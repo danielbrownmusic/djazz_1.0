@@ -1,0 +1,45 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28720\viewh16800\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 HOW TO MAKE A NEW SONG FILE FOR DJAZZ.\
+\
+A song file is not a score file. It does not contain any notes to play. It contains the navigation information in the song: chapters, bars, beats chord labels, and tempo, in order to make the grid and send the master clock and factor oracle the appropriate data.\
+\
+Here is how to make one. There are seven (7) steps listed below.\
+\
+1. Open the patcher \'93djazz.make_song_file.maxpat\'94 from the folder \'93patchers/data_conversion_tools\'94 in the current djazz folder.\
+\
+2. In the appropriate fields, put in the song name, beat count, tempo, time signature, and the starting bars for each chapter. This data is exactly the same, and in the same order, as the data listed for the songs in the old Djazz version, EXCEPT FOR ONE DIFFERENCE: don\'92t use quotation marks when you put in the start bars. Only put in the list of numbers (and don\'92t use commas).\
+\
+3. Put the grid data in the \'93grid data\'94 box. Put it in (or copy and paste it) in LISP-style notation, where each entry is a list:  ( chord-root   chord-type-symbol   number-of-measures  )\
+Do not use outer parentheses for the whole list of lists.\
+Do not include any comments or semi-colons.\
+Spacing and indentation is not important.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic Screenshot 2024-07-21 at 22.35.50.png \width23480 \height12400 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}
+\fs36 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+4. Press the \'93save\'94 button.\
+\
+5. Save the song file in the folder of the same song name that contains the subfolders \'93new\'94 and \'93new2.\'94 The file name and the song folder name should be exactly the same.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic Screenshot 2024-07-21 at 22.31.37.png \width21380 \height16060 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}
+\fs36 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 6. That\'92s all. If the folder you put the new song file in has scores in its \'93new\'94 and \'93new2\'94 subfolders, this song can now be played as usual by Djazz.\
+\
+7. Press the \'93clear\'94 button to clear the data.}

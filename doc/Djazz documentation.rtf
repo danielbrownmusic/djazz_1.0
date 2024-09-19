@@ -1,0 +1,118 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Oblique;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19780\viewh18600\viewkind1
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf0 DJAZZ DOC\
+\
+1. MANUAL\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 _________________________________________________________\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 2. API\
+	1. Architecture\
+		Model/Control/View Control/View\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 _________________________________________________________\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 		Pattrs\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 _________________________________________________________\
+\
+Because Djazz is beat-based, most objects are built to receive and process information at recurring instances. \
+_________________________________________________________\
+\
+Description of Components in Model:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+Master Control\
+	Master Clock\
+	- outputs a beat number when it receives a bang\
+	- increments its beat number with each output, but also keeps track of position in a song form and adjusts the beat in accordance if looped.\
+	- keeps track of tempo if tempo is manually input and fluctuates. This uses antescofo.\
+	- reads from song dict to get label\
+	- sends tempo, beat, and chord label, immediately in succession and 
+\f1\i in that order,
+\f0\i0  to midi and audio generators. This order is important,  so that the generators can calculate the correct information to play at the beginning of each beat.  \
+		\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 _________________________________________________________\
+Pattr translation in control and view control\
+\
+_________________________________________________________	\
+Interface - not much to say. Just graphical controls.\
+Sends and receives pattrs to and from control. Infinite loop is avoided via pattrstorage output mode set to 5.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 _________________________________________________________		\
+	1. Index of abstractions\
+		beat clock\
+		beat generator\
+			midi beat generator\
+			audio beat generator\
+		beat reader\
+			midi beat reader\
+			audio beat reader\
+		\
+_________________________________________________________\
+\
+Externals used in Djazz:\
+1. Antescofo is used in two places: \
+	1. Master control, to calculate the tempo (SCORE NAME)\
+	2. MIDI beat reader, to sequence and send out midi notes in the proper tempo and rhythm (SCORE NAME)\
+\
+2. SuperVP is used to play audio beats\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 _________________________________________________________\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 Attaching External Devices\
+	Parameters\
+	Parameter Listeners\
+	 External devices with views as well as controls\
+		Launchpads\
+			Mapping editors\
+			Dictionary readers and writers in javascript\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 _________________________________________________________\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+Dictionaries in Javascript and pure Max\
+	Gotchas\
+	\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 _________________________________________________________\
+Improvisation\
+	Factor Oracle\
+	Analyzer\
+	Listeners\
+\
+_________________________________________________________\
+File formats used\
+	json\
+	song file\
+	score/track files for MIDI\
+	audio: wav and json\
+\
+Folders for consolidating files that go together\
+	Saving and loading folders (gotchas)\
+\
+Json files are imported into dictionaries\
+_________________________________________________________\
+\
+Saving and loading sessions\
+\
+ The CONTROL PATTRS and DATA PATTRS (dicts) are saved.\
+	On loading, the data pattrs must be fully loaded first; their priorities are set to 1.\
+	The control pattrs are independent so their priorities are all 0.\
+_________________________________________________________\
+\
+\
+Tools\
+	Song file maker\
+	MIDI-to-json translator\
+	\
+\
+	LISP-to-json song label maker}

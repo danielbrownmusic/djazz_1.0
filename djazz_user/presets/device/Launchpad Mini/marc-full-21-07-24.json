@@ -1,0 +1,63 @@
+{
+	"device" : "Launchpad Mini",
+	"manual" : "https://leemans.ch/latex/doc_launchpad-programmers-reference.pdf",
+	"grid" : 	{
+		"chapter" : 		{
+			"cells" : [ "midi 8", "midi 24", "midi 40", "midi 56", "midi 72", "midi 88", "midi 104", "midi 120" ],
+			"colors" : 			{
+				"unused" : "none",
+				"off" : "green dim static",
+				"waiting" : "green dim static",
+				"playing" : "green bright static"
+			}
+
+		}
+,
+		"bar" : 		{
+			"cells" : [ "midi 0", "midi 1", "midi 2", "midi 3", "midi 4", "midi 5", "midi 6", "midi 7", "midi 16", "midi 17", "midi 18", "midi 19", "midi 20", "midi 21", "midi 22", "midi 23", "midi 32", "midi 33", "midi 34", "midi 35", "midi 36", "midi 37", "midi 38", "midi 39", "midi 48", "midi 49", "midi 50", "midi 51", "midi 52", "midi 53", "midi 54", "midi 55" ],
+			"colors" : 			{
+				"unused" : "none",
+				"off" : "brown dim static",
+				"waiting" : "red dim static",
+				"playing" : "red bright static"
+			}
+
+		}
+
+	}
+,
+	"parameters" : 	{
+		"score_1_speed_1/2" : "midi 64 yellow",
+		"score_1_speed_3/2" : "midi 80 yellow",
+		"score_1_speed_2" : "midi 96 yellow",
+		"score_1_speed_4" : "midi 112 yellow",
+		"midi_out_8_unmute" : "midi 65 green",
+		"midi_out_9_unmute" : "midi 66 green",
+		"midi_out_10_unmute" : "midi 67 green",
+		"midi_out_11_unmute" : "midi 68 green",
+		"midi_out_12_unmute" : "midi 69 green",
+		"midi_out_13_unmute" : "midi 81 green",
+		"midi_out_14_unmute" : "midi 82 green",
+		"midi_out_3_unmute" : "midi 97 green",
+		"midi_out_4_unmute" : "midi 98 green",
+		"midi_out_5_unmute" : "midi 99 green",
+		"midi_out_6_unmute" : "midi 100 green",
+		"midi_out_7_unmute" : "midi 101 green",
+		"score_1_reset_octave" : "midi 83 orange",
+		"score_1_octave_up" : "midi 85 orange",
+		"score_1_octave_down" : "midi 84 orange",
+		"score_1_loop_1" : "midi 71 yellow",
+		"score_1_loop_2" : "midi 87 yellow",
+		"score_1_loop_3" : "midi 103 yellow",
+		"score_1_loop_4" : "midi 119 yellow",
+		"score_1_loop_5" : "midi 70 yellow",
+		"score_1_loop_6" : "midi 86 yellow",
+		"score_1_loop_7" : "midi 102 yellow",
+		"score_1_loop_8" : "midi 118 yellow",
+		"audio_1_active" : "midi 113 green",
+		"audio_out_1_unmute" : "midi 113 green",
+		"audio_out_2_unmute" : "midi 114 green",
+		"audio_out_3_unmute" : "midi 115 green"
+	}
+
+}
