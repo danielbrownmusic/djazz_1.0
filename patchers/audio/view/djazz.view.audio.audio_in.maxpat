@@ -398,7 +398,7 @@
 				"box" : 				{
 					"comment" : "(0/1) sets record-enable off or on",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -449,7 +449,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 59.0, 119.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -484,7 +484,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 68.0, 199.030296675916702, 71.0, 22.0 ],
+									"patching_rect" : [ 73.0, 174.0, 71.0, 22.0 ],
 									"text" : "fromsymbol"
 								}
 
@@ -496,7 +496,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 50.0, 141.832768069808935, 31.0, 22.0 ],
+									"patching_rect" : [ 26.0, 118.0, 66.0, 22.0 ],
 									"text" : "t b s"
 								}
 
@@ -508,7 +508,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 62.0, 248.232770251338934, 72.0, 22.0 ],
+									"patching_rect" : [ 73.0, 226.0, 72.0, 22.0 ],
 									"text" : "prepend set"
 								}
 
@@ -520,7 +520,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 100.0, 43.0, 22.0 ],
+									"patching_rect" : [ 26.0, 70.0, 43.0, 22.0 ],
 									"text" : "NONE"
 								}
 
@@ -532,7 +532,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
-									"patching_rect" : [ 148.5, 100.0, 90.0, 22.0 ],
+									"patching_rect" : [ 95.0, 70.0, 90.0, 22.0 ],
 									"text" : "opendialog fold"
 								}
 
@@ -546,7 +546,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 39.999992675916701, 30.0, 30.0 ]
+									"patching_rect" : [ 26.0, 16.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -559,7 +559,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 148.5, 39.999992675916701, 30.0, 30.0 ]
+									"patching_rect" : [ 95.0, 16.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -571,7 +571,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 330.232750675916691, 30.0, 30.0 ]
+									"patching_rect" : [ 26.0, 290.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -1035,7 +1035,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-15",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1518,7 +1518,7 @@
 			}
 , 			{
 				"box" : 				{
-					"buffername" : "10139_AUDIO_IN_BUFFER_NAME",
+					"buffername" : "NONE",
 					"id" : "obj-14",
 					"maxclass" : "waveform~",
 					"numinlets" : 5,
@@ -2091,6 +2091,14 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"bgcolor" : [ 0.76078431372549, 0.76078431372549, 0.76078431372549, 1.0 ],
 		"editing_bgcolor" : [ 0.76078431372549, 0.76078431372549, 0.76078431372549, 1.0 ]
 	}
