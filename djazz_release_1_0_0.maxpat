@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 50.0, 110.0, 636.0, 490.0 ],
+		"rect" : [ 50.0, 110.0, 936.0, 833.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -1184,7 +1184,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-13",
-					"items" : [ "to Max 1", ",", "to Max 2", ",", "Launchpad Pro MK3 LPProMK3 MIDI", ",", "Launchpad Pro MK3 LPProMK3 DIN", ",", "Launchpad Pro MK3 LPProMK3 DAW" ],
+					"items" : [ "to Max 1", ",", "to Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1384,7 +1384,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-9",
-					"items" : [ ",", "Launchpad Pro MK3" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -5706,7 +5706,7 @@
 					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 212.0, 136.0, 627.0, 290.0 ],
+					"patching_rect" : [ 210.0, 143.0, 627.0, 290.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.00000011920929, 1.6666659116745, 630.0, 287.0 ],
 					"varname" : "view",
@@ -6037,7 +6037,7 @@
 				"patchline" : 				{
 					"color" : [ 0.63137948513031, 0.73795622587204, 0.818884968757629, 1.0 ],
 					"destination" : [ "obj-65", 1 ],
-					"midpoints" : [ 862.5, 114.0, 829.5, 114.0 ],
+					"midpoints" : [ 862.5, 109.0, 827.5, 109.0 ],
 					"order" : 3,
 					"source" : [ "obj-15", 0 ]
 				}
@@ -6193,7 +6193,7 @@
 				"patchline" : 				{
 					"color" : [ 0.0, 0.44994792342186, 0.445239782333374, 1.0 ],
 					"destination" : [ "obj-65", 0 ],
-					"midpoints" : [ 704.5, 945.403219819068909, 943.096771597862244, 945.403219819068909, 943.096771597862244, 124.016118884086609, 221.5, 124.016118884086609 ],
+					"midpoints" : [ 704.5, 945.403219819068909, 943.096771597862244, 945.403219819068909, 943.096771597862244, 124.016118884086609, 219.5, 124.016118884086609 ],
 					"order" : 1,
 					"source" : [ "obj-4", 0 ]
 				}
@@ -6257,6 +6257,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
+					"midpoints" : [ 827.5, 456.5, 655.5, 456.5 ],
 					"source" : [ "obj-65", 2 ]
 				}
 
@@ -6264,7 +6265,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 3 ],
-					"midpoints" : [ 221.5, 468.0, 588.0, 468.0 ],
+					"midpoints" : [ 219.5, 468.0, 588.0, 468.0 ],
 					"source" : [ "obj-65", 0 ]
 				}
 
@@ -6272,6 +6273,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-74", 0 ],
+					"midpoints" : [ 523.5, 450.5, 626.5, 450.5 ],
 					"source" : [ "obj-65", 1 ]
 				}
 
@@ -6320,7 +6322,7 @@
 				"patchline" : 				{
 					"color" : [ 0.0, 0.44695645570755, 0.422329187393188, 1.0 ],
 					"destination" : [ "obj-65", 0 ],
-					"midpoints" : [ 684.5, 768.0, 942.25, 768.0, 942.25, 123.0, 221.5, 123.0 ],
+					"midpoints" : [ 684.5, 768.0, 942.25, 768.0, 942.25, 123.0, 219.5, 123.0 ],
 					"source" : [ "obj-74", 1 ]
 				}
 
@@ -7637,13 +7639,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "djazz_device_dict_reader_launchpad_pro_mk3.js",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/device_code/launchpad/Launchpad Pro MK3 code",
-				"patcherrelativepath" : "./code/device_code/launchpad/Launchpad Pro MK3 code",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "djazz_device_io.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/devices",
 				"patcherrelativepath" : "./patchers/devices",
@@ -7665,30 +7660,37 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "djazz_launchpad_dict_reader_device_mini.js",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/device_code/launchpad/Launchpad Mini code",
+				"patcherrelativepath" : "./code/device_code/launchpad/Launchpad Mini code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "djazz_launchpad_dict_reader_map.js",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/device_code/launchpad/common",
-				"patcherrelativepath" : "./code/device_code/launchpad/common",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/device_code/launchpad/Launchpad Mini code",
+				"patcherrelativepath" : "./code/device_code/launchpad/Launchpad Mini code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "djazz_launchpad_dict_writer_ctrl.js",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/device_code/launchpad/common",
-				"patcherrelativepath" : "./code/device_code/launchpad/common",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/device_code/launchpad/Launchpad Mini code",
+				"patcherrelativepath" : "./code/device_code/launchpad/Launchpad Mini code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "djazz_launchpad_dict_writer_map.js",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/device_code/launchpad/common",
-				"patcherrelativepath" : "./code/device_code/launchpad/common",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/device_code/launchpad/Launchpad Mini code",
+				"patcherrelativepath" : "./code/device_code/launchpad/Launchpad Mini code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "djazz_launchpad_dict_writer_view.js",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/device_code/launchpad/common",
-				"patcherrelativepath" : "./code/device_code/launchpad/common",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/device_code/launchpad/Launchpad Mini code",
+				"patcherrelativepath" : "./code/device_code/launchpad/Launchpad Mini code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -7708,8 +7710,8 @@
 			}
 , 			{
 				"name" : "djazz_launchpad_mapping.js",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/device_code/launchpad/common",
-				"patcherrelativepath" : "./code/device_code/launchpad/common",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/device_code/launchpad/Launchpad Mini code",
+				"patcherrelativepath" : "./code/device_code/launchpad/Launchpad Mini code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -7746,13 +7748,6 @@
 				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/devices/Launchpad Pro MK3 LPProMK3 MIDI",
 				"patcherrelativepath" : "./patchers/devices/Launchpad Pro MK3 LPProMK3 MIDI",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_mapping_launchpad_pro_mk3.js",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/device_code/launchpad/Launchpad Pro MK3 code",
-				"patcherrelativepath" : "./code/device_code/launchpad/Launchpad Pro MK3 code",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{

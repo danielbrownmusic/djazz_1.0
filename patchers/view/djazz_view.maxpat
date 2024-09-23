@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 119.0, 373.0, 1575.0, 710.0 ],
+		"rect" : [ 349.0, 673.0, 1575.0, 710.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1377.0, 490.0, 45.0, 22.0 ],
+					"text" : "mute 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "newobj",
@@ -931,7 +943,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-17",
-					"items" : [ "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "AllINeed", ",", "AllOfMe", ",", "Allthethingsyouare", ",", "AutumnleavesDoMin", ",", "BalitaKely", ",", "BandeOrgueZay", ",", "Baobab", ",", "BesameMucho", ",", "Bilo", ",", "BluesFamaj", ",", "BodyAndSoul", ",", "Boomerang", ",", "CamelBluesTernaire8", ",", "Capharnaum", ",", "Caravan", ",", "Carlos", ",", "Cerebral", ",", "CheektoCheek", ",", "CheektoCheekDjin", ",", "Cheerleader", ",", "ChegadeSaudade", ",", "Dang", ",", "Embona", ",", "Equilibrium", ",", "Espion", ",", "EtrangeJournee", ",", "EveryBreath", ",", "Fahatsia", ",", "Fara", ",", "Formidable", ",", "Free1", ",", "Free16", ",", "Free24", ",", "Free32", ",", "Free4", ",", "Free8", ",", "FreedomJazzDance", ",", "Guerre", ",", "Handfulofkeys", ",", "Helmut", ",", "Hoany", ",", "Ifarakely", ",", "Jabeau", ",", "JakeFine", ",", "JustAGigolo", ",", "JustTheWay", ",", "Kilalao", ",", "KillerJoe", ",", "Kissamile", ",", "Kristoffer", ",", "L-O-V-E", ",", "LaJavanaise", ",", "Lasa", ",", "Liana", ",", "LianaIntro16", ",", "LoveYourself", ",", "Lullaby", ",", "MakingFlippy", ",", "Malaky", ",", "Masoala", ",", "Mezerg", ",", "MieuxQue", ",", "Nightintunisia", ",", "Padam", ",", "PasAVendre", ",", "PasJalouse", ",", "PasPeur", ",", "Perfect", ",", "Perhaps", ",", "Rasputin", ",", "Rasputincourt", ",", "Reveeveille", ",", "SatinDoll", ",", "Save", ",", "Sojerina", ",", "SoWhat", ",", "Spain", ",", "StarWazzz", ",", "Summertime", ",", "Sunny", ",", "TakeFive", ",", "TheseBoots", ",", "Tsofyrano", ",", "VatoMalaza", ",", "Walk", ",", "Williason", ",", "WizKhalifa", ",", "Zay" ],
+					"items" : [ "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "AllINeed", ",", "AllOfMe", ",", "Allthethingsyouare", ",", "AutumnleavesDoMin", ",", "BalitaKely", ",", "BandeOrgueZay", ",", "Baobab", ",", "BesameMucho", ",", "Bilo", ",", "BluesFamaj", ",", "BodyAndSoul", ",", "Boomerang", ",", "CamelBluesTernaire8", ",", "Capharnaum", ",", "Caravan", ",", "Carlos", ",", "Cerebral", ",", "CheektoCheek", ",", "CheektoCheekDjin", ",", "Cheerleader", ",", "ChegadeSaudade", ",", "Dang", ",", "Embona", ",", "Equilibrium", ",", "Espion", ",", "EtrangeJournee", ",", "EveryBreath", ",", "Fahatsia", ",", "Fara", ",", "Formidable", ",", "Free1", ",", "Free16", ",", "Free24", ",", "Free32", ",", "Free4", ",", "Free8", ",", "FreedomJazzDance", ",", "Guerre", ",", "Handfulofkeys", ",", "Helmut", ",", "Hoany", ",", "Ifarakely", ",", "Jabeau", ",", "JakeFine", ",", "JustAGigolo", ",", "JustTheWay", ",", "Kilalao", ",", "KillerJoe", ",", "Kissamile", ",", "Kristoffer", ",", "L-O-V-E", ",", "LaJavanaise", ",", "Lasa", ",", "Liana", ",", "LianaIntro16", ",", "LoveYourself", ",", "Lullaby", ",", "MakingFlippy", ",", "Malaky", ",", "Masoala", ",", "Mezerg", ",", "MieuxQue", ",", "Nightintunisia", ",", "Padam", ",", "PasAVendre", ",", "PasJalouse", ",", "PasPeur", ",", "Perfect", ",", "Perhaps", ",", "Rasputin", ",", "Rasputincourt", ",", "Reveeveille", ",", "SatinDoll", ",", "Save", ",", "Sojerina", ",", "SoWhat", ",", "Spain", ",", "StarWazzz", ",", "Summertime", ",", "Sunny", ",", "TakeFive", ",", "TheseBoots", ",", "Tsofyrano", ",", "VatoMalaza", ",", "Walk", ",", "Williason", ",", "WizKhalifa", ",", "Zay" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2547,6 +2559,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-45", 2 ],
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-55", 1 ],
 					"source" : [ "obj-17", 1 ]
 				}
@@ -2753,6 +2772,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"order" : 1,
+					"source" : [ "obj-41", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"order" : 0,
 					"source" : [ "obj-41", 0 ]
@@ -2763,7 +2790,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-45", 1 ],
 					"midpoints" : [ 1453.500043034553528, 517.333349227905273, 1328.833371957143072, 517.333349227905273 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-41", 0 ]
 				}
 
