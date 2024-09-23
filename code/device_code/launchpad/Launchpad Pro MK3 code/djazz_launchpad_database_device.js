@@ -1,8 +1,14 @@
-
 var d_ = new Dict();
 
+// ---------------------------------------------
 
-exports.load = function (device_dict_name)
+exports.get_dict = function ()
+{
+    return d_.name;
+}
+
+
+exports.set_dict = function (device_dict_name)
 {
     d_.name = device_dict_name;
     if (!is_dict_ok_(d_))
@@ -13,14 +19,9 @@ exports.load = function (device_dict_name)
 }
 
 
-exports.get_dict = function ()
+exports.import_json = function(file_path)
 {
-    return d_;
-}
-
-exports.name = function ()
-{
-    return d_.name;
+    d_.import_json(file_path);
 }
 
 
@@ -60,43 +61,18 @@ exports.grid_states = function (param)
 }
 
 
-exports.color_code = function(color)
+exports.color_code = function(hue, value)
 {
-    post ("color =", color, "\n");
-    var data            = color.split(" ");
-    var hue             = data[0];
-    var is_none         = (hue === 'none'); 
-    var value           = is_none? 'bright' : data[1];
-    var behavior        = is_none ? 'static' : data[2];
+    return d_.get(to_key_("colors", hue, value));
+}
 
-    var color_code      = d_.get("colors").get(hue).get(value);
-    var behavior_code   = d_.get("behaviors").get(behavior);
-    var velocity        = color_code + behavior_code;
-    var channel         = 1;
-    return [velocity, channel];
+
+exports.behavior_code = function(behavior)
+{
+    return d_.get(to_key_("behaviors", behavior));
 }
 
 //-------------------------------------------------------
-
-function get_device_file_path_(device_name)
-{
-    var system_folder = "djazz_db";
-    var folders     = this.patcher.filepath.split("/");
-    var i           = folders.indexOf(system_folder);
-    var folder_path = folders.slice(0, i + 1).concat(["device", device_name]).join("/");
-    var f           = new Folder(folder_path);
-
-    while (!f.end)
-    {
-        if (f.extension === ".json")
-        {
-            var file_path = [f.pathname, f.filename].join("/");
-            return file_path;
-        }
-        f.next();
-    }
-}
-get_device_file_path_.local = 1;
 
 
 function is_dict_ok_(d)
@@ -122,17 +98,29 @@ function to_key_()
 to_symbol_.local = 1;
 
 
-/* exports.color_code = function(hue, value)
-{
-    return d_.get(to_key_("colors", hue, value));    
-}
 
 
-exports.behavior_code = function(behavior)
+
+/* function get_device_file_path_(device_name)
 {
-    return d_.get(to_key_("behaviors", behavior));
+    var system_folder = "djazz_db";
+    var folders     = this.patcher.filepath.split("/");
+    var i           = folders.indexOf(system_folder);
+    var folder_path = folders.slice(0, i + 1).concat(["device", device_name]).join("/");
+    var f           = new Folder(folder_path);
+
+    while (!f.end)
+    {
+        if (f.extension === ".json")
+        {
+            var file_path = [f.pathname, f.filename].join("/");
+            return file_path;
+        }
+        f.next();
+    }
 }
- */
+get_device_file_path_.local = 1; */
+
 
 
 

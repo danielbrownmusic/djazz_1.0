@@ -104,7 +104,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 877.0, 124.0, 640.0, 480.0 ],
+						"rect" : [ 144.0, 168.0, 1069.0, 709.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -675,8 +675,8 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 444.5, 336.0, 235.0, 22.0 ],
-									"text" : "djazz_launchpad_mini_interface_view",
+									"patching_rect" : [ 444.5, 336.0, 393.0, 22.0 ],
+									"text" : "djazz_launchpad_interface_view \"Launchpad Pro MK3 LPProMK3 MIDI\"",
 									"varname" : "djazz_launchpad_mini_interface_view[1]"
 								}
 
@@ -1184,7 +1184,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-13",
-					"items" : [ "to Max 1", ",", "to Max 2" ],
+					"items" : [ "to Max 1", ",", "to Max 2", ",", "Launchpad Pro MK3 LPProMK3 MIDI", ",", "Launchpad Pro MK3 LPProMK3 DIN", ",", "Launchpad Pro MK3 LPProMK3 DAW" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1384,7 +1384,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-9",
-					"items" : "<empty>",
+					"items" : [ ",", "Launchpad Pro MK3" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -7690,6 +7690,20 @@
 				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/device_code/launchpad/common",
 				"patcherrelativepath" : "./code/device_code/launchpad/common",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "djazz_launchpad_interface_view.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/devices",
+				"patcherrelativepath" : "./patchers/devices",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "djazz_launchpad_make_mapping.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/devices",
+				"patcherrelativepath" : "./patchers/devices",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{

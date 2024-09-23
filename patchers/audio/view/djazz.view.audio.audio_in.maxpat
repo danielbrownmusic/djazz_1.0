@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 624.0, 217.0, 937.0, 814.0 ],
+		"rect" : [ 624.0, 217.0, 477.0, 814.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,19 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "(0/1) sets record active on or off",
+					"id" : "obj-8",
+					"index" : 0,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 183.0, 34.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-29",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -56,7 +69,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 119.0, 662.0, 769.0 ],
+						"rect" : [ 112.0, 652.0, 662.0, 769.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -84,6 +97,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-45",
@@ -356,7 +370,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 41.0, 131.5, 115.0, 22.0 ],
+					"patching_rect" : [ 41.0, 131.5, 135.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -364,7 +378,7 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p record_button_ctrl"
+					"text" : "p record_button_enable"
 				}
 
 			}
@@ -378,7 +392,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "bang", "bang", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 270.0, 179.0, 31.0, 26.0 ],
+					"patching_rect" : [ 228.0, 181.499060574147279, 31.0, 26.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -1.231707499999999, 25.5, 25.0, 24.0 ]
 				}
@@ -392,7 +406,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 41.0, 175.0, 140.0, 33.0 ],
+					"patching_rect" : [ 41.0, 181.499060574147279, 142.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 51.0, 199.0, 20.0 ],
 					"text" : "LOOP MUST BE ON TO RECORD",
@@ -404,7 +418,7 @@
 				"box" : 				{
 					"comment" : "(0/1) sets record-enable off or on",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1041,7 +1055,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-15",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1342,7 +1356,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 233.0, 125.0, 84.0, 35.0 ],
+					"patching_rect" : [ 233.5, 117.5, 84.0, 35.0 ],
 					"saved_object_attributes" : 					{
 						"initial" : [ 0 ],
 						"parameter_enable" : 0,
@@ -1524,7 +1538,7 @@
 			}
 , 			{
 				"box" : 				{
-					"buffername" : "44542_AUDIO_IN_BUFFER_NAME",
+					"buffername" : "NONE",
 					"id" : "obj-14",
 					"maxclass" : "waveform~",
 					"numinlets" : 5,
@@ -1999,7 +2013,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
-					"midpoints" : [ 146.5, 165.75, 279.5, 165.75 ],
+					"midpoints" : [ 166.5, 171.75, 237.5, 171.75 ],
 					"source" : [ "obj-29", 2 ]
 				}
 
@@ -2007,7 +2021,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-95", 0 ],
-					"midpoints" : [ 98.5, 165.75, 275.5, 165.75 ],
+					"midpoints" : [ 108.5, 163.75, 275.5, 163.75 ],
 					"source" : [ "obj-29", 1 ]
 				}
 
@@ -2036,7 +2050,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-29", 1 ],
-					"midpoints" : [ 279.5, 215.0, 213.0, 215.0, 213.0, 120.5, 146.5, 120.5 ],
+					"midpoints" : [ 237.5, 224.0, 213.0, 224.0, 213.0, 120.5, 166.5, 120.5 ],
 					"source" : [ "obj-40", 0 ]
 				}
 
@@ -2085,6 +2099,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-95", 0 ],
+					"midpoints" : [ 192.5, 164.0, 275.5, 164.0 ],
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
 					"midpoints" : [ 275.5, 354.863059234901471, 408.5, 354.863059234901471 ],
 					"source" : [ "obj-9", 0 ]
@@ -2099,6 +2121,14 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"bgcolor" : [ 0.76078431372549, 0.76078431372549, 0.76078431372549, 1.0 ],
 		"editing_bgcolor" : [ 0.76078431372549, 0.76078431372549, 0.76078431372549, 1.0 ]
 	}

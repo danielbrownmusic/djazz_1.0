@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 220.0, 135.0, 884.0, 484.0 ],
+		"rect" : [ 220.0, 135.0, 1004.0, 346.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -338,7 +338,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 307.0, 154.0, 72.0, 22.0 ],
+					"patching_rect" : [ 293.0, 163.0, 72.0, 22.0 ],
 					"text" : "loadmess 0"
 				}
 
@@ -360,7 +360,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 143.0, 283.0, 1551.0, 800.0 ],
+						"rect" : [ 441.0, 551.0, 1253.0, 532.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -872,7 +872,6 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-17",
-									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
@@ -6700,13 +6699,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 252.0, 390.0, 229.0, 22.0 ],
+					"patching_rect" : [ 252.0, 390.0, 708.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "djazz_mapping_launchpad_pro_mk3.js",
+						"filename" : "djazz_launchpad_mapping.js",
 						"parameter_enable" : 0
 					}
 ,
-					"text" : "js djazz_mapping_launchpad_pro_mk3.js"
+					"text" : "js djazz_launchpad_mapping.js #0_LAUNCHPAD_DEVICE_DICT launchpad_pro_mk3 djazz_launchpad_color_to_midi_pro_mk3"
 				}
 
 			}
@@ -6947,7 +6946,9 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-51", 0 ],
-					"source" : [ "obj-60", 0 ]
+					"source" : [ "obj-60", 0 ],
+					"watchpoint_flags" : 5,
+					"watchpoint_id" : 1
 				}
 
 			}

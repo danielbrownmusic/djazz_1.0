@@ -4,38 +4,56 @@ CONVENTION for grid stuff:
 'param' = "bar i", "chapter j"
 */
 
-
-var dutils = require("db_dictionary_array_utils");
-
+var dutils          = require("db_dictionary_array_utils");
 var GRID_PARAMS_    = ['bar', 'chapter'];
 var PARAM_STATES_   = [0, 1];
-
 var d_              = new Dict();
 
 // -------------------------------------------------------------
 
 
+exports.get_dict = function()
+{
+    return d_.name;
+}
+
+
 exports.set_dict = function (device_name, mapping_dict_name)
 {
     d_.name = mapping_dict_name;
-    //post (d_.name);
-    //post (d_.getkeys());
-    if (!is_dict_ok_(device_name))
+/*     if (!is_dict_ok_(device_name))
     {
         post_error_(device_name);
         return false;
-    }
-    return true;
+    } */
+    //return true;
 }
 
 
-exports.close = function()
+//  WRITING -----------------------------------------------
+
+
+exports.add_parameter = function (param, cell_type, cell_value, color)
 {
-    d_ = new Dict();
+    var key = to_key_("parameters", param);
+    d_.replace(key, to_symbol_(cell_type, cell_value, color));
 }
 
 
-// -------------------------------------------------------------
+exports.remove_param = function (param)
+{
+    d_.get("parameters").remove(param);
+}
+
+
+exports.clear = function()
+{
+    d_.replace("grid");
+    d_.replace("parameters");
+}
+
+
+// READING ---------------------------------------------------
 
 
 exports.contains = function(param)
@@ -87,7 +105,7 @@ exports.color = function (param, state)
 
 
 
-// -------------------------------------------------------------
+// LOCAL ---------------------------------------------------
 
 function get_grid_params_()
 {
@@ -180,7 +198,7 @@ get_grid_param_count_.local = 1;
 
 // -------------------------------------------------------------
 
-function is_dict_ok_(device_name)
+/* function is_dict_ok_(device_name)
 {
     // (d_.get("device"), "\n");
     return d_.get("device") == device_name;
@@ -192,7 +210,7 @@ function post_error_(device_name)
 {
     post ( "Wrong type of preset file loaded:", d_.get("device"), "instead of", device_name, "\n");
 }
-post_error_.local = 1;
+post_error_.local = 1; */
 
 
 function to_symbol_()
@@ -207,3 +225,10 @@ function to_key_()
     return Array.prototype.slice.call(arguments).join("::");
 }
 to_key_.local = 1;
+
+
+/* exports.close = function()
+{
+    d_ = new Dict();
+}
+ */
