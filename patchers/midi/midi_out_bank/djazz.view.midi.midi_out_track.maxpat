@@ -411,7 +411,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1016.0, 141.0, 36.0, 35.0 ],
 					"saved_object_attributes" : 					{
-						"initial" : [ 0 ],
+						"initial" : [ "NONE" ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
 					}
@@ -1476,13 +1476,14 @@
 					"bgfillcolor_type" : "color",
 					"fontsize" : 12.0,
 					"id" : "obj-43",
-					"items" : [ "AU DLS Synth 1", ",", "from Max 1", ",", "from Max 2", ",", "Logic Pro Virtual In" ],
+					"items" : [ "AU DLS Synth 1", ",", "from Max 1", ",", "from Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1024.0, 265.0, 100.0, 22.0 ],
+					"pattrmode" : 1,
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 93.0, 90.0, 22.0 ],
 					"textcolor" : [ 1.0, 0.988235294117647, 0.988235294117647, 1.0 ],

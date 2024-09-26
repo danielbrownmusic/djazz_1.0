@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 132.0, 396.0, 1281.0, 622.0 ],
+		"rect" : [ 253.0, 383.0, 1281.0, 622.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -159,7 +159,7 @@
 				"box" : 				{
 					"comment" : "anything to trigger bang in manual tap",
 					"id" : "obj-10",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -254,9 +254,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(float) metronome tempo",
 					"id" : "obj-9",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -269,7 +269,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-6",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -279,9 +279,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(1/0) advance beat on tap or not",
 					"id" : "obj-5",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -348,11 +348,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 30.0, 23.0, 30.0, 30.0 ]
 				}
 
@@ -583,7 +583,37 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "djazz.view.manual_tap.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/view",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "djazz.view.metronome.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/view",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "djazz.view.remote_tap.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/view",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "djazz_tempo_to_ms.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/tools/conversion",
+				"patcherrelativepath" : "../tools/conversion",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }

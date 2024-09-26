@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 504.0, 153.0, 911.0, 486.0 ],
+		"rect" : [ 205.0, 242.0, 911.0, 486.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,7 +40,7 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(0/1) metronome off/on",
 					"id" : "obj-2",
 					"index" : 0,
 					"maxclass" : "inlet",
@@ -229,7 +229,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "djazz_tempo_to_ms.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_with_data/patchers/tools/conversion",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/tools/conversion",
 				"patcherrelativepath" : "../tools/conversion",
 				"type" : "JSON",
 				"implicit" : 1
