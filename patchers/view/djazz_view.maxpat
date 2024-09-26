@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 349.0, 673.0, 1575.0, 710.0 ],
+		"rect" : [ 119.0, 373.0, 670.0, 710.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,45 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontsize" : 10.0,
+					"id" : "obj-19",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 390.0, 431.0, 127.0, 18.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 23.0, 286.0, 132.0, 18.0 ],
+					"text" : "GLOBAL SOLO EFFECTS",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "global_solo_effects" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-11",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "djazz.view.effects.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 210.0, 490.0, 611.0, 27.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 16.0, 309.0, 610.0, 23.0 ],
+					"varname" : "global_solo_effects",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "message",
@@ -943,7 +982,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-17",
-					"items" : [ "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "AllINeed", ",", "AllOfMe", ",", "Allthethingsyouare", ",", "AutumnleavesDoMin", ",", "BalitaKely", ",", "BandeOrgueZay", ",", "Baobab", ",", "BesameMucho", ",", "Bilo", ",", "BluesFamaj", ",", "BodyAndSoul", ",", "Boomerang", ",", "CamelBluesTernaire8", ",", "Capharnaum", ",", "Caravan", ",", "Carlos", ",", "Cerebral", ",", "CheektoCheek", ",", "CheektoCheekDjin", ",", "Cheerleader", ",", "ChegadeSaudade", ",", "Dang", ",", "Embona", ",", "Equilibrium", ",", "Espion", ",", "EtrangeJournee", ",", "EveryBreath", ",", "Fahatsia", ",", "Fara", ",", "Formidable", ",", "Free1", ",", "Free16", ",", "Free24", ",", "Free32", ",", "Free4", ",", "Free8", ",", "FreedomJazzDance", ",", "Guerre", ",", "Handfulofkeys", ",", "Helmut", ",", "Hoany", ",", "Ifarakely", ",", "Jabeau", ",", "JakeFine", ",", "JustAGigolo", ",", "JustTheWay", ",", "Kilalao", ",", "KillerJoe", ",", "Kissamile", ",", "Kristoffer", ",", "L-O-V-E", ",", "LaJavanaise", ",", "Lasa", ",", "Liana", ",", "LianaIntro16", ",", "LoveYourself", ",", "Lullaby", ",", "MakingFlippy", ",", "Malaky", ",", "Masoala", ",", "Mezerg", ",", "MieuxQue", ",", "Nightintunisia", ",", "Padam", ",", "PasAVendre", ",", "PasJalouse", ",", "PasPeur", ",", "Perfect", ",", "Perhaps", ",", "Rasputin", ",", "Rasputincourt", ",", "Reveeveille", ",", "SatinDoll", ",", "Save", ",", "Sojerina", ",", "SoWhat", ",", "Spain", ",", "StarWazzz", ",", "Summertime", ",", "Sunny", ",", "TakeFive", ",", "TheseBoots", ",", "Tsofyrano", ",", "VatoMalaza", ",", "Walk", ",", "Williason", ",", "WizKhalifa", ",", "Zay" ],
+					"items" : [ "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "select", ",", "AllINeed", ",", "AllOfMe", ",", "Allthethingsyouare", ",", "AutumnleavesDoMin", ",", "BalitaKely", ",", "BandeOrgueZay", ",", "Baobab", ",", "BesameMucho", ",", "Bilo", ",", "BluesFamaj", ",", "BodyAndSoul", ",", "Boomerang", ",", "CamelBluesTernaire8", ",", "Capharnaum", ",", "Caravan", ",", "Carlos", ",", "Cerebral", ",", "CheektoCheek", ",", "CheektoCheekDjin", ",", "Cheerleader", ",", "ChegadeSaudade", ",", "Dang", ",", "Embona", ",", "Equilibrium", ",", "Espion", ",", "EtrangeJournee", ",", "EveryBreath", ",", "Fahatsia", ",", "Fara", ",", "Formidable", ",", "Free1", ",", "Free16", ",", "Free24", ",", "Free32", ",", "Free4", ",", "Free8", ",", "FreedomJazzDance", ",", "Guerre", ",", "Handfulofkeys", ",", "Helmut", ",", "Hoany", ",", "Ifarakely", ",", "Jabeau", ",", "JakeFine", ",", "JustAGigolo", ",", "JustTheWay", ",", "Kilalao", ",", "KillerJoe", ",", "Kissamile", ",", "Kristoffer", ",", "L-O-V-E", ",", "LaJavanaise", ",", "Lasa", ",", "Liana", ",", "LianaIntro16", ",", "LoveYourself", ",", "Lullaby", ",", "MakingFlippy", ",", "Malaky", ",", "Masoala", ",", "Mezerg", ",", "MieuxQue", ",", "Nightintunisia", ",", "Padam", ",", "PasAVendre", ",", "PasJalouse", ",", "PasPeur", ",", "Perfect", ",", "Perhaps", ",", "Rasputin", ",", "Rasputincourt", ",", "Reveeveille", ",", "SatinDoll", ",", "Save", ",", "Sojerina", ",", "SoWhat", ",", "Spain", ",", "StarWazzz", ",", "Summertime", ",", "Sunny", ",", "TakeFive", ",", "TheseBoots", ",", "Tsofyrano", ",", "VatoMalaza", ",", "Walk", ",", "Williason", ",", "WizKhalifa", ",", "Zay" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1008,7 +1047,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"fontsize" : 14.0,
 					"id" : "obj-16",
 					"maxclass" : "comment",
@@ -1016,8 +1055,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 2358.666736960411072, 312.66667628288269, 76.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 548.0, 254.0, 62.0, 22.0 ],
-					"textcolor" : [ 0.576470588235294, 0.576470588235294, 0.576470588235294, 1.0 ]
+					"presentation_rect" : [ 562.0, 254.0, 62.0, 22.0 ],
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -1056,7 +1095,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 2284.000068068504333, 343.333343863487244, 35.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 416.0, 255.0, 35.0, 18.0 ],
+					"presentation_rect" : [ 422.0, 255.0, 35.0, 18.0 ],
 					"text" : "BEAT",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -1072,7 +1111,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2284.000068068504333, 312.66667628288269, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 452.0, 254.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 458.0, 254.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -1085,7 +1124,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 2362.666737079620361, 343.333343863487244, 40.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 506.0, 255.0, 40.0, 18.0 ],
+					"presentation_rect" : [ 517.0, 255.0, 40.0, 18.0 ],
 					"text" : "LABEL",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -2429,7 +2468,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 234.66667366027832, 73.333335518836975, 394.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 251.0, 384.0, 29.0 ],
+					"presentation_rect" : [ 23.0, 249.5, 384.0, 29.0 ],
 					"varname" : "master",
 					"viewvisibility" : 1
 				}
@@ -2913,6 +2952,26 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-11::obj-14" : [ "global_solo_effects_speed_2", "score_1_speed_2", 0 ],
+			"obj-11::obj-144" : [ "global_solo_effects_octave", "score_1_octave", 0 ],
+			"obj-11::obj-149" : [ "global_solo_effects_reset_pitch", "textbutton", 0 ],
+			"obj-11::obj-15" : [ "global_solo_effects_speed_1/2", "score_1_speed_1/2", 0 ],
+			"obj-11::obj-150" : [ "global_solo_effects_pitch_down", "textbutton", 0 ],
+			"obj-11::obj-151" : [ "global_solo_effects_pitch_up", "textbutton", 0 ],
+			"obj-11::obj-17" : [ "global_solo_effects_speed_3/2", "score_1_speed_3/2", 0 ],
+			"obj-11::obj-19" : [ "global_solo_effects_speed_4", "score_1_speed_4", 0 ],
+			"obj-11::obj-20" : [ "global_solo_effects_loop_1", "score_1_loop_1", 0 ],
+			"obj-11::obj-22" : [ "global_solo_effects_pitch", "score_1_transpose_pitch", 0 ],
+			"obj-11::obj-27" : [ "global_solo_effects_loop_2", "score_1_loop_2", 0 ],
+			"obj-11::obj-28" : [ "global_solo_effects_loop_3", "score_1_loop_3", 0 ],
+			"obj-11::obj-29" : [ "global_solo_effects_loop_4", "score_1_loop_4", 0 ],
+			"obj-11::obj-30" : [ "global_solo_effects_loop_5", "score_1_loop_5", 0 ],
+			"obj-11::obj-36" : [ "global_solo_effects_loop_6", "score_1_loop_6", 0 ],
+			"obj-11::obj-37" : [ "global_solo_effects_loop_7", "score_1_loop_7", 0 ],
+			"obj-11::obj-39" : [ "global_solo_effects_loop_8", "score_1_loop_8", 0 ],
+			"obj-11::obj-40" : [ "global_solo_effects_octave_up", "score_1_octave_up", 0 ],
+			"obj-11::obj-47" : [ "global_solo_effects_octave_down", "score_1_octave_down", 0 ],
+			"obj-11::obj-64" : [ "global_solo_effects_reset_octave", "score_1_reset_octave", 0 ],
 			"obj-29::obj-14::obj-1" : [ "audio_out_1_solo", "led[1]", 0 ],
 			"obj-29::obj-14::obj-10" : [ "audio_out_1_unmute", "led", 0 ],
 			"obj-29::obj-14::obj-9" : [ "audio_out_1_mute", "led", 0 ],
@@ -3526,6 +3585,13 @@
 			}
 , 			{
 				"name" : "djazz.view.beat_clock.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/view",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "djazz.view.effects.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/view",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

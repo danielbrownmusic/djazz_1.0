@@ -10,9 +10,9 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 51.0, 115.0, 596.0, 463.0 ],
+		"rect" : [ 386.0, 234.0, 620.0, 448.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -375,7 +375,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 860.000025629997253, 514.666682004928589, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 160.0, 370.0, 416.0, 22.0 ]
+					"presentation_rect" : [ 160.0, 370.0, 416.0, 22.0 ],
+					"text" : "bang"
 				}
 
 			}
@@ -1768,7 +1769,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 119.0, 640.0, 480.0 ],
+						"rect" : [ 114.0, 338.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2829,7 +2830,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 34.0, 640.0, 480.0 ],
+						"rect" : [ 59.0, 119.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4058,7 +4059,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 130.0, 17.0, 77.799999117851257, 20.0 ],
+					"patching_rect" : [ 121.600000441074371, 16.000000476837158, 77.799999117851257, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 17.0, 23.0, 77.799999117851257, 20.0 ],
 					"text" : "SONG FILE",
