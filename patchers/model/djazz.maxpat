@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 199.0, 242.0, 744.0, 296.0 ],
+		"rect" : [ 832.0, 196.0, 800.0, 296.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -93,7 +93,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 428.0, 69.0, 134.0, 22.0 ],
+					"patching_rect" : [ 459.0, 69.0, 134.0, 22.0 ],
 					"text" : "route master audio midi"
 				}
 
@@ -107,7 +107,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 428.0, 19.0, 30.0, 30.0 ]
+					"patching_rect" : [ 459.0, 19.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -170,7 +170,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 106.0, 19.0, 30.0, 30.0 ]
+					"patching_rect" : [ 76.0, 19.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -191,10 +191,10 @@
 				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 6,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 18.0, 173.0, 192.999999999999972, 22.0 ],
+					"patching_rect" : [ 18.0, 173.0, 193.0, 22.0 ],
 					"text" : "djazz.audio",
 					"varname" : "audio"
 				}
@@ -209,7 +209,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 575.0, 19.0, 30.0, 30.0 ]
+					"patching_rect" : [ 623.0, 19.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -233,7 +233,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 575.0, 69.0, 115.0, 62.0 ],
+					"patching_rect" : [ 623.0, 69.0, 115.0, 62.0 ],
 					"saved_object_attributes" : 					{
 						"client_rect" : [ 1057, 45, 1440, 407 ],
 						"parameter_enable" : 0,
@@ -253,7 +253,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 344.0, 69.0, 53.0, 22.0 ],
+					"patching_rect" : [ 364.0, 69.0, 53.0, 22.0 ],
 					"text" : "pattrhub"
 				}
 
@@ -265,7 +265,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 302.0, 110.0, 145.0, 22.0 ],
+					"patching_rect" : [ 302.0, 110.0, 176.0, 22.0 ],
 					"text" : "djazz.master_control",
 					"varname" : "master"
 				}
@@ -293,7 +293,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 344.0, 19.0, 30.0, 30.0 ]
+					"patching_rect" : [ 364.0, 19.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -305,7 +305,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 575.0, 228.0, 30.0, 30.0 ]
+					"patching_rect" : [ 623.0, 228.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -418,8 +418,16 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 2 ],
-					"midpoints" : [ 514.166666666666742, 153.0, 351.5, 153.0 ],
+					"midpoints" : [ 545.166666666666629, 160.0, 351.5, 160.0 ],
 					"source" : [ "obj-4", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 3 ],
+					"midpoints" : [ 506.833333333333314, 153.5, 201.5, 153.5 ],
+					"source" : [ "obj-4", 1 ]
 				}
 
 			}
@@ -441,7 +449,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-16", 2 ],
-					"midpoints" : [ 311.5, 158.728515812500007, 201.499999999999972, 158.728515812500007 ],
+					"midpoints" : [ 311.5, 145.728515812500007, 143.5, 145.728515812500007 ],
 					"order" : 1,
 					"source" : [ "obj-6", 0 ]
 				}
