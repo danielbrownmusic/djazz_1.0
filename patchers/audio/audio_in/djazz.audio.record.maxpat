@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 102.0, 358.0, 478.0, 432.0 ],
+		"rect" : [ 34.0, 358.0, 546.0, 725.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -81,7 +81,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 473.0, 16.021421019551781, 150.0, 74.0 ],
+					"patching_rect" : [ 260.0, 20.0, 150.0, 74.0 ],
 					"text" : "audio_buffer_name audio_score_dict_name\nbeat \ninitial_tempo loop_section_beats  "
 				}
 
@@ -1073,7 +1073,6 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-22",
-													"int" : 1,
 													"maxclass" : "gswitch2",
 													"numinlets" : 2,
 													"numoutlets" : 2,
@@ -1374,7 +1373,6 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-36",
-													"int" : 1,
 													"maxclass" : "gswitch2",
 													"numinlets" : 2,
 													"numoutlets" : 2,
@@ -3606,7 +3604,6 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-4",
-													"int" : 1,
 													"maxclass" : "gswitch2",
 													"numinlets" : 2,
 													"numoutlets" : 2,
@@ -5659,7 +5656,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 628.750003730889603, 16.021421019551781, 275.0, 163.0 ],
+					"patching_rect" : [ 416.0, 20.0, 275.0, 163.0 ],
 					"text" : "CLEAR: repetition -> -1\n              record-buffer ready to be set to 1\n              audio score clear\n\nSTART: repetition -> 0\n             record-to-buffer set to 1\n             audio score starts writing\n\nSTOP: record-buffer set to 0\n            audio score kept but stops writing"
 				}
 
@@ -5672,7 +5669,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 486.750003730889603, 185.113289043708846, 417.0, 53.0 ],
+					"patching_rect" : [ 274.0, 189.0, 417.0, 53.0 ],
 					"text" : "on active turned to 1: CLEAR\non first beat received after active turned to 1: START\non min-beat hit after first beat received: repetition increased by 1"
 				}
 
@@ -5690,9 +5687,7 @@
 					"destination" : [ "obj-23", 0 ],
 					"midpoints" : [ 210.5, 84.010711009775889, 33.5, 84.010711009775889 ],
 					"order" : 1,
-					"source" : [ "obj-45", 0 ],
-					"watchpoint_flags" : 5,
-					"watchpoint_id" : 5
+					"source" : [ "obj-45", 0 ]
 				}
 
 			}
