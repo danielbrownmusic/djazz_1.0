@@ -40,6 +40,31 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "NONE" ],
+					"patching_rect" : [ 274.0, 386.0, 50.0, 22.0 ],
+					"text" : "t NONE"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-11",
+					"index" : 0,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 244.0, 24.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-58",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -334,7 +359,7 @@
 				"box" : 				{
 					"comment" : "(symbol) to data: (folder path to load or NONE to clear)",
 					"id" : "obj-8",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -708,7 +733,7 @@
 				"box" : 				{
 					"comment" : "(0/1) sets record-enable off or on",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -883,14 +908,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-42",
-					"linecount" : 2,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 651.0, 237.0, 321.0, 47.930298787637753 ],
-					"text" : "Macintosh HD:/Users/danielbrown/Documents/Max 8/Projects/djazz/this_sucks_audio",
+					"text" : "NONE",
 					"varname" : "textedit[1]"
 				}
 
@@ -899,7 +923,7 @@
 				"box" : 				{
 					"comment" : "(int) max repetitions",
 					"id" : "obj-15",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -932,8 +956,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 508.0, 418.0, 269.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 155.0, 0.0, 633.0, 22.0 ],
-					"text" : "this_sucks_audio"
+					"presentation_rect" : [ 155.0, 0.0, 633.0, 22.0 ]
 				}
 
 			}
@@ -1363,7 +1386,7 @@
 			}
 , 			{
 				"box" : 				{
-					"buffername" : "17442_AUDIO_IN_BUFFER_NAME",
+					"buffername" : "NONE",
 					"id" : "obj-14",
 					"maxclass" : "waveform~",
 					"numinlets" : 5,
@@ -1754,6 +1777,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-12", 0 ]
 				}
@@ -1763,6 +1793,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-58", 0 ],
 					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-55", 0 ],
+					"source" : [ "obj-16", 0 ]
 				}
 
 			}
@@ -1954,6 +1991,14 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"bgcolor" : [ 0.76078431372549, 0.76078431372549, 0.76078431372549, 1.0 ],
 		"editing_bgcolor" : [ 0.866666666666667, 0.866666666666667, 0.866666666666667, 1.0 ]
 	}

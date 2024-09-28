@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 50.0, 109.0, 655.0, 472.0 ],
+		"rect" : [ 50.0, 110.0, 1078.0, 502.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -2147,7 +2147,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 136.0, 479.0, 51.0, 51.0 ],
+					"patching_rect" : [ 136.0, 475.0, 51.0, 51.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 357.0, 47.0, 47.0 ],
 					"style" : "djazz_button"

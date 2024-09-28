@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 138.0, 127.0, 1283.0, 840.0 ],
+		"rect" : [ 138.0, 127.0, 670.0, 840.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -217,7 +217,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 59.0, 119.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1333,7 +1333,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 17.0, 98.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"midi_out_#1_unmute" : [ 1 ]
+						"midi_out_#1_unmute" : [ 0 ]
 					}
 ,
 					"text" : "autopattr",
@@ -1641,7 +1641,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"midpoints" : [ 444.833333333333314, 131.5, 871.5, 131.5 ],
+					"midpoints" : [ 444.833333333333314, 126.0, 744.0, 126.0, 744.0, 304.0, 871.5, 304.0 ],
 					"source" : [ "obj-3", 2 ]
 				}
 
