@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 394.0, 145.0, 560.0, 407.0 ],
+		"rect" : [ 50.0, 109.0, 655.0, 472.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -1154,7 +1154,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1084.0, 32.0, 87.0, 22.0 ],
+					"patching_rect" : [ 1066.0, 32.0, 87.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1173,7 +1173,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1258.342129588127136, 204.0, 63.0, 22.0 ],
+					"patching_rect" : [ 1240.0, 204.0, 63.0, 22.0 ],
 					"text" : "closebang"
 				}
 
@@ -2005,7 +2005,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1157.342129588127136, 253.0, 120.0, 22.0 ],
+					"patching_rect" : [ 1139.0, 253.0, 120.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2038,7 +2038,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1084.0, 73.0, 100.0, 22.0 ],
+					"patching_rect" : [ 1066.0, 73.0, 100.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -2215,7 +2215,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1087.342129588127136, 203.0, 159.0, 23.0 ],
+					"patching_rect" : [ 1069.0, 203.0, 159.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 350.0, 357.0, 156.0, 23.0 ]
 				}
@@ -6493,7 +6493,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1087.342129588127136, 160.0, 123.0, 22.0 ],
+					"patching_rect" : [ 1069.0, 160.0, 123.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 235.0, 357.0, 114.0, 22.0 ],
 					"text" : "CONTROLLERS",
@@ -6557,7 +6557,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 119.0, 878.0, 739.0 ],
+						"rect" : [ 59.0, 119.0, 611.0, 417.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -7779,7 +7779,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"midpoints" : [ 1166.842129588127136, 284.0, 1335.092129588127136, 284.0, 1335.092129588127136, 192.0, 1096.842129588127136, 192.0 ],
+					"midpoints" : [ 1148.5, 284.0, 1317.092129588127136, 284.0, 1317.092129588127136, 192.0, 1078.5, 192.0 ],
 					"source" : [ "obj-77", 0 ]
 				}
 

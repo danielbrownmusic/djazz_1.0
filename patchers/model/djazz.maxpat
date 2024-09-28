@@ -209,7 +209,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 623.0, 19.0, 30.0, 30.0 ]
+					"patching_rect" : [ 616.0, 19.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -233,9 +233,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 623.0, 69.0, 115.0, 62.0 ],
+					"patching_rect" : [ 616.0, 69.0, 115.0, 62.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 1057, 45, 1440, 407 ],
+						"client_rect" : [ 882, 177, 1265, 539 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
 						"storage_rect" : [ 583, 69, 1034, 197 ]
@@ -305,7 +305,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 623.0, 228.0, 30.0, 30.0 ]
+					"patching_rect" : [ 616.0, 228.0, 30.0, 30.0 ]
 				}
 
 			}
