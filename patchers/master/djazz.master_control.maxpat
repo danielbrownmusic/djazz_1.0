@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 111.0, 1381.0, 822.0 ],
+		"rect" : [ 116.0, 159.0, 1381.0, 822.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -1180,7 +1180,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 412.750001799999154, 18.166666999999961, 116.0, 35.0 ],
 					"saved_object_attributes" : 					{
-						"initial" : [ 0 ],
+						"initial" : [ 1 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
 					}
