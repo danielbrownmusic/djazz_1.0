@@ -116,7 +116,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(sym) out port",
 					"id" : "obj-133",
 					"index" : 0,
 					"maxclass" : "outlet",
