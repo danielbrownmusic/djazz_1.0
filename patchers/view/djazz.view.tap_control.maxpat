@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 62.0, 251.0, 1555.0, 693.0 ],
+		"rect" : [ 62.0, 251.0, 1081.0, 693.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -606,7 +606,7 @@
 				"box" : 				{
 					"comment" : "anything triggers manual tap",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -619,7 +619,7 @@
 				"box" : 				{
 					"comment" : "(float) tempo",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -632,7 +632,7 @@
 				"box" : 				{
 					"comment" : "bang on beat",
 					"id" : "obj-14",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -644,7 +644,7 @@
 				"box" : 				{
 					"comment" : "(0/1) don't or do trigger grill advance with each beat",
 					"id" : "obj-13",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -824,8 +824,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"midpoints" : [ 667.5, 371.5, 286.5, 371.5 ],
-					"source" : [ "obj-22", 0 ]
+					"midpoints" : [ 708.0, 371.5, 286.5, 371.5 ],
+					"source" : [ "obj-22", 1 ]
 				}
 
 			}
@@ -916,44 +916,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "djazz.view.manual_tap.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/view",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz.view.metronome.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/view",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz.view.remote_tap.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/view",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz.view.tap_control_selector.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/view",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_tempo_to_ms.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/tools/conversion",
-				"patcherrelativepath" : "../tools/conversion",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

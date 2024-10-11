@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 125.0, 176.0, 1442.0, 885.0 ],
+		"rect" : [ 230.0, 248.0, 956.0, 740.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -47,10 +47,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1052.0, 617.0, 114.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 100, 100, 500, 600 ],
+						"client_rect" : [ 882, 177, 1265, 539 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 200, 200, 800, 500 ]
+						"storage_rect" : [ 583, 69, 1034, 197 ]
 					}
 ,
 					"text" : "pattrstorage lp_mini",
@@ -84,7 +84,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 667.0, 617.0, 67.0, 22.0 ],
+					"patching_rect" : [ 570.0, 215.0, 67.0, 22.0 ],
 					"text" : "delay 1000"
 				}
 
@@ -534,13 +534,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-14",
+					"linecount" : 8,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 743.0, 656.0, 138.0, 22.0 ],
+					"patching_rect" : [ 743.0, 656.0, 138.0, 116.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 102.0, 32.0, 282.0, 22.0 ]
+					"presentation_linecount" : 4,
+					"presentation_rect" : [ 102.0, 32.0, 282.0, 62.0 ],
+					"text" : "\"Macintosh HD:/Users/danielbrown/Documents/Max 8/Projects/djazz/djazz_user/presets/device/Launchpad Mini/marc-full-21-07-24.json\""
 				}
 
 			}
@@ -1533,7 +1536,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
+					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-15", 0 ]
 				}
 

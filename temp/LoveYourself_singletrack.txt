@@ -1,0 +1,383 @@
+Format: MIDI Single Track File
+Tracks: 1
+Timing division: 480 ppq
+Start of track: 1
+0: File meta event: code 3: Track name: "Jazz Organ accgliss"
+0: File meta event: code 4: Instrument name: "Jazz Organ Chicken-1"
+0: Time signature: 2/4
+0: Key signature: 2 sharps, minor
+0: Key signature: 0 sharp, major
+0: File meta event: code 84: SMPTE offset: 33 0 0 0 0 0: Tempo: 119.293
+0: File meta event: code 6: Text marker: " "
+0: Note: channel 0 duration 36 pitch 12 velocity 100
+65280: Controller change: channel 1 controller 7 (Volume) value 96
+65280: Controller change: channel 1 controller 7 (Volume) value 96
+65280: Controller change: channel 1 controller 10 (Pan) value 80
+65300: Controller change: channel 1 controller 7 (Volume) value 97
+65340: Controller change: channel 1 controller 7 (Volume) value 98
+65348: Controller change: channel 1 controller 7 (Volume) value 99
+65355: Controller change: channel 1 controller 7 (Volume) value 101
+65360: Controller change: channel 1 controller 7 (Volume) value 102
+65380: Controller change: channel 1 controller 7 (Volume) value 103
+65420: Controller change: channel 1 controller 7 (Volume) value 104
+65520: Controller change: channel 1 controller 7 (Volume) value 105
+65620: Controller change: channel 1 controller 7 (Volume) value 106
+65720: Controller change: channel 1 controller 7 (Volume) value 107
+65760: Note: channel 1 duration 225 pitch 81 velocity 127
+65760: Note: channel 1 duration 235 pitch 86 velocity 127
+65820: Controller change: channel 1 controller 7 (Volume) value 108
+65840: Controller change: channel 1 controller 7 (Volume) value 109
+65860: Controller change: channel 1 controller 7 (Volume) value 110
+65868: Controller change: channel 1 controller 7 (Volume) value 116
+65875: Controller change: channel 1 controller 7 (Volume) value 122
+65880: Controller change: channel 1 controller 7 (Volume) value 127
+66240: Note: channel 1 duration 210 pitch 79 velocity 127
+66240: Note: channel 1 duration 195 pitch 83 velocity 127
+66560: Note: channel 1 duration 85 pitch 77 velocity 127
+66560: Note: channel 1 duration 200 pitch 81 velocity 127
+66720: Note: channel 1 duration 120 pitch 78 velocity 127
+66880: Note: channel 1 duration 180 pitch 74 velocity 117
+67047: Controller change: channel 1 controller 7 (Volume) value 126
+67200: Note: channel 1 duration 40 pitch 60 velocity 68
+67200: Note: channel 1 duration 160 pitch 67 velocity 127
+67200: Note: channel 1 duration 110 pitch 73 velocity 127
+67200: Note: channel 1 duration 140 pitch 74 velocity 117
+67360: Note: channel 1 duration 80 pitch 68 velocity 55
+67680: Note: channel 1 duration 200 pitch 67 velocity 127
+67680: Note: channel 1 duration 175 pitch 74 velocity 127
+68000: Note: channel 1 duration 80 pitch 65 velocity 127
+68000: Note: channel 1 duration 105 pitch 66 velocity 127
+68000: Note: channel 1 duration 120 pitch 74 velocity 100
+68160: Note: channel 1 duration 275 pitch 62 velocity 108
+68214: Controller change: channel 1 controller 7 (Volume) value 125
+68640: Note: channel 1 duration 280 pitch 59 velocity 108
+68960: Note: channel 1 duration 605 pitch 62 velocity 127
+69382: Controller change: channel 1 controller 7 (Volume) value 124
+69600: Note: channel 1 duration 60 pitch 60 velocity 63
+69760: Note: channel 1 duration 105 pitch 64 velocity 91
+69760: Note: channel 1 duration 120 pitch 65 velocity 117
+69760: Note: channel 1 duration 220 pitch 66 velocity 127
+69920: Note: channel 1 duration 120 pitch 69 velocity 127
+70080: Note: channel 1 duration 110 pitch 69 velocity 117
+70080: Note: channel 1 duration 35 pitch 70 velocity 117
+70080: Note: channel 1 duration 235 pitch 71 velocity 127
+70400: Note: channel 1 duration 130 pitch 74 velocity 117
+70549: Controller change: channel 1 controller 7 (Volume) value 123
+70720: Note: channel 1 duration 45 pitch 76 velocity 108
+70720: Note: channel 1 duration 120 pitch 77 velocity 117
+70880: Note: channel 1 duration 80 pitch 71 velocity 108
+70880: Note: channel 1 duration 50 pitch 74 velocity 76
+71040: Note: channel 1 duration 265 pitch 74 velocity 117
+71360: Note: channel 1 duration 60 pitch 71 velocity 117
+71520: Note: channel 1 duration 110 pitch 77 velocity 127
+71520: Note: channel 1 duration 220 pitch 81 velocity 117
+71680: Note: channel 1 duration 80 pitch 78 velocity 117
+71716: Controller change: channel 1 controller 7 (Volume) value 122
+71840: Note: channel 1 duration 105 pitch 79 velocity 127
+71840: Note: channel 1 duration 180 pitch 83 velocity 127
+72000: Note: channel 1 duration 55 pitch 80 velocity 76
+72160: Note: channel 1 duration 235 pitch 79 velocity 127
+72160: Note: channel 1 duration 220 pitch 83 velocity 91
+72480: Note: channel 1 duration 120 pitch 77 velocity 127
+72480: Note: channel 1 duration 270 pitch 81 velocity 117
+72640: Note: channel 1 duration 85 pitch 78 velocity 100
+72800: Note: channel 1 duration 535 pitch 74 velocity 127
+72883: Controller change: channel 1 controller 7 (Volume) value 121
+73440: Note: channel 1 duration 245 pitch 71 velocity 117
+73920: Note: channel 1 duration 275 pitch 74 velocity 127
+74050: Controller change: channel 1 controller 7 (Volume) value 120
+74400: Note: channel 1 duration 255 pitch 76 velocity 127
+74720: Note: channel 1 duration 255 pitch 76 velocity 127
+75040: Note: channel 1 duration 120 pitch 76 velocity 91
+75040: Note: channel 1 duration 105 pitch 77 velocity 61
+75200: Note: channel 1 duration 120 pitch 71 velocity 91
+75200: Note: channel 1 duration 100 pitch 74 velocity 85
+75218: Controller change: channel 1 controller 7 (Volume) value 119
+75360: Note: channel 1 duration 295 pitch 74 velocity 108
+75840: Note: channel 1 duration 150 pitch 79 velocity 127
+75840: Note: channel 1 duration 200 pitch 83 velocity 127
+76160: Note: channel 1 duration 35 pitch 65 velocity 80
+76320: Note: channel 1 duration 225 pitch 79 velocity 127
+76320: Note: channel 1 duration 220 pitch 83 velocity 127
+76385: Controller change: channel 1 controller 7 (Volume) value 118
+76640: Note: channel 1 duration 85 pitch 77 velocity 127
+76640: Note: channel 1 duration 40 pitch 80 velocity 73
+76640: Note: channel 1 duration 90 pitch 81 velocity 80
+76800: Note: channel 1 duration 350 pitch 74 velocity 127
+76800: Note: channel 1 duration 85 pitch 78 velocity 117
+77280: Note: channel 1 duration 210 pitch 74 velocity 100
+77552: Controller change: channel 1 controller 7 (Volume) value 117
+77600: Note: channel 1 duration 120 pitch 77 velocity 127
+77600: Note: channel 1 duration 200 pitch 81 velocity 117
+77760: Note: channel 1 duration 60 pitch 78 velocity 117
+78240: Note: channel 1 duration 205 pitch 67 velocity 117
+78240: Note: channel 1 duration 545 pitch 74 velocity 127
+78560: Note: channel 1 duration 120 pitch 65 velocity 117
+78719: Controller change: channel 1 controller 7 (Volume) value 116
+78719: Note: channel 1 duration 106 pitch 66 velocity 117
+79886: Controller change: channel 1 controller 7 (Volume) value 115
+80000: Note: channel 1 duration 35 pitch 74 velocity 108
+80160: Note: channel 1 duration 210 pitch 81 velocity 127
+80160: Note: channel 1 duration 240 pitch 86 velocity 127
+80480: Note: channel 1 duration 270 pitch 81 velocity 127
+80480: Note: channel 1 duration 225 pitch 86 velocity 85
+80800: Note: channel 1 duration 100 pitch 81 velocity 76
+80800: Note: channel 1 duration 95 pitch 86 velocity 70
+80960: Note: channel 1 duration 70 pitch 74 velocity 127
+81053: Controller change: channel 1 controller 7 (Volume) value 114
+81120: Note: channel 1 duration 265 pitch 79 velocity 127
+81120: Note: channel 1 duration 225 pitch 83 velocity 127
+81440: Note: channel 1 duration 130 pitch 77 velocity 127
+81440: Note: channel 1 duration 180 pitch 81 velocity 117
+82221: Controller change: channel 1 controller 7 (Volume) value 113
+82400: Note: channel 1 duration 130 pitch 79 velocity 127
+82400: Note: channel 1 duration 190 pitch 83 velocity 117
+82720: Note: channel 1 duration 190 pitch 79 velocity 127
+82720: Note: channel 1 duration 190 pitch 83 velocity 108
+83040: Note: channel 1 duration 210 pitch 77 velocity 127
+83040: Note: channel 1 duration 215 pitch 81 velocity 100
+83360: Note: channel 1 duration 200 pitch 74 velocity 100
+83360: Note: channel 1 duration 190 pitch 81 velocity 100
+83388: Controller change: channel 1 controller 7 (Volume) value 112
+83840: Note: channel 1 duration 50 pitch 65 velocity 108
+84000: Note: channel 1 duration 230 pitch 67 velocity 127
+84000: Note: channel 1 duration 270 pitch 74 velocity 127
+84320: Note: channel 1 duration 120 pitch 65 velocity 127
+84320: Note: channel 1 duration 200 pitch 66 velocity 85
+84320: Note: channel 1 duration 15 pitch 74 velocity 63
+84480: Note: channel 1 duration 400 pitch 62 velocity 108
+84555: Controller change: channel 1 controller 7 (Volume) value 111
+84960: Note: channel 1 duration 110 pitch 65 velocity 108
+84960: Note: channel 1 duration 250 pitch 66 velocity 127
+85440: Controller change: channel 1 controller 7 (Volume) value 112
+101760: Controller change: channel 1 controller 7 (Volume) value 112
+101760: Note: channel 1 duration 95 pitch 77 velocity 127
+101760: Note: channel 1 duration 200 pitch 78 velocity 108
+101760: Note: channel 1 duration 235 pitch 81 velocity 91
+101760: Note: channel 1 duration 75 pitch 83 velocity 117
+101760: Controller change: channel 1 controller 7 (Volume) value 126
+102240: Note: channel 1 duration 225 pitch 79 velocity 127
+102240: Note: channel 1 duration 200 pitch 83 velocity 127
+102560: Note: channel 1 duration 120 pitch 77 velocity 117
+102560: Note: channel 1 duration 140 pitch 81 velocity 85
+102720: Note: channel 1 duration 175 pitch 74 velocity 108
+102720: Note: channel 1 duration 70 pitch 78 velocity 85
+103200: Note: channel 1 duration 775 pitch 81 velocity 127
+103200: Note: channel 1 duration 705 pitch 86 velocity 127
+104000: Note: channel 1 duration 25 pitch 74 velocity 73
+104160: Note: channel 1 duration 145 pitch 78 velocity 127
+104160: Note: channel 1 duration 200 pitch 81 velocity 127
+104160: Note: channel 1 duration 180 pitch 83 velocity 127
+104480: Note: channel 1 duration 125 pitch 77 velocity 127
+104480: Note: channel 1 duration 270 pitch 81 velocity 108
+104640: Note: channel 1 duration 80 pitch 78 velocity 100
+106240: Pitch bend: channel 1 value 8064
+106260: Pitch bend: channel 1 value 8192
+106280: Pitch bend: channel 1 value 8064
+106320: Pitch bend: channel 1 value 8192
+106340: Pitch bend: channel 1 value 8064
+106360: Pitch bend: channel 1 value 8192
+106380: Pitch bend: channel 1 value 8064
+106400: Note: channel 1 duration 200 pitch 81 velocity 117
+106420: Pitch bend: channel 1 value 8192
+106420: Pitch bend: channel 1 value 8064
+106550: Pitch bend: channel 1 value 8192
+106570: Pitch bend: channel 1 value 8064
+106600: Pitch bend: channel 1 value 8192
+106720: Note: channel 1 duration 125 pitch 89 velocity 127
+106880: Note: channel 1 duration 60 pitch 90 velocity 108
+107020: Pitch bend: channel 1 value 8064
+107040: Note: channel 1 duration 85 pitch 89 velocity 127
+107040: Note: channel 1 duration 120 pitch 90 velocity 127
+107055: Pitch bend: channel 1 value 8192
+107180: Pitch bend: channel 1 value 8064
+107200: Note: channel 1 duration 80 pitch 86 velocity 117
+107265: Pitch bend: channel 1 value 8192
+107360: Note: channel 1 duration 65 pitch 84 velocity 127
+107445: Pitch bend: channel 1 value 8064
+107480: Pitch bend: channel 1 value 8192
+107500: Pitch bend: channel 1 value 8064
+107570: Pitch bend: channel 1 value 8192
+107680: Note: channel 1 duration 80 pitch 77 velocity 117
+107840: Note: channel 1 duration 85 pitch 74 velocity 127
+107840: Note: channel 1 duration 60 pitch 76 velocity 127
+107840: Pitch bend: channel 1 value 8064
+107880: Pitch bend: channel 1 value 8192
+107900: Pitch bend: channel 1 value 8064
+107960: Pitch bend: channel 1 value 8192
+108000: Note: channel 1 duration 135 pitch 78 velocity 117
+108000: Note: channel 1 duration 75 pitch 79 velocity 73
+108020: Pitch bend: channel 1 value 8064
+108080: Pitch bend: channel 1 value 8192
+108115: Pitch bend: channel 1 value 8064
+108120: Pitch bend: channel 1 value 8192
+108160: Note: channel 1 duration 685 pitch 86 velocity 117
+108525: Pitch bend: channel 1 value 8064
+108655: Pitch bend: channel 1 value 8192
+108800: Note: channel 1 duration 55 pitch 74 velocity 117
+108960: Note: channel 1 duration 235 pitch 79 velocity 127
+109035: Pitch bend: channel 1 value 8064
+109180: Pitch bend: channel 1 value 8192
+109280: Note: channel 1 duration 90 pitch 77 velocity 127
+109280: Note: channel 1 duration 120 pitch 78 velocity 127
+109415: Pitch bend: channel 1 value 8064
+109440: Note: channel 1 duration 255 pitch 74 velocity 127
+109455: Pitch bend: channel 1 value 8192
+109470: Pitch bend: channel 1 value 8064
+109515: Pitch bend: channel 1 value 8192
+109920: Note: channel 1 duration 180 pitch 72 velocity 127
+110240: Note: channel 1 duration 100 pitch 70 velocity 127
+110240: Note: channel 1 duration 100 pitch 71 velocity 127
+110400: Controller change: channel 1 controller 7 (Volume) value 126
+110400: Controller change: channel 1 controller 7 (Volume) value 126
+110400: Controller change: channel 1 controller 7 (Volume) value 126
+111200: Note: channel 1 duration 125 pitch 71 velocity 127
+111200: Note: channel 1 duration 300 pitch 74 velocity 127
+111360: Note: channel 1 duration 270 pitch 69 velocity 108
+111680: Note: channel 1 duration 120 pitch 71 velocity 127
+111680: Note: channel 1 duration 210 pitch 74 velocity 100
+111840: Note: channel 1 duration 240 pitch 69 velocity 108
+112160: Note: channel 1 duration 40 pitch 65 velocity 108
+112320: Note: channel 1 duration 100 pitch 77 velocity 127
+112320: Note: channel 1 duration 240 pitch 81 velocity 127
+112480: Note: channel 1 duration 105 pitch 78 velocity 60
+112640: Note: channel 1 duration 90 pitch 77 velocity 127
+112640: Note: channel 1 duration 390 pitch 81 velocity 80
+112800: Note: channel 1 duration 225 pitch 74 velocity 85
+112800: Note: channel 1 duration 10 pitch 76 velocity 73
+112800: Note: channel 1 duration 20 pitch 78 velocity 127
+113280: Note: channel 1 duration 305 pitch 74 velocity 127
+113280: Note: channel 1 duration 270 pitch 81 velocity 127
+113600: Note: channel 1 duration 60 pitch 65 velocity 108
+113760: Note: channel 1 duration 225 pitch 77 velocity 127
+113760: Note: channel 1 duration 300 pitch 81 velocity 127
+113920: Note: channel 1 duration 80 pitch 78 velocity 68
+114080: Note: channel 1 duration 75 pitch 65 velocity 117
+114240: Note: channel 1 duration 240 pitch 79 velocity 127
+114240: Note: channel 1 duration 260 pitch 81 velocity 127
+114560: Note: channel 1 duration 105 pitch 79 velocity 127
+114560: Note: channel 1 duration 90 pitch 81 velocity 108
+115040: Note: channel 1 duration 60 pitch 67 velocity 117
+115200: Note: channel 1 duration 290 pitch 79 velocity 127
+115200: Note: channel 1 duration 285 pitch 81 velocity 127
+115520: Note: channel 1 duration 55 pitch 67 velocity 117
+115680: Note: channel 1 duration 95 pitch 77 velocity 127
+115680: Note: channel 1 duration 235 pitch 81 velocity 127
+115840: Note: channel 1 duration 105 pitch 78 velocity 100
+116000: Note: channel 1 duration 310 pitch 74 velocity 127
+116000: Note: channel 1 duration 350 pitch 81 velocity 85
+116185: Pitch bend: channel 1 value 8064
+116205: Pitch bend: channel 1 value 8192
+116400: Pitch bend: channel 1 value 8064
+116420: Pitch bend: channel 1 value 8192
+116480: Note: channel 1 duration 45 pitch 77 velocity 65
+116640: Note: channel 1 duration 100 pitch 71 velocity 91
+116640: Note: channel 1 duration 320 pitch 74 velocity 117
+116640: Note: channel 1 duration 290 pitch 81 velocity 127
+116670: Pitch bend: channel 1 value 8064
+116775: Pitch bend: channel 1 value 8192
+116960: Note: channel 1 duration 50 pitch 65 velocity 100
+117120: Note: channel 1 duration 260 pitch 77 velocity 127
+117120: Note: channel 1 duration 285 pitch 81 velocity 127
+117600: Note: channel 1 duration 95 pitch 77 velocity 127
+117600: Note: channel 1 duration 285 pitch 81 velocity 127
+117760: Note: channel 1 duration 160 pitch 78 velocity 91
+117920: Note: channel 1 duration 60 pitch 65 velocity 100
+118080: Note: channel 1 duration 260 pitch 74 velocity 127
+118080: Note: channel 1 duration 245 pitch 81 velocity 127
+118400: Note: channel 1 duration 35 pitch 65 velocity 100
+118560: Note: channel 1 duration 245 pitch 67 velocity 127
+118560: Note: channel 1 duration 255 pitch 74 velocity 127
+118880: Note: channel 1 duration 90 pitch 65 velocity 117
+119040: Note: channel 1 duration 430 pitch 62 velocity 85
+119040: Note: channel 1 duration 80 pitch 66 velocity 127
+119520: Note: channel 1 duration 140 pitch 65 velocity 127
+119520: Note: channel 1 duration 205 pitch 66 velocity 100
+119840: Note: channel 1 duration 190 pitch 62 velocity 117
+120320: Note: channel 1 duration 100 pitch 69 velocity 85
+120320: Note: channel 1 duration 95 pitch 71 velocity 117
+120480: Note: channel 1 duration 165 pitch 74 velocity 127
+120480: Note: channel 1 duration 75 pitch 76 velocity 127
+120640: Note: channel 1 duration 100 pitch 71 velocity 127
+120800: Note: channel 1 duration 100 pitch 69 velocity 91
+120960: Note: channel 1 duration 155 pitch 77 velocity 127
+120960: Note: channel 1 duration 220 pitch 81 velocity 127
+121120: Note: channel 1 duration 70 pitch 78 velocity 108
+121280: Note: channel 1 duration 140 pitch 79 velocity 127
+121280: Note: channel 1 duration 195 pitch 83 velocity 127
+121600: Note: channel 1 duration 170 pitch 79 velocity 127
+121600: Note: channel 1 duration 160 pitch 83 velocity 108
+121920: Note: channel 1 duration 100 pitch 77 velocity 117
+121920: Note: channel 1 duration 220 pitch 81 velocity 100
+122080: Note: channel 1 duration 95 pitch 78 velocity 108
+122880: Note: channel 1 duration 285 pitch 81 velocity 127
+122880: Note: channel 1 duration 270 pitch 86 velocity 127
+122880: Note: channel 1 duration 240 pitch 88 velocity 127
+123200: Note: channel 1 duration 85 pitch 81 velocity 100
+123360: Note: channel 1 duration 90 pitch 81 velocity 80
+123360: Note: channel 1 duration 135 pitch 86 velocity 55
+123520: Note: channel 1 duration 100 pitch 81 velocity 85
+123520: Note: channel 1 duration 60 pitch 86 velocity 73
+123680: Note: channel 1 duration 105 pitch 81 velocity 85
+123840: Note: channel 1 duration 90 pitch 81 velocity 73
+123840: Note: channel 1 duration 75 pitch 86 velocity 91
+124000: Note: channel 1 duration 90 pitch 81 velocity 85
+124000: Note: channel 1 duration 80 pitch 86 velocity 100
+124160: Note: channel 1 duration 85 pitch 81 velocity 76
+124320: Note: channel 1 duration 75 pitch 81 velocity 85
+124320: Note: channel 1 duration 80 pitch 86 velocity 100
+124480: Note: channel 1 duration 80 pitch 81 velocity 100
+124480: Note: channel 1 duration 60 pitch 86 velocity 85
+124640: Note: channel 1 duration 100 pitch 81 velocity 76
+124640: Note: channel 1 duration 50 pitch 86 velocity 85
+124800: Note: channel 1 duration 285 pitch 81 velocity 70
+124800: Note: channel 1 duration 220 pitch 86 velocity 100
+125120: Note: channel 1 duration 120 pitch 74 velocity 91
+125280: Note: channel 1 duration 235 pitch 79 velocity 127
+125280: Note: channel 1 duration 195 pitch 86 velocity 127
+125600: Note: channel 1 duration 175 pitch 79 velocity 117
+125600: Note: channel 1 duration 80 pitch 85 velocity 73
+125600: Note: channel 1 duration 150 pitch 86 velocity 73
+125760: Note: channel 1 duration 50 pitch 80 velocity 100
+125920: Note: channel 1 duration 205 pitch 79 velocity 117
+125920: Note: channel 1 duration 215 pitch 86 velocity 63
+126240: Note: channel 1 duration 135 pitch 77 velocity 127
+126240: Note: channel 1 duration 245 pitch 86 velocity 100
+126400: Note: channel 1 duration 200 pitch 78 velocity 117
+126560: Note: channel 1 duration 160 pitch 74 velocity 100
+126880: Note: channel 1 duration 200 pitch 79 velocity 127
+126880: Note: channel 1 duration 200 pitch 83 velocity 117
+127200: Note: channel 1 duration 240 pitch 79 velocity 127
+127200: Note: channel 1 duration 185 pitch 83 velocity 127
+127520: Note: channel 1 duration 160 pitch 77 velocity 127
+127520: Note: channel 1 duration 225 pitch 81 velocity 85
+127680: Note: channel 1 duration 75 pitch 78 velocity 117
+127840: Note: channel 1 duration 195 pitch 74 velocity 108
+128160: Note: channel 1 duration 135 pitch 79 velocity 127
+128160: Note: channel 1 duration 280 pitch 84 velocity 127
+128640: Controller change: channel 1 controller 7 (Volume) value 126
+128640: Controller change: channel 1 controller 7 (Volume) value 126
+128640: Note: channel 1 duration 230 pitch 79 velocity 127
+128640: Note: channel 1 duration 225 pitch 84 velocity 127
+128640: Controller change: channel 1 controller 7 (Volume) value 126
+128960: Note: channel 1 duration 100 pitch 77 velocity 127
+128960: Note: channel 1 duration 140 pitch 84 velocity 91
+129120: Note: channel 1 duration 295 pitch 74 velocity 91
+129120: Note: channel 1 duration 80 pitch 78 velocity 127
+129440: Note: channel 1 duration 60 pitch 65 velocity 76
+129920: Note: channel 1 duration 40 pitch 73 velocity 127
+129920: Note: channel 1 duration 115 pitch 74 velocity 127
+130240: Note: channel 1 duration 140 pitch 79 velocity 127
+130240: Note: channel 1 duration 200 pitch 83 velocity 127
+130400: Note: channel 1 duration 65 pitch 80 velocity 100
+130560: Note: channel 1 duration 160 pitch 79 velocity 127
+130560: Note: channel 1 duration 150 pitch 83 velocity 117
+130880: Note: channel 1 duration 180 pitch 74 velocity 117
+131200: Note: channel 1 duration 160 pitch 79 velocity 127
+131200: Note: channel 1 duration 200 pitch 83 velocity 108
+131520: Note: channel 1 duration 290 pitch 79 velocity 127
+131520: Note: channel 1 duration 300 pitch 83 velocity 127
+132000: Note: channel 1 duration 240 pitch 77 velocity 127
+132000: Note: channel 1 duration 320 pitch 81 velocity 127
+132480: Controller change: channel 1 controller 7 (Volume) value 126
+132480: End of track
