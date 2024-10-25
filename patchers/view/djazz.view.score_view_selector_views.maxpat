@@ -83,7 +83,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 472.0, 90.0, 67.0, 22.0 ],
+					"patching_rect" : [ 471.0, 90.0, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -202,30 +202,23 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "djazz.view.beat_clock.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_with_data/patchers/view",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/view",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "djazz.view.track_information.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_with_data/patchers/view",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/view",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "djazz_select_score_file_view.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_with_data/patchers/song file io",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/song file io",
 				"patcherrelativepath" : "../song file io",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "song_folder.png",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_with_data/media",
-				"patcherrelativepath" : "../../media",
-				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{

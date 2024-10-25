@@ -40,6 +40,36 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontsize" : 10.0,
+					"id" : "obj-23",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 566.0, 433.0, 128.0, 18.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1096.0, 2.0, 85.0, 18.0 ],
+					"text" : "TOTAL TIME (s)",
+					"textcolor" : [ 1.0, 0.992156862745098, 0.796078431372549, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 10.0,
+					"id" : "obj-22",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 551.0, 418.0, 128.0, 18.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 692.0, 3.0, 100.0, 18.0 ],
+					"text" : "MAX REPETITIONS",
+					"textcolor" : [ 1.0, 0.992156862745098, 0.796078431372549, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -956,7 +986,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1540.0, 243.0, 269.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 155.0, 0.0, 633.0, 22.0 ]
+					"presentation_rect" : [ 155.0, 0.0, 485.0, 22.0 ]
 				}
 
 			}

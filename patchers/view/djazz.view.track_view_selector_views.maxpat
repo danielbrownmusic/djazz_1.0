@@ -46,7 +46,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 422.0, 195.5, 30.0, 30.0 ]
+					"patching_rect" : [ 572.0, 194.25, 30.0, 30.0 ]
 				}
 
 			}
@@ -104,7 +104,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 34.0, 137.0, 370.0, 24.5 ],
+					"patching_rect" : [ 34.0, 137.0, 476.0, 23.25 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 20.0, 100.0, 533.0, 26.0 ],
 					"varname" : "file_selector",
@@ -128,7 +128,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 422.0, 139.5, 533.0, 22.0 ],
+					"patching_rect" : [ 572.0, 138.25, 533.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 20.0, 200.0, 533.0, 22.0 ],
 					"varname" : "information",
@@ -161,28 +161,28 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "djazz.view.beat_clock.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_with_data/patchers/view",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/view",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "djazz.view.select_track_file.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_with_data/patchers/song file io",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/song file io",
 				"patcherrelativepath" : "../song file io",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "djazz.view.track_information.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_with_data/patchers/view",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/view",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "song_folder.png",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_with_data/media",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/media",
 				"patcherrelativepath" : "../../media",
 				"type" : "PNG",
 				"implicit" : 1
