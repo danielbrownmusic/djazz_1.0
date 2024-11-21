@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 201.0, 100.0, 677.0, 563.0 ],
+		"rect" : [ 50.0, 110.0, 1603.0, 890.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -1580,7 +1580,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 180.0, 152.0, 22.0, 22.0 ],
+									"patching_rect" : [ 295.0, 150.0, 22.0, 22.0 ],
 									"text" : "t 0"
 								}
 
@@ -1593,7 +1593,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 176.0, 182.0, 30.0, 30.0 ]
+									"patching_rect" : [ 295.0, 203.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -1830,7 +1830,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 59.0, 119.0, 640.0, 480.0 ],
+										"rect" : [ 245.0, 489.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -1912,7 +1912,7 @@
 											}
 , 											{
 												"box" : 												{
-													"comment" : "",
+													"comment" : "port for notein",
 													"id" : "obj-33",
 													"index" : 1,
 													"maxclass" : "inlet",
@@ -1925,7 +1925,7 @@
 											}
 , 											{
 												"box" : 												{
-													"comment" : "",
+													"comment" : "controller messages for umenu",
 													"id" : "obj-34",
 													"index" : 1,
 													"maxclass" : "outlet",
@@ -1937,7 +1937,7 @@
 											}
 , 											{
 												"box" : 												{
-													"comment" : "",
+													"comment" : "(list: i i i) notein data",
 													"id" : "obj-35",
 													"index" : 2,
 													"maxclass" : "outlet",
@@ -2046,7 +2046,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 300.0, 182.0, 30.0, 30.0 ]
+									"patching_rect" : [ 345.0, 203.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -2058,7 +2058,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 182.0, 30.0, 30.0 ]
+									"patching_rect" : [ 50.0, 203.0, 30.0, 30.0 ]
 								}
 
 							}
