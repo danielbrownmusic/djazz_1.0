@@ -45,7 +45,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 339.0, 252.0, 34.0, 22.0 ],
+					"patching_rect" : [ 195.0, 248.0, 34.0, 22.0 ],
 					"text" : "sel 0"
 				}
 
@@ -57,7 +57,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "int", "int" ],
-					"patching_rect" : [ 328.0, 199.0, 41.0, 22.0 ],
+					"patching_rect" : [ 184.0, 195.0, 41.0, 22.0 ],
 					"text" : "notein"
 				}
 
@@ -65,13 +65,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-7",
-					"items" : [ "Launchpad Mini", ",", "to Max 1", ",", "to Max 2" ],
+					"items" : [ "to Max 1", ",", "to Max 2", ",", "Logic Pro Virtual Out" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 287.0, 134.0, 100.0, 22.0 ],
+					"patching_rect" : [ 143.0, 130.0, 100.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 2.0, 96.0, 22.0 ]
 				}
@@ -83,9 +83,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 401.0, 28.0, 70.0, 22.0 ],
-					"text" : "loadmess 1"
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 257.0, 24.0, 58.0, 22.0 ],
+					"text" : "loadbang"
 				}
 
 			}
@@ -96,7 +96,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 287.0, 75.0, 133.0, 22.0 ],
+					"patching_rect" : [ 143.0, 71.0, 133.0, 22.0 ],
 					"text" : "midiinfo @autopollinput"
 				}
 
@@ -105,12 +105,12 @@
 				"box" : 				{
 					"comment" : "anything to trigger bang",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 224.0, 152.0, 30.0, 30.0 ]
+					"patching_rect" : [ 95.0, 248.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -118,11 +118,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 224.0, 298.0, 30.0, 30.0 ]
+					"patching_rect" : [ 95.0, 394.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -136,7 +136,7 @@
 					"outlettype" : [ "bang" ],
 					"outlinecolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 1.0 ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 224.0, 213.0, 46.0, 46.0 ],
+					"patching_rect" : [ 95.0, 309.0, 46.0, 46.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 54.0, 27.0, 23.0, 23.0 ],
 					"style" : "djazz_toggle"
@@ -147,12 +147,12 @@
 				"box" : 				{
 					"comment" : "(0/1) inactive/active",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 37.0, 153.0, 30.0, 30.0 ]
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 28.0, 248.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -167,7 +167,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 37.0, 216.0, 51.0, 43.0 ],
+					"patching_rect" : [ 28.0, 311.0, 51.0, 43.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 3.0, 27.0, 47.0, 23.0 ],
 					"style" : "djazz_toggle",
@@ -180,11 +180,11 @@
 				"box" : 				{
 					"comment" : "(1/0) inactive/active",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 37.0, 299.0, 30.0, 30.0 ]
+					"patching_rect" : [ 28.0, 394.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -248,13 +248,12 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
+					"midpoints" : [ 219.5, 289.0, 104.5, 289.0 ],
 					"source" : [ "obj-9", 1 ]
 				}
 
 			}
  ],
-		"dependency_cache" : [  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "djazz_toggle",
 				"default" : 				{

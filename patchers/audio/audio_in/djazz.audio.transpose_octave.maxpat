@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 4,
+			"minor" : 6,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -40,25 +40,13 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-2",
-					"linecount" : 4,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 380.0, 176.0, 175.0, 74.0 ],
-					"text" : "1. \"beat\"\n2. beat number (int)\n3. pitch transposition (int)\n4. tempo (float)\n"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
+					"comment" : "(list: i i f) beat_number pitch_transposition tempo",
 					"id" : "obj-10",
 					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 24.000000000000043, 341.0, 30.0, 30.0 ]
+					"patching_rect" : [ 17.0, 297.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -69,7 +57,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 85.333333333333343, 196.0, 34.5, 22.0 ],
+					"patching_rect" : [ 50.0, 181.0, 34.5, 22.0 ],
 					"text" : "+ 0"
 				}
 
@@ -78,11 +66,11 @@
 				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "newobj",
-					"numinlets" : 4,
+					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 24.000000000000043, 256.0, 110.999999999999929, 22.0 ],
-					"text" : "pack beat -1 0 0."
+					"patching_rect" : [ 17.0, 234.0, 84.999999999999915, 22.0 ],
+					"text" : "pack -1 0 0."
 				}
 
 			}
@@ -93,7 +81,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 154.5, 141.0, 30.0, 22.0 ],
+					"patching_rect" : [ 123.0, 126.0, 30.0, 22.0 ],
 					"text" : "* 12"
 				}
 
@@ -103,23 +91,23 @@
 					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "int", "int", "float" ],
-					"patching_rect" : [ 24.0, 141.0, 111.0, 22.0 ],
-					"text" : "unpack beat -1 0 0."
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "int", "float" ],
+					"patching_rect" : [ 17.0, 126.0, 85.0, 22.0 ],
+					"text" : "unpack -1 0 0."
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(list: i i f) beat_number pitch_transposition tempo",
 					"id" : "obj-5",
 					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 24.0, 17.0, 30.0, 30.0 ]
+					"patching_rect" : [ 17.0, 18.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -131,7 +119,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 154.5, 83.0, 50.0, 22.0 ],
+					"patching_rect" : [ 123.0, 77.0, 50.0, 22.0 ],
 					"varname" : "number"
 				}
 
@@ -144,7 +132,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 138.5, 17.0, 51.0, 35.0 ],
+					"patching_rect" : [ 107.0, 15.0, 51.0, 35.0 ],
 					"restore" : [ 0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
@@ -180,15 +168,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 3 ],
-					"source" : [ "obj-6", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 1 ],
-					"source" : [ "obj-6", 1 ]
+					"destination" : [ "obj-8", 2 ],
+					"source" : [ "obj-6", 2 ]
 				}
 
 			}
@@ -202,13 +183,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"source" : [ "obj-6", 2 ]
+					"source" : [ "obj-6", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 1 ],
+					"midpoints" : [ 132.5, 164.0, 75.0, 164.0 ],
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -222,7 +204,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 2 ],
+					"destination" : [ "obj-8", 1 ],
 					"source" : [ "obj-9", 0 ]
 				}
 

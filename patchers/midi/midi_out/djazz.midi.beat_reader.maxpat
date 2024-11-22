@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 843.0, 371.0, 561.0, 721.0 ],
+		"rect" : [ 843.0, 362.0, 577.0, 721.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,25 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "(sym) beat_list_dict_name",
+					"id" : "obj-5",
+					"index" : 2,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 225.0, 21.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 225.0, 419.0, 115.0, 22.0 ],
+					"patching_rect" : [ 224.5, 352.0, 115.0, 22.0 ],
 					"text" : "prepend beat_count"
 				}
 
@@ -217,7 +230,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 87.0, 170.0, 116.0, 22.0 ],
+					"patching_rect" : [ 86.5, 103.0, 116.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -232,12 +245,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-21",
+					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 37.5, 221.0, 39.0, 32.0 ]
+					"patching_rect" : [ 37.5, 154.0, 39.0, 32.0 ]
 				}
 
 			}
@@ -432,7 +446,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 225.0, 353.0, 97.0, 22.0 ],
+					"patching_rect" : [ 224.5, 286.0, 97.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -451,7 +465,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 57.5, 295.0, 96.5, 22.0 ],
+					"patching_rect" : [ 57.5, 228.0, 96.5, 22.0 ],
 					"text" : "zl.slice 1"
 				}
 
@@ -463,7 +477,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 135.0, 353.0, 72.0, 22.0 ],
+					"patching_rect" : [ 134.5, 286.0, 72.0, 22.0 ],
 					"text" : "prepend set"
 				}
 
@@ -475,32 +489,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 57.5, 419.0, 53.0, 22.0 ],
+					"patching_rect" : [ 57.5, 352.0, 53.0, 22.0 ],
 					"text" : "prepend"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-2",
-					"linecount" : 7,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 362.0, 278.0, 261.0, 100.0 ],
-					"text" : "LEFT OUTLET:\n(list: int float int [notes...] )\n1. pitch transposition\n2. tempo\n3. note count\n4-end: notes\n(note: ontime pitch velocity duration channel)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 57.5, 103.0, 354.0, 22.0 ],
-					"text" : "route beat beat_list_dict_name"
 				}
 
 			}
@@ -512,19 +502,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 225.0, 484.0, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-28",
-					"linecount" : 6,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 362.0, 175.0, 147.0, 87.0 ],
-					"text" : "INLET:\n(list: \"beat\"  int int float)\n1. \"beat\"\n2. beat \n3. pitch transposition\n4. tempo"
+					"patching_rect" : [ 224.5, 417.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -536,7 +514,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 57.5, 484.0, 30.0, 30.0 ]
+					"patching_rect" : [ 57.5, 417.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -1226,7 +1204,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 57.5, 353.0, 71.0, 22.0 ],
+					"patching_rect" : [ 57.5, 286.0, 71.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1240,7 +1218,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "(list: \"beat\"  int int float) 1. \"beat\" 2. beat  3. pitch transposition 4. tempo",
+					"comment" : "(list: sym i f) beat_dict_name pitch_transposition tempo",
 					"id" : "obj-1",
 					"index" : 1,
 					"maxclass" : "inlet",
@@ -1254,7 +1232,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
+					"destination" : [ "obj-21", 1 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -1283,7 +1261,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"midpoints" : [ 144.5, 403.573171000000002, 67.0, 403.573171000000002 ],
+					"midpoints" : [ 144.0, 336.573171000000002, 67.0, 336.573171000000002 ],
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -1305,7 +1283,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
-					"midpoints" : [ 96.5, 206.0, 47.0, 206.0 ],
+					"midpoints" : [ 96.0, 139.0, 47.0, 139.0 ],
 					"source" : [ "obj-26", 0 ]
 				}
 
@@ -1328,23 +1306,16 @@
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"order" : 0,
-					"source" : [ "obj-6", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-21", 1 ],
-					"source" : [ "obj-6", 0 ]
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
-					"midpoints" : [ 234.5, 143.0, 96.5, 143.0 ],
+					"midpoints" : [ 234.5, 74.0, 96.0, 74.0 ],
 					"order" : 1,
-					"source" : [ "obj-6", 1 ]
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
