@@ -462,7 +462,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(list: i i i ) track_number start_time_in_ms end_time_in_ms ",
 					"id" : "obj-17",
 					"index" : 1,
 					"maxclass" : "outlet",

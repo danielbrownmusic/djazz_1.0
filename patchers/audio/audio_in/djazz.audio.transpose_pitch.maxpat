@@ -40,7 +40,7 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"comment" : "(list: i i f) beat_number pitch_transposition tempo",
+					"comment" : "(list: s i f) beat_dict_name pitch_transposition tempo",
 					"id" : "obj-10",
 					"index" : 1,
 					"maxclass" : "outlet",
@@ -57,7 +57,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 73.0, 169.0, 36.5, 22.0 ],
+					"patching_rect" : [ 85.0, 170.0, 36.5, 22.0 ],
 					"text" : "+ 0"
 				}
 
@@ -69,8 +69,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 40.000000000000057, 222.0, 84.999999999999943, 22.0 ],
-					"text" : "pack -1 0 0."
+					"patching_rect" : [ 40.000000000000057, 222.0, 109.0, 22.0 ],
+					"text" : "pack NONE 0 0."
 				}
 
 			}
@@ -80,21 +80,21 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
-					"outlettype" : [ "int", "int", "float" ],
-					"patching_rect" : [ 40.0, 110.0, 85.0, 22.0 ],
-					"text" : "unpack -1 0 0."
+					"outlettype" : [ "", "int", "float" ],
+					"patching_rect" : [ 40.0, 110.0, 109.0, 22.0 ],
+					"text" : "unpack NONE 0 0."
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "(list: i i f) beat_number pitch_transposition tempo",
+					"comment" : "(list: s i f) beat_dict_name pitch_transposition tempo",
 					"id" : "obj-5",
 					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "clear" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 40.0, 25.0, 30.0, 30.0 ]
 				}
 
@@ -143,7 +143,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 1 ],
-					"midpoints" : [ 180.0, 150.0, 100.0, 150.0 ],
+					"midpoints" : [ 180.0, 150.0, 112.0, 150.0 ],
 					"source" : [ "obj-3", 0 ]
 				}
 

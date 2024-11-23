@@ -40,7 +40,7 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"comment" : "(list: i i f) beat_number pitch_transposition tempo",
+					"comment" : "(list: s i f) beat_dict_name pitch_transposition tempo",
 					"id" : "obj-10",
 					"index" : 1,
 					"maxclass" : "outlet",
@@ -57,7 +57,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 50.0, 181.0, 34.5, 22.0 ],
+					"patching_rect" : [ 62.0, 181.0, 34.5, 22.0 ],
 					"text" : "+ 0"
 				}
 
@@ -69,8 +69,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 17.0, 234.0, 84.999999999999915, 22.0 ],
-					"text" : "pack -1 0 0."
+					"patching_rect" : [ 17.0, 234.0, 109.0, 22.0 ],
+					"text" : "pack NONE 0 0."
 				}
 
 			}
@@ -81,7 +81,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 123.0, 126.0, 30.0, 22.0 ],
+					"patching_rect" : [ 186.0, 126.5, 30.0, 22.0 ],
 					"text" : "* 12"
 				}
 
@@ -92,15 +92,15 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
-					"outlettype" : [ "int", "int", "float" ],
-					"patching_rect" : [ 17.0, 126.0, 85.0, 22.0 ],
-					"text" : "unpack -1 0 0."
+					"outlettype" : [ "", "int", "float" ],
+					"patching_rect" : [ 17.0, 126.0, 109.0, 22.0 ],
+					"text" : "unpack NONE 0 0."
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "(list: i i f) beat_number pitch_transposition tempo",
+					"comment" : "(list: s i f) beat_dict_name pitch_transposition tempo",
 					"id" : "obj-5",
 					"index" : 1,
 					"maxclass" : "inlet",
@@ -119,7 +119,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 123.0, 77.0, 50.0, 22.0 ],
+					"patching_rect" : [ 186.0, 77.5, 50.0, 22.0 ],
 					"varname" : "number"
 				}
 
@@ -132,7 +132,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 107.0, 15.0, 51.0, 35.0 ],
+					"patching_rect" : [ 170.0, 15.5, 51.0, 35.0 ],
 					"restore" : [ 0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
@@ -190,7 +190,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 1 ],
-					"midpoints" : [ 132.5, 164.0, 75.0, 164.0 ],
+					"midpoints" : [ 195.5, 164.0, 87.0, 164.0 ],
 					"source" : [ "obj-7", 0 ]
 				}
 
