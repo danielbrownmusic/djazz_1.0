@@ -66,4 +66,10 @@
         "flashing" : 2,
         "pulsing" : 3    
     }
+    ,
+    "color_callback" : {
+        "arguments": "color_code, behavior_code",
+        "body": "return [color_code, behavior_code];"
+    }
+    
 }

@@ -119,7 +119,7 @@ function to_key_()
 {
     return Array.prototype.slice.call(arguments).join("::");
 }
-to_symbol_.local = 1;
+to_key_.local = 1;
 
 
 /* exports.color_code = function(hue, value)

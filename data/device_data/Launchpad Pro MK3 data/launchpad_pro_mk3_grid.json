@@ -1,8 +1,4 @@
 {
-    "device" : "Launchpad Pro MK3"
-    ,
-    "manual" : "https://fael-downloads-prod.focusrite.com/customer/prod/s3fs-public/downloads/LPP3_prog_ref_guide_200415.pdf"
-    ,
     "grid" : {
         "chapter" :     {
             "cells" : [

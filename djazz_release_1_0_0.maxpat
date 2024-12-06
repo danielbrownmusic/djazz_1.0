@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 50.0, 110.0, 705.0, 578.0 ],
+		"rect" : [ 50.0, 110.0, 1464.0, 919.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -2075,7 +2075,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-23",
-					"items" : [ "AU DLS Synth 1", ",", "from Max 1", ",", "from Max 2", ",", "Logic Pro Virtual In" ],
+					"items" : [ "AU DLS Synth 1", ",", "Launchpad Pro MK3 LPProMK3 MIDI", ",", "Launchpad Pro MK3 LPProMK3 DIN", ",", "Launchpad Pro MK3 LPProMK3 DAW", ",", "Launchpad Mini", ",", "from Max 1", ",", "from Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2759,6 +2759,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -2814,7 +2815,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 892.0, 194.0, 640.0, 480.0 ],
+										"rect" : [ 966.0, 523.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -3003,7 +3004,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 808.0, 114.0, 806.0, 840.0 ],
+										"rect" : [ 808.0, 114.0, 507.0, 597.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -3031,6 +3032,7 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
+										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-4",
@@ -3038,7 +3040,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 186.0, 468.0, 94.0, 22.0 ],
+													"patching_rect" : [ 122.0, 438.0, 94.0, 22.0 ],
 													"text" : "prepend symbol"
 												}
 
@@ -3050,7 +3052,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 193.5, 390.0, 100.0, 22.0 ],
+													"patching_rect" : [ 122.0, 343.0, 100.0, 22.0 ],
 													"text" : "tosymbol"
 												}
 
@@ -3062,7 +3064,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 193.5, 426.0, 31.0, 22.0 ],
+													"patching_rect" : [ 122.0, 389.0, 132.0, 22.0 ],
 													"text" : "t s s"
 												}
 
@@ -3074,7 +3076,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 50.0, 44.0, 119.0, 22.0 ],
+													"patching_rect" : [ 24.0, 16.0, 119.0, 22.0 ],
 													"text" : "loadmess controllers"
 												}
 
@@ -3086,7 +3088,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 50.0, 315.29625519986439, 84.0, 22.0 ],
+													"patching_rect" : [ 24.0, 438.0, 84.0, 22.0 ],
 													"text" : "clear, append"
 												}
 
@@ -3098,7 +3100,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 361.0, 339.0, 93.0, 22.0 ],
+													"patching_rect" : [ 289.0, 292.0, 93.0, 22.0 ],
 													"text" : "Launchpad Mini"
 												}
 
@@ -3110,7 +3112,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 193.5, 343.0, 118.0, 22.0 ],
+													"patching_rect" : [ 122.0, 292.0, 118.0, 22.0 ],
 													"text" : "Launchpad Pro MK3"
 												}
 
@@ -3118,12 +3120,11 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-39",
-													"linecount" : 2,
 													"maxclass" : "newobj",
 													"numinlets" : 3,
 													"numoutlets" : 3,
 													"outlettype" : [ "", "", "" ],
-													"patching_rect" : [ 193.5, 284.0, 255.0, 35.0 ],
+													"patching_rect" : [ 122.0, 237.0, 354.0, 22.0 ],
 													"text" : "route \"Launchpad Pro MK3 LPProMK3 MIDI\" \"Launchpad Mini\""
 												}
 
@@ -3135,7 +3136,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 289.5, 461.0, 96.0, 22.0 ],
+													"patching_rect" : [ 234.0, 438.0, 96.0, 22.0 ],
 													"text" : "prepend append"
 												}
 
@@ -3147,7 +3148,7 @@
 													"numinlets" : 3,
 													"numoutlets" : 3,
 													"outlettype" : [ "", "", "" ],
-													"patching_rect" : [ 50.0, 200.29625519986439, 306.0, 22.0 ],
+													"patching_rect" : [ 24.0, 153.0, 215.0, 22.0 ],
 													"text" : "route clear append"
 												}
 
@@ -3162,7 +3163,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 50.0, 100.0, 141.0, 38.0 ],
+													"patching_rect" : [ 24.0, 72.0, 141.0, 38.0 ],
 													"text" : "midiinfo @autopollcontrollers 1"
 												}
 
@@ -3175,7 +3176,7 @@
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 50.0, 571.0, 30.0, 30.0 ]
+													"patching_rect" : [ 24.0, 524.0, 30.0, 30.0 ]
 												}
 
 											}
@@ -3217,15 +3218,8 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-4", 0 ],
-													"source" : [ "obj-2", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-53", 0 ],
-													"midpoints" : [ 299.0, 526.5, 59.5, 526.5 ],
+													"midpoints" : [ 243.5, 479.5, 33.5, 479.5 ],
 													"source" : [ "obj-21", 0 ]
 												}
 
@@ -3254,6 +3248,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-53", 0 ],
+													"midpoints" : [ 131.5, 479.5, 33.5, 479.5 ],
 													"source" : [ "obj-4", 0 ]
 												}
 
@@ -3268,7 +3263,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-3", 0 ],
-													"midpoints" : [ 370.5, 382.5, 203.0, 382.5 ],
+													"midpoints" : [ 298.5, 331.5, 131.5, 331.5 ],
 													"source" : [ "obj-43", 0 ]
 												}
 
@@ -3717,7 +3712,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-9",
-					"items" : "<empty>",
+					"items" : [ ",", "Launchpad Pro MK3", ",", "Launchpad Mini" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -9087,7 +9082,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-13",
-					"items" : [ "to Max 1", ",", "to Max 2", ",", "Logic Pro Virtual Out" ],
+					"items" : [ "Launchpad Pro MK3 LPProMK3 MIDI", ",", "Launchpad Pro MK3 LPProMK3 DIN", ",", "Launchpad Pro MK3 LPProMK3 DAW", ",", "Launchpad Mini", ",", "to Max 1", ",", "to Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -10316,22 +10311,22 @@
 			}
 , 			{
 				"name" : "darr.get_at.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/tools/dict",
-				"patcherrelativepath" : "./patchers/tools/dict",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/utils/dict",
+				"patcherrelativepath" : "./patchers/utils/dict",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "darr.getsize.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/tools/dict",
-				"patcherrelativepath" : "./patchers/tools/dict",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/utils/dict",
+				"patcherrelativepath" : "./patchers/utils/dict",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "darr.set_at.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/tools/dict",
-				"patcherrelativepath" : "./patchers/tools/dict",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/utils/dict",
+				"patcherrelativepath" : "./patchers/utils/dict",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -10360,13 +10355,6 @@
 				"name" : "djazz.antescofo_get_tempo.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/antescofo",
 				"patcherrelativepath" : "./patchers/antescofo",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz.antescofo_to_json.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/data_file_conversion_tools/obsolete",
-				"patcherrelativepath" : "./patchers/data_file_conversion_tools/obsolete",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -11163,8 +11151,8 @@
 			}
 , 			{
 				"name" : "djazz_tempo_to_ms.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/tools/conversion",
-				"patcherrelativepath" : "./patchers/tools/conversion",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/utils/conversion",
+				"patcherrelativepath" : "./patchers/utils/conversion",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -11205,57 +11193,57 @@
 			}
 , 			{
 				"name" : "du.dict_to_obj.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/tools/dict/nested",
-				"patcherrelativepath" : "./patchers/tools/dict/nested",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/utils/dict/nested",
+				"patcherrelativepath" : "./patchers/utils/dict/nested",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "du.does_key_exist.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/tools/dict",
-				"patcherrelativepath" : "./patchers/tools/dict",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/utils/dict",
+				"patcherrelativepath" : "./patchers/utils/dict",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "du.get.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/tools/dict",
-				"patcherrelativepath" : "./patchers/tools/dict",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/utils/dict",
+				"patcherrelativepath" : "./patchers/utils/dict",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "du.get_at_subkey.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/tools/dict",
-				"patcherrelativepath" : "./patchers/tools/dict",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/utils/dict",
+				"patcherrelativepath" : "./patchers/utils/dict",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "du.get_key_count.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/tools/dict",
-				"patcherrelativepath" : "./patchers/tools/dict",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/utils/dict",
+				"patcherrelativepath" : "./patchers/utils/dict",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "du.get_subdict.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/tools/dict",
-				"patcherrelativepath" : "./patchers/tools/dict",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/utils/dict",
+				"patcherrelativepath" : "./patchers/utils/dict",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "du.name_to_obj.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/tools/dict/nested",
-				"patcherrelativepath" : "./patchers/tools/dict/nested",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/utils/dict/nested",
+				"patcherrelativepath" : "./patchers/utils/dict/nested",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "eqsym.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/tools",
-				"patcherrelativepath" : "./patchers/tools",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/utils",
+				"patcherrelativepath" : "./patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
