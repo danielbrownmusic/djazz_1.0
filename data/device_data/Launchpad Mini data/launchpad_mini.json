@@ -51,7 +51,10 @@
         ,
         "flashing"      : 8
     }
-
-
-
+    ,
+    "color_code" : {
+        "arguments" : ""
+        ,
+        "body" : ""
+    }
 }

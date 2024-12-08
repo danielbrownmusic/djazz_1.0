@@ -1,8 +1,6 @@
 {
     "device" : "Launchpad Mini"
     ,
-    "manual" : "https://leemans.ch/latex/doc_launchpad-programmers-reference.pdf"
-    ,
     "grid" : {
         "chapter" :     {
             "cells" : [

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 100.0, 500.0, 200.0 ],
+		"rect" : [ 100.0, 100.0, 1253.0, 983.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,78 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "0 when edit message is sent",
+					"id" : "obj-43",
+					"index" : 2,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 89.0, 1175.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-42",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 89.0, 1125.0, 22.0, 22.0 ],
+					"text" : "t 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-41",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 36.0, 166.0, 77.0, 22.0 ],
+					"text" : "prepend port"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-40",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 36.0, 115.0, 35.0, 22.0 ],
+					"text" : "none"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-38",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 80.0, 115.0, 102.0, 22.0 ],
+					"text" : "\"Launchpad Mini\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "" ],
+					"patching_rect" : [ 36.0, 68.0, 106.0, 22.0 ],
+					"text" : "sel 0 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 11.595186999999999,
 					"id" : "obj-34",
@@ -48,7 +120,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 495.0, 200.0, 67.0, 21.0 ],
-					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 100, 100, 600, 300, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 100, 100, 1353, 1083, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
 
@@ -129,26 +201,14 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-18",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 159.5, 80.0, 46.0, 22.0 ],
-					"text" : "route 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
+					"comment" : "(0/1) close/open window and close/set port",
 					"id" : "obj-17",
 					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 159.5, 21.0, 30.0, 30.0 ]
+					"patching_rect" : [ 36.0, 16.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -586,18 +646,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-31",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 36.0, 41.0, 58.0, 22.0 ],
-					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-30",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -943,7 +991,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 36.0, 1213.0, 30.0, 30.0 ]
+					"patching_rect" : [ 36.0, 1175.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -1054,18 +1102,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-12",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 36.0, 118.0, 126.0, 22.0 ],
-					"text" : "port \"Launchpad Mini\""
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-10",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -1093,7 +1129,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-20",
-					"items" : [ ",", "audio_1_active", ",", "audio_1_improvise", ",", "audio_1_loop_1", ",", "audio_1_loop_2", ",", "audio_1_loop_3", ",", "audio_1_loop_4", ",", "audio_1_loop_5", ",", "audio_1_loop_6", ",", "audio_1_loop_7", ",", "audio_1_loop_8", ",", "audio_1_max_continuity", ",", "audio_1_octave_down", ",", "audio_1_octave_up", ",", "audio_1_pitch_down", ",", "audio_1_pitch_range", ",", "audio_1_pitch_up", ",", "audio_1_reset_octave", ",", "audio_1_reset_pitch", ",", "audio_1_speed_1/2", ",", "audio_1_speed_2", ",", "audio_1_speed_3/2", ",", "audio_1_speed_4", ",", "audio_1_transpose_pitch", ",", "audio_2_active", ",", "audio_2_improvise", ",", "audio_2_loop_1", ",", "audio_2_loop_2", ",", "audio_2_loop_3", ",", "audio_2_loop_4", ",", "audio_2_loop_5", ",", "audio_2_loop_6", ",", "audio_2_loop_7", ",", "audio_2_loop_8", ",", "audio_2_max_continuity", ",", "audio_2_octave_down", ",", "audio_2_octave_up", ",", "audio_2_pitch_down", ",", "audio_2_pitch_range", ",", "audio_2_pitch_up", ",", "audio_2_reset_octave", ",", "audio_2_reset_pitch", ",", "audio_2_speed_1/2", ",", "audio_2_speed_2", ",", "audio_2_speed_3/2", ",", "audio_2_speed_4", ",", "audio_2_transpose_pitch", ",", "audio_3_active", ",", "audio_3_improvise", ",", "audio_3_loop_1", ",", "audio_3_loop_2", ",", "audio_3_loop_3", ",", "audio_3_loop_4", ",", "audio_3_loop_5", ",", "audio_3_loop_6", ",", "audio_3_loop_7", ",", "audio_3_loop_8", ",", "audio_3_max_continuity", ",", "audio_3_octave_down", ",", "audio_3_octave_up", ",", "audio_3_pitch_down", ",", "audio_3_pitch_range", ",", "audio_3_pitch_up", ",", "audio_3_reset_octave", ",", "audio_3_reset_pitch", ",", "audio_3_speed_1/2", ",", "audio_3_speed_2", ",", "audio_3_speed_3/2", ",", "audio_3_speed_4", ",", "audio_3_transpose_pitch", ",", "audio_out_1_mute", ",", "audio_out_1_solo", ",", "audio_out_1_unmute", ",", "audio_out_2_mute", ",", "audio_out_2_solo", ",", "audio_out_2_unmute", ",", "audio_out_3_mute", ",", "audio_out_3_solo", ",", "audio_out_3_unmute", ",", "grid_bar", ",", "grid_chapter", ",", "grid_chapter_count", ",", "grid_loop_chapter", ",", "grid_view", ",", "live.gain~", ",", "live.gain~[5]", ",", "midi_1_active", ",", "midi_2_active", ",", "midi_out_10_mute", ",", "midi_out_10_solo", ",", "midi_out_10_unmute", ",", "midi_out_11_mute", ",", "midi_out_11_solo", ",", "midi_out_11_unmute", ",", "midi_out_12_mute", ",", "midi_out_12_solo", ",", "midi_out_12_unmute", ",", "midi_out_13_mute", ",", "midi_out_13_solo", ",", "midi_out_13_unmute", ",", "midi_out_14_mute", ",", "midi_out_14_solo", ",", "midi_out_14_unmute", ",", "midi_out_15_mute", ",", "midi_out_15_solo", ",", "midi_out_15_unmute", ",", "midi_out_1_mute", ",", "midi_out_1_solo", ",", "midi_out_1_unmute", ",", "midi_out_2_mute", ",", "midi_out_2_solo", ",", "midi_out_2_unmute", ",", "midi_out_3_mute", ",", "midi_out_3_solo", ",", "midi_out_3_unmute", ",", "midi_out_4_mute", ",", "midi_out_4_solo", ",", "midi_out_4_unmute", ",", "midi_out_5_mute", ",", "midi_out_5_solo", ",", "midi_out_5_unmute", ",", "midi_out_6_mute", ",", "midi_out_6_solo", ",", "midi_out_6_unmute", ",", "midi_out_7_mute", ",", "midi_out_7_solo", ",", "midi_out_7_unmute", ",", "midi_out_8_mute", ",", "midi_out_8_solo", ",", "midi_out_8_unmute", ",", "midi_out_9_mute", ",", "midi_out_9_solo", ",", "midi_out_9_unmute", ",", "midi_track_10_improvise", ",", "midi_track_10_loop_1", ",", "midi_track_10_loop_2", ",", "midi_track_10_loop_3", ",", "midi_track_10_loop_4", ",", "midi_track_10_loop_5", ",", "midi_track_10_loop_6", ",", "midi_track_10_loop_7", ",", "midi_track_10_loop_8", ",", "midi_track_10_max_continuity", ",", "midi_track_10_octave_down", ",", "midi_track_10_octave_up", ",", "midi_track_10_pitch_down", ",", "midi_track_10_pitch_range", ",", "midi_track_10_pitch_up", ",", "midi_track_10_reset_octave", ",", "midi_track_10_reset_pitch", ",", "midi_track_10_speed_1/2", ",", "midi_track_10_speed_2", ",", "midi_track_10_speed_3/2", ",", "midi_track_10_speed_4", ",", "midi_track_11_improvise", ",", "midi_track_11_loop_1", ",", "midi_track_11_loop_2", ",", "midi_track_11_loop_3", ",", "midi_track_11_loop_4", ",", "midi_track_11_loop_5", ",", "midi_track_11_loop_6", ",", "midi_track_11_loop_7", ",", "midi_track_11_loop_8", ",", "midi_track_11_max_continuity", ",", "midi_track_11_octave_down", ",", "midi_track_11_octave_up", ",", "midi_track_11_pitch_down", ",", "midi_track_11_pitch_range", ",", "midi_track_11_pitch_up", ",", "midi_track_11_reset_octave", ",", "midi_track_11_reset_pitch", ",", "midi_track_11_speed_1/2", ",", "midi_track_11_speed_2", ",", "midi_track_11_speed_3/2", ",", "midi_track_11_speed_4", ",", "midi_track_12_improvise", ",", "midi_track_12_loop_1", ",", "midi_track_12_loop_2", ",", "midi_track_12_loop_3", ",", "midi_track_12_loop_4", ",", "midi_track_12_loop_5", ",", "midi_track_12_loop_6", ",", "midi_track_12_loop_7", ",", "midi_track_12_loop_8", ",", "midi_track_12_max_continuity", ",", "midi_track_12_octave_down", ",", "midi_track_12_octave_up", ",", "midi_track_12_pitch_down", ",", "midi_track_12_pitch_range", ",", "midi_track_12_pitch_up", ",", "midi_track_12_reset_octave", ",", "midi_track_12_reset_pitch", ",", "midi_track_12_speed_1/2", ",", "midi_track_12_speed_2", ",", "midi_track_12_speed_3/2", ",", "midi_track_12_speed_4", ",", "midi_track_13_improvise", ",", "midi_track_13_loop_1", ",", "midi_track_13_loop_2", ",", "midi_track_13_loop_3", ",", "midi_track_13_loop_4", ",", "midi_track_13_loop_5", ",", "midi_track_13_loop_6", ",", "midi_track_13_loop_7", ",", "midi_track_13_loop_8", ",", "midi_track_13_max_continuity", ",", "midi_track_13_octave_down", ",", "midi_track_13_octave_up", ",", "midi_track_13_pitch_down", ",", "midi_track_13_pitch_range", ",", "midi_track_13_pitch_up", ",", "midi_track_13_reset_octave", ",", "midi_track_13_reset_pitch", ",", "midi_track_13_speed_1/2", ",", "midi_track_13_speed_2", ",", "midi_track_13_speed_3/2", ",", "midi_track_13_speed_4", ",", "midi_track_14_improvise", ",", "midi_track_14_loop_1", ",", "midi_track_14_loop_2", ",", "midi_track_14_loop_3", ",", "midi_track_14_loop_4", ",", "midi_track_14_loop_5", ",", "midi_track_14_loop_6", ",", "midi_track_14_loop_7", ",", "midi_track_14_loop_8", ",", "midi_track_14_max_continuity", ",", "midi_track_14_octave_down", ",", "midi_track_14_octave_up", ",", "midi_track_14_pitch_down", ",", "midi_track_14_pitch_range", ",", "midi_track_14_pitch_up", ",", "midi_track_14_reset_octave", ",", "midi_track_14_reset_pitch", ",", "midi_track_14_speed_1/2", ",", "midi_track_14_speed_2", ",", "midi_track_14_speed_3/2", ",", "midi_track_14_speed_4", ",", "midi_track_15_improvise", ",", "midi_track_15_loop_1", ",", "midi_track_15_loop_2", ",", "midi_track_15_loop_3", ",", "midi_track_15_loop_4", ",", "midi_track_15_loop_5", ",", "midi_track_15_loop_6", ",", "midi_track_15_loop_7", ",", "midi_track_15_loop_8", ",", "midi_track_15_max_continuity", ",", "midi_track_15_octave_down", ",", "midi_track_15_octave_up", ",", "midi_track_15_pitch_down", ",", "midi_track_15_pitch_range", ",", "midi_track_15_pitch_up", ",", "midi_track_15_reset_octave", ",", "midi_track_15_reset_pitch", ",", "midi_track_15_speed_1/2", ",", "midi_track_15_speed_2", ",", "midi_track_15_speed_3/2", ",", "midi_track_15_speed_4", ",", "midi_track_1_improvise", ",", "midi_track_1_loop_1", ",", "midi_track_1_loop_2", ",", "midi_track_1_loop_3", ",", "midi_track_1_loop_4", ",", "midi_track_1_loop_5", ",", "midi_track_1_loop_6", ",", "midi_track_1_loop_7", ",", "midi_track_1_loop_8", ",", "midi_track_1_max_continuity", ",", "midi_track_1_octave_down", ",", "midi_track_1_octave_up", ",", "midi_track_1_pitch_down", ",", "midi_track_1_pitch_range", ",", "midi_track_1_pitch_up", ",", "midi_track_1_reset_octave", ",", "midi_track_1_reset_pitch", ",", "midi_track_1_speed_1/2", ",", "midi_track_1_speed_2", ",", "midi_track_1_speed_3/2", ",", "midi_track_1_speed_4", ",", "midi_track_2_improvise", ",", "midi_track_2_loop_1", ",", "midi_track_2_loop_2", ",", "midi_track_2_loop_3", ",", "midi_track_2_loop_4", ",", "midi_track_2_loop_5", ",", "midi_track_2_loop_6", ",", "midi_track_2_loop_7", ",", "midi_track_2_loop_8", ",", "midi_track_2_max_continuity", ",", "midi_track_2_octave_down", ",", "midi_track_2_octave_up", ",", "midi_track_2_pitch_down", ",", "midi_track_2_pitch_range", ",", "midi_track_2_pitch_up", ",", "midi_track_2_reset_octave", ",", "midi_track_2_reset_pitch", ",", "midi_track_2_speed_1/2", ",", "midi_track_2_speed_2", ",", "midi_track_2_speed_3/2", ",", "midi_track_2_speed_4", ",", "midi_track_3_improvise", ",", "midi_track_3_loop_1", ",", "midi_track_3_loop_2", ",", "midi_track_3_loop_3", ",", "midi_track_3_loop_4", ",", "midi_track_3_loop_5", ",", "midi_track_3_loop_6", ",", "midi_track_3_loop_7", ",", "midi_track_3_loop_8", ",", "midi_track_3_max_continuity", ",", "midi_track_3_octave_down", ",", "midi_track_3_octave_up", ",", "midi_track_3_pitch_down", ",", "midi_track_3_pitch_range", ",", "midi_track_3_pitch_up", ",", "midi_track_3_reset_octave", ",", "midi_track_3_reset_pitch", ",", "midi_track_3_speed_1/2", ",", "midi_track_3_speed_2", ",", "midi_track_3_speed_3/2", ",", "midi_track_3_speed_4", ",", "midi_track_4_improvise", ",", "midi_track_4_loop_1", ",", "midi_track_4_loop_2", ",", "midi_track_4_loop_3", ",", "midi_track_4_loop_4", ",", "midi_track_4_loop_5", ",", "midi_track_4_loop_6", ",", "midi_track_4_loop_7", ",", "midi_track_4_loop_8", ",", "midi_track_4_max_continuity", ",", "midi_track_4_octave_down", ",", "midi_track_4_octave_up", ",", "midi_track_4_pitch_down", ",", "midi_track_4_pitch_range", ",", "midi_track_4_pitch_up", ",", "midi_track_4_reset_octave", ",", "midi_track_4_reset_pitch", ",", "midi_track_4_speed_1/2", ",", "midi_track_4_speed_2", ",", "midi_track_4_speed_3/2", ",", "midi_track_4_speed_4", ",", "midi_track_5_improvise", ",", "midi_track_5_loop_1", ",", "midi_track_5_loop_2", ",", "midi_track_5_loop_3", ",", "midi_track_5_loop_4", ",", "midi_track_5_loop_5", ",", "midi_track_5_loop_6", ",", "midi_track_5_loop_7", ",", "midi_track_5_loop_8", ",", "midi_track_5_max_continuity", ",", "midi_track_5_octave_down", ",", "midi_track_5_octave_up", ",", "midi_track_5_pitch_down", ",", "midi_track_5_pitch_range", ",", "midi_track_5_pitch_up", ",", "midi_track_5_reset_octave", ",", "midi_track_5_reset_pitch", ",", "midi_track_5_speed_1/2", ",", "midi_track_5_speed_2", ",", "midi_track_5_speed_3/2", ",", "midi_track_5_speed_4", ",", "midi_track_6_improvise", ",", "midi_track_6_loop_1", ",", "midi_track_6_loop_2", ",", "midi_track_6_loop_3", ",", "midi_track_6_loop_4", ",", "midi_track_6_loop_5", ",", "midi_track_6_loop_6", ",", "midi_track_6_loop_7", ",", "midi_track_6_loop_8", ",", "midi_track_6_max_continuity", ",", "midi_track_6_octave_down", ",", "midi_track_6_octave_up", ",", "midi_track_6_pitch_down", ",", "midi_track_6_pitch_range", ",", "midi_track_6_pitch_up", ",", "midi_track_6_reset_octave", ",", "midi_track_6_reset_pitch", ",", "midi_track_6_speed_1/2", ",", "midi_track_6_speed_2", ",", "midi_track_6_speed_3/2", ",", "midi_track_6_speed_4", ",", "midi_track_7_improvise", ",", "midi_track_7_loop_1", ",", "midi_track_7_loop_2", ",", "midi_track_7_loop_3", ",", "midi_track_7_loop_4", ",", "midi_track_7_loop_5", ",", "midi_track_7_loop_6", ",", "midi_track_7_loop_7", ",", "midi_track_7_loop_8", ",", "midi_track_7_max_continuity", ",", "midi_track_7_octave_down", ",", "midi_track_7_octave_up", ",", "midi_track_7_pitch_down", ",", "midi_track_7_pitch_range", ",", "midi_track_7_pitch_up", ",", "midi_track_7_reset_octave", ",", "midi_track_7_reset_pitch", ",", "midi_track_7_speed_1/2", ",", "midi_track_7_speed_2", ",", "midi_track_7_speed_3/2", ",", "midi_track_7_speed_4", ",", "midi_track_8_improvise", ",", "midi_track_8_loop_1", ",", "midi_track_8_loop_2", ",", "midi_track_8_loop_3", ",", "midi_track_8_loop_4", ",", "midi_track_8_loop_5", ",", "midi_track_8_loop_6", ",", "midi_track_8_loop_7", ",", "midi_track_8_loop_8", ",", "midi_track_8_max_continuity", ",", "midi_track_8_octave_down", ",", "midi_track_8_octave_up", ",", "midi_track_8_pitch_down", ",", "midi_track_8_pitch_range", ",", "midi_track_8_pitch_up", ",", "midi_track_8_reset_octave", ",", "midi_track_8_reset_pitch", ",", "midi_track_8_speed_1/2", ",", "midi_track_8_speed_2", ",", "midi_track_8_speed_3/2", ",", "midi_track_8_speed_4", ",", "midi_track_9_improvise", ",", "midi_track_9_loop_1", ",", "midi_track_9_loop_2", ",", "midi_track_9_loop_3", ",", "midi_track_9_loop_4", ",", "midi_track_9_loop_5", ",", "midi_track_9_loop_6", ",", "midi_track_9_loop_7", ",", "midi_track_9_loop_8", ",", "midi_track_9_max_continuity", ",", "midi_track_9_octave_down", ",", "midi_track_9_octave_up", ",", "midi_track_9_pitch_down", ",", "midi_track_9_pitch_range", ",", "midi_track_9_pitch_up", ",", "midi_track_9_reset_octave", ",", "midi_track_9_reset_pitch", ",", "midi_track_9_speed_1/2", ",", "midi_track_9_speed_2", ",", "midi_track_9_speed_3/2", ",", "midi_track_9_speed_4", ",", "note", ",", "note[10]", ",", "note[11]", ",", "note[12]", ",", "note[13]", ",", "note[14]", ",", "note[1]", ",", "note[2]", ",", "note[3]", ",", "note[4]", ",", "note[5]", ",", "note[6]", ",", "note[7]", ",", "note[8]", ",", "note[9]", ",", "score_1_improvise", ",", "score_1_loop_1", ",", "score_1_loop_2", ",", "score_1_loop_3", ",", "score_1_loop_4", ",", "score_1_loop_5", ",", "score_1_loop_6", ",", "score_1_loop_7", ",", "score_1_loop_8", ",", "score_1_max_continuity", ",", "score_1_octave_down", ",", "score_1_octave_up", ",", "score_1_pitch_down", ",", "score_1_pitch_range", ",", "score_1_pitch_up", ",", "score_1_reset_octave", ",", "score_1_reset_pitch", ",", "score_1_speed_1/2", ",", "score_1_speed_2", ",", "score_1_speed_3/2", ",", "score_1_speed_4", ",", "score_2_improvise", ",", "score_2_loop_1", ",", "score_2_loop_2", ",", "score_2_loop_3", ",", "score_2_loop_4", ",", "score_2_loop_5", ",", "score_2_loop_6", ",", "score_2_loop_7", ",", "score_2_loop_8", ",", "score_2_max_continuity", ",", "score_2_octave_down", ",", "score_2_octave_up", ",", "score_2_pitch_down", ",", "score_2_pitch_range", ",", "score_2_pitch_up", ",", "score_2_reset_octave", ",", "score_2_reset_pitch", ",", "score_2_speed_1/2", ",", "score_2_speed_2", ",", "score_2_speed_3/2", ",", "score_2_speed_4", ",", "score_2_transpose_pitch", ",", "score_2_transpose_pitch[10]", ",", "score_2_transpose_pitch[11]", ",", "score_2_transpose_pitch[12]", ",", "score_2_transpose_pitch[13]", ",", "score_2_transpose_pitch[14]", ",", "score_2_transpose_pitch[15]", ",", "score_2_transpose_pitch[16]", ",", "score_2_transpose_pitch[1]", ",", "score_2_transpose_pitch[2]", ",", "score_2_transpose_pitch[3]", ",", "score_2_transpose_pitch[4]", ",", "score_2_transpose_pitch[5]", ",", "score_2_transpose_pitch[6]", ",", "score_2_transpose_pitch[7]", ",", "score_2_transpose_pitch[8]", ",", "score_2_transpose_pitch[9]" ],
+					"items" : [ ",", "MON", ",", "OUT", ",", "REC", ",", "audio_1_active", ",", "audio_1_improvise", ",", "audio_1_loop_1", ",", "audio_1_loop_2", ",", "audio_1_loop_3", ",", "audio_1_loop_4", ",", "audio_1_loop_5", ",", "audio_1_loop_6", ",", "audio_1_loop_7", ",", "audio_1_loop_8", ",", "audio_1_max_continuity", ",", "audio_1_octave", ",", "audio_1_octave_down", ",", "audio_1_octave_up", ",", "audio_1_pitch", ",", "audio_1_pitch_down", ",", "audio_1_pitch_range", ",", "audio_1_pitch_up", ",", "audio_1_reset_octave", ",", "audio_1_reset_pitch", ",", "audio_1_speed_1/2", ",", "audio_1_speed_2", ",", "audio_1_speed_3/2", ",", "audio_1_speed_4", ",", "audio_2_active", ",", "audio_2_improvise", ",", "audio_2_loop_1", ",", "audio_2_loop_2", ",", "audio_2_loop_3", ",", "audio_2_loop_4", ",", "audio_2_loop_5", ",", "audio_2_loop_6", ",", "audio_2_loop_7", ",", "audio_2_loop_8", ",", "audio_2_max_continuity", ",", "audio_2_octave", ",", "audio_2_octave_down", ",", "audio_2_octave_up", ",", "audio_2_pitch", ",", "audio_2_pitch_down", ",", "audio_2_pitch_range", ",", "audio_2_pitch_up", ",", "audio_2_reset_octave", ",", "audio_2_reset_pitch", ",", "audio_2_speed_1/2", ",", "audio_2_speed_2", ",", "audio_2_speed_3/2", ",", "audio_2_speed_4", ",", "audio_3_active", ",", "audio_3_improvise", ",", "audio_3_loop_1", ",", "audio_3_loop_2", ",", "audio_3_loop_3", ",", "audio_3_loop_4", ",", "audio_3_loop_5", ",", "audio_3_loop_6", ",", "audio_3_loop_7", ",", "audio_3_loop_8", ",", "audio_3_max_continuity", ",", "audio_3_octave", ",", "audio_3_octave_down", ",", "audio_3_octave_up", ",", "audio_3_pitch", ",", "audio_3_pitch_down", ",", "audio_3_pitch_range", ",", "audio_3_pitch_up", ",", "audio_3_reset_octave", ",", "audio_3_reset_pitch", ",", "audio_3_speed_1/2", ",", "audio_3_speed_2", ",", "audio_3_speed_3/2", ",", "audio_3_speed_4", ",", "audio_out_1_mute", ",", "audio_out_1_solo", ",", "audio_out_1_unmute", ",", "audio_out_2_mute", ",", "audio_out_2_solo", ",", "audio_out_2_unmute", ",", "audio_out_3_mute", ",", "audio_out_3_solo", ",", "audio_out_3_unmute", ",", "global_solo_effects_loop_1", ",", "global_solo_effects_loop_2", ",", "global_solo_effects_loop_3", ",", "global_solo_effects_loop_4", ",", "global_solo_effects_loop_5", ",", "global_solo_effects_loop_6", ",", "global_solo_effects_loop_7", ",", "global_solo_effects_loop_8", ",", "global_solo_effects_octave", ",", "global_solo_effects_octave_down", ",", "global_solo_effects_octave_up", ",", "global_solo_effects_pitch", ",", "global_solo_effects_pitch_down", ",", "global_solo_effects_pitch_up", ",", "global_solo_effects_reset_octave", ",", "global_solo_effects_reset_pitch", ",", "global_solo_effects_speed_1/2", ",", "global_solo_effects_speed_2", ",", "global_solo_effects_speed_3/2", ",", "global_solo_effects_speed_4", ",", "grid_bar", ",", "grid_chapter", ",", "grid_chapter_count", ",", "grid_loop_chapter", ",", "grid_view", ",", "midi_1_active", ",", "midi_2_active", ",", "midi_out_10_mute", ",", "midi_out_10_solo", ",", "midi_out_10_unmute", ",", "midi_out_11_mute", ",", "midi_out_11_solo", ",", "midi_out_11_unmute", ",", "midi_out_12_mute", ",", "midi_out_12_solo", ",", "midi_out_12_unmute", ",", "midi_out_13_mute", ",", "midi_out_13_solo", ",", "midi_out_13_unmute", ",", "midi_out_14_mute", ",", "midi_out_14_solo", ",", "midi_out_14_unmute", ",", "midi_out_15_mute", ",", "midi_out_15_solo", ",", "midi_out_15_unmute", ",", "midi_out_1_mute", ",", "midi_out_1_solo", ",", "midi_out_1_unmute", ",", "midi_out_2_mute", ",", "midi_out_2_solo", ",", "midi_out_2_unmute", ",", "midi_out_3_mute", ",", "midi_out_3_solo", ",", "midi_out_3_unmute", ",", "midi_out_4_mute", ",", "midi_out_4_solo", ",", "midi_out_4_unmute", ",", "midi_out_5_mute", ",", "midi_out_5_solo", ",", "midi_out_5_unmute", ",", "midi_out_6_mute", ",", "midi_out_6_solo", ",", "midi_out_6_unmute", ",", "midi_out_7_mute", ",", "midi_out_7_solo", ",", "midi_out_7_unmute", ",", "midi_out_8_mute", ",", "midi_out_8_solo", ",", "midi_out_8_unmute", ",", "midi_out_9_mute", ",", "midi_out_9_solo", ",", "midi_out_9_unmute", ",", "midi_track_10_improvise", ",", "midi_track_10_loop_1", ",", "midi_track_10_loop_2", ",", "midi_track_10_loop_3", ",", "midi_track_10_loop_4", ",", "midi_track_10_loop_5", ",", "midi_track_10_loop_6", ",", "midi_track_10_loop_7", ",", "midi_track_10_loop_8", ",", "midi_track_10_max_continuity", ",", "midi_track_10_octave", ",", "midi_track_10_octave_down", ",", "midi_track_10_octave_up", ",", "midi_track_10_pitch", ",", "midi_track_10_pitch_down", ",", "midi_track_10_pitch_range", ",", "midi_track_10_pitch_up", ",", "midi_track_10_reset_octave", ",", "midi_track_10_reset_pitch", ",", "midi_track_10_speed_1/2", ",", "midi_track_10_speed_2", ",", "midi_track_10_speed_3/2", ",", "midi_track_10_speed_4", ",", "midi_track_11_improvise", ",", "midi_track_11_loop_1", ",", "midi_track_11_loop_2", ",", "midi_track_11_loop_3", ",", "midi_track_11_loop_4", ",", "midi_track_11_loop_5", ",", "midi_track_11_loop_6", ",", "midi_track_11_loop_7", ",", "midi_track_11_loop_8", ",", "midi_track_11_max_continuity", ",", "midi_track_11_octave", ",", "midi_track_11_octave_down", ",", "midi_track_11_octave_up", ",", "midi_track_11_pitch", ",", "midi_track_11_pitch_down", ",", "midi_track_11_pitch_range", ",", "midi_track_11_pitch_up", ",", "midi_track_11_reset_octave", ",", "midi_track_11_reset_pitch", ",", "midi_track_11_speed_1/2", ",", "midi_track_11_speed_2", ",", "midi_track_11_speed_3/2", ",", "midi_track_11_speed_4", ",", "midi_track_12_improvise", ",", "midi_track_12_loop_1", ",", "midi_track_12_loop_2", ",", "midi_track_12_loop_3", ",", "midi_track_12_loop_4", ",", "midi_track_12_loop_5", ",", "midi_track_12_loop_6", ",", "midi_track_12_loop_7", ",", "midi_track_12_loop_8", ",", "midi_track_12_max_continuity", ",", "midi_track_12_octave", ",", "midi_track_12_octave_down", ",", "midi_track_12_octave_up", ",", "midi_track_12_pitch", ",", "midi_track_12_pitch_down", ",", "midi_track_12_pitch_range", ",", "midi_track_12_pitch_up", ",", "midi_track_12_reset_octave", ",", "midi_track_12_reset_pitch", ",", "midi_track_12_speed_1/2", ",", "midi_track_12_speed_2", ",", "midi_track_12_speed_3/2", ",", "midi_track_12_speed_4", ",", "midi_track_13_improvise", ",", "midi_track_13_loop_1", ",", "midi_track_13_loop_2", ",", "midi_track_13_loop_3", ",", "midi_track_13_loop_4", ",", "midi_track_13_loop_5", ",", "midi_track_13_loop_6", ",", "midi_track_13_loop_7", ",", "midi_track_13_loop_8", ",", "midi_track_13_max_continuity", ",", "midi_track_13_octave", ",", "midi_track_13_octave_down", ",", "midi_track_13_octave_up", ",", "midi_track_13_pitch", ",", "midi_track_13_pitch_down", ",", "midi_track_13_pitch_range", ",", "midi_track_13_pitch_up", ",", "midi_track_13_reset_octave", ",", "midi_track_13_reset_pitch", ",", "midi_track_13_speed_1/2", ",", "midi_track_13_speed_2", ",", "midi_track_13_speed_3/2", ",", "midi_track_13_speed_4", ",", "midi_track_14_improvise", ",", "midi_track_14_loop_1", ",", "midi_track_14_loop_2", ",", "midi_track_14_loop_3", ",", "midi_track_14_loop_4", ",", "midi_track_14_loop_5", ",", "midi_track_14_loop_6", ",", "midi_track_14_loop_7", ",", "midi_track_14_loop_8", ",", "midi_track_14_max_continuity", ",", "midi_track_14_octave", ",", "midi_track_14_octave_down", ",", "midi_track_14_octave_up", ",", "midi_track_14_pitch", ",", "midi_track_14_pitch_down", ",", "midi_track_14_pitch_range", ",", "midi_track_14_pitch_up", ",", "midi_track_14_reset_octave", ",", "midi_track_14_reset_pitch", ",", "midi_track_14_speed_1/2", ",", "midi_track_14_speed_2", ",", "midi_track_14_speed_3/2", ",", "midi_track_14_speed_4", ",", "midi_track_15_improvise", ",", "midi_track_15_loop_1", ",", "midi_track_15_loop_2", ",", "midi_track_15_loop_3", ",", "midi_track_15_loop_4", ",", "midi_track_15_loop_5", ",", "midi_track_15_loop_6", ",", "midi_track_15_loop_7", ",", "midi_track_15_loop_8", ",", "midi_track_15_max_continuity", ",", "midi_track_15_octave", ",", "midi_track_15_octave_down", ",", "midi_track_15_octave_up", ",", "midi_track_15_pitch", ",", "midi_track_15_pitch_down", ",", "midi_track_15_pitch_range", ",", "midi_track_15_pitch_up", ",", "midi_track_15_reset_octave", ",", "midi_track_15_reset_pitch", ",", "midi_track_15_speed_1/2", ",", "midi_track_15_speed_2", ",", "midi_track_15_speed_3/2", ",", "midi_track_15_speed_4", ",", "midi_track_1_improvise", ",", "midi_track_1_loop_1", ",", "midi_track_1_loop_2", ",", "midi_track_1_loop_3", ",", "midi_track_1_loop_4", ",", "midi_track_1_loop_5", ",", "midi_track_1_loop_6", ",", "midi_track_1_loop_7", ",", "midi_track_1_loop_8", ",", "midi_track_1_max_continuity", ",", "midi_track_1_octave", ",", "midi_track_1_octave_down", ",", "midi_track_1_octave_up", ",", "midi_track_1_pitch", ",", "midi_track_1_pitch_down", ",", "midi_track_1_pitch_range", ",", "midi_track_1_pitch_up", ",", "midi_track_1_reset_octave", ",", "midi_track_1_reset_pitch", ",", "midi_track_1_speed_1/2", ",", "midi_track_1_speed_2", ",", "midi_track_1_speed_3/2", ",", "midi_track_1_speed_4", ",", "midi_track_2_improvise", ",", "midi_track_2_loop_1", ",", "midi_track_2_loop_2", ",", "midi_track_2_loop_3", ",", "midi_track_2_loop_4", ",", "midi_track_2_loop_5", ",", "midi_track_2_loop_6", ",", "midi_track_2_loop_7", ",", "midi_track_2_loop_8", ",", "midi_track_2_max_continuity", ",", "midi_track_2_octave", ",", "midi_track_2_octave_down", ",", "midi_track_2_octave_up", ",", "midi_track_2_pitch", ",", "midi_track_2_pitch_down", ",", "midi_track_2_pitch_range", ",", "midi_track_2_pitch_up", ",", "midi_track_2_reset_octave", ",", "midi_track_2_reset_pitch", ",", "midi_track_2_speed_1/2", ",", "midi_track_2_speed_2", ",", "midi_track_2_speed_3/2", ",", "midi_track_2_speed_4", ",", "midi_track_3_improvise", ",", "midi_track_3_loop_1", ",", "midi_track_3_loop_2", ",", "midi_track_3_loop_3", ",", "midi_track_3_loop_4", ",", "midi_track_3_loop_5", ",", "midi_track_3_loop_6", ",", "midi_track_3_loop_7", ",", "midi_track_3_loop_8", ",", "midi_track_3_max_continuity", ",", "midi_track_3_octave", ",", "midi_track_3_octave_down", ",", "midi_track_3_octave_up", ",", "midi_track_3_pitch", ",", "midi_track_3_pitch_down", ",", "midi_track_3_pitch_range", ",", "midi_track_3_pitch_up", ",", "midi_track_3_reset_octave", ",", "midi_track_3_reset_pitch", ",", "midi_track_3_speed_1/2", ",", "midi_track_3_speed_2", ",", "midi_track_3_speed_3/2", ",", "midi_track_3_speed_4", ",", "midi_track_4_improvise", ",", "midi_track_4_loop_1", ",", "midi_track_4_loop_2", ",", "midi_track_4_loop_3", ",", "midi_track_4_loop_4", ",", "midi_track_4_loop_5", ",", "midi_track_4_loop_6", ",", "midi_track_4_loop_7", ",", "midi_track_4_loop_8", ",", "midi_track_4_max_continuity", ",", "midi_track_4_octave", ",", "midi_track_4_octave_down", ",", "midi_track_4_octave_up", ",", "midi_track_4_pitch", ",", "midi_track_4_pitch_down", ",", "midi_track_4_pitch_range", ",", "midi_track_4_pitch_up", ",", "midi_track_4_reset_octave", ",", "midi_track_4_reset_pitch", ",", "midi_track_4_speed_1/2", ",", "midi_track_4_speed_2", ",", "midi_track_4_speed_3/2", ",", "midi_track_4_speed_4", ",", "midi_track_5_improvise", ",", "midi_track_5_loop_1", ",", "midi_track_5_loop_2", ",", "midi_track_5_loop_3", ",", "midi_track_5_loop_4", ",", "midi_track_5_loop_5", ",", "midi_track_5_loop_6", ",", "midi_track_5_loop_7", ",", "midi_track_5_loop_8", ",", "midi_track_5_max_continuity", ",", "midi_track_5_octave", ",", "midi_track_5_octave_down", ",", "midi_track_5_octave_up", ",", "midi_track_5_pitch", ",", "midi_track_5_pitch_down", ",", "midi_track_5_pitch_range", ",", "midi_track_5_pitch_up", ",", "midi_track_5_reset_octave", ",", "midi_track_5_reset_pitch", ",", "midi_track_5_speed_1/2", ",", "midi_track_5_speed_2", ",", "midi_track_5_speed_3/2", ",", "midi_track_5_speed_4", ",", "midi_track_6_improvise", ",", "midi_track_6_loop_1", ",", "midi_track_6_loop_2", ",", "midi_track_6_loop_3", ",", "midi_track_6_loop_4", ",", "midi_track_6_loop_5", ",", "midi_track_6_loop_6", ",", "midi_track_6_loop_7", ",", "midi_track_6_loop_8", ",", "midi_track_6_max_continuity", ",", "midi_track_6_octave", ",", "midi_track_6_octave_down", ",", "midi_track_6_octave_up", ",", "midi_track_6_pitch", ",", "midi_track_6_pitch_down", ",", "midi_track_6_pitch_range", ",", "midi_track_6_pitch_up", ",", "midi_track_6_reset_octave", ",", "midi_track_6_reset_pitch", ",", "midi_track_6_speed_1/2", ",", "midi_track_6_speed_2", ",", "midi_track_6_speed_3/2", ",", "midi_track_6_speed_4", ",", "midi_track_7_improvise", ",", "midi_track_7_loop_1", ",", "midi_track_7_loop_2", ",", "midi_track_7_loop_3", ",", "midi_track_7_loop_4", ",", "midi_track_7_loop_5", ",", "midi_track_7_loop_6", ",", "midi_track_7_loop_7", ",", "midi_track_7_loop_8", ",", "midi_track_7_max_continuity", ",", "midi_track_7_octave", ",", "midi_track_7_octave_down", ",", "midi_track_7_octave_up", ",", "midi_track_7_pitch", ",", "midi_track_7_pitch_down", ",", "midi_track_7_pitch_range", ",", "midi_track_7_pitch_up", ",", "midi_track_7_reset_octave", ",", "midi_track_7_reset_pitch", ",", "midi_track_7_speed_1/2", ",", "midi_track_7_speed_2", ",", "midi_track_7_speed_3/2", ",", "midi_track_7_speed_4", ",", "midi_track_8_improvise", ",", "midi_track_8_loop_1", ",", "midi_track_8_loop_2", ",", "midi_track_8_loop_3", ",", "midi_track_8_loop_4", ",", "midi_track_8_loop_5", ",", "midi_track_8_loop_6", ",", "midi_track_8_loop_7", ",", "midi_track_8_loop_8", ",", "midi_track_8_max_continuity", ",", "midi_track_8_octave", ",", "midi_track_8_octave_down", ",", "midi_track_8_octave_up", ",", "midi_track_8_pitch", ",", "midi_track_8_pitch_down", ",", "midi_track_8_pitch_range", ",", "midi_track_8_pitch_up", ",", "midi_track_8_reset_octave", ",", "midi_track_8_reset_pitch", ",", "midi_track_8_speed_1/2", ",", "midi_track_8_speed_2", ",", "midi_track_8_speed_3/2", ",", "midi_track_8_speed_4", ",", "midi_track_9_improvise", ",", "midi_track_9_loop_1", ",", "midi_track_9_loop_2", ",", "midi_track_9_loop_3", ",", "midi_track_9_loop_4", ",", "midi_track_9_loop_5", ",", "midi_track_9_loop_6", ",", "midi_track_9_loop_7", ",", "midi_track_9_loop_8", ",", "midi_track_9_max_continuity", ",", "midi_track_9_octave", ",", "midi_track_9_octave_down", ",", "midi_track_9_octave_up", ",", "midi_track_9_pitch", ",", "midi_track_9_pitch_down", ",", "midi_track_9_pitch_range", ",", "midi_track_9_pitch_up", ",", "midi_track_9_reset_octave", ",", "midi_track_9_reset_pitch", ",", "midi_track_9_speed_1/2", ",", "midi_track_9_speed_2", ",", "midi_track_9_speed_3/2", ",", "midi_track_9_speed_4", ",", "score_1_improvise", ",", "score_1_loop_1", ",", "score_1_loop_2", ",", "score_1_loop_3", ",", "score_1_loop_4", ",", "score_1_loop_5", ",", "score_1_loop_6", ",", "score_1_loop_7", ",", "score_1_loop_8", ",", "score_1_max_continuity", ",", "score_1_octave", ",", "score_1_octave_down", ",", "score_1_octave_up", ",", "score_1_pitch", ",", "score_1_pitch_down", ",", "score_1_pitch_range", ",", "score_1_pitch_up", ",", "score_1_reset_octave", ",", "score_1_reset_pitch", ",", "score_1_speed_1/2", ",", "score_1_speed_2", ",", "score_1_speed_3/2", ",", "score_1_speed_4", ",", "score_2_improvise", ",", "score_2_loop_1", ",", "score_2_loop_2", ",", "score_2_loop_3", ",", "score_2_loop_4", ",", "score_2_loop_5", ",", "score_2_loop_6", ",", "score_2_loop_7", ",", "score_2_loop_8", ",", "score_2_max_continuity", ",", "score_2_octave", ",", "score_2_octave_down", ",", "score_2_octave_up", ",", "score_2_pitch", ",", "score_2_pitch_down", ",", "score_2_pitch_range", ",", "score_2_pitch_up", ",", "score_2_reset_octave", ",", "score_2_reset_pitch", ",", "score_2_speed_1/2", ",", "score_2_speed_2", ",", "score_2_speed_3/2", ",", "score_2_speed_4" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1109,6 +1145,15 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
+					"order" : 1,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -1117,13 +1162,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
 					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"source" : [ "obj-12", 0 ]
 				}
 
 			}
@@ -1160,15 +1198,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
+					"destination" : [ "obj-29", 0 ],
 					"source" : [ "obj-17", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
-					"source" : [ "obj-18", 0 ]
 				}
 
 			}
@@ -1250,6 +1281,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-38", 0 ],
+					"source" : [ "obj-29", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-40", 0 ],
+					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-25", 1 ],
 					"source" : [ "obj-3", 0 ]
 				}
@@ -1259,13 +1304,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"source" : [ "obj-30", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
-					"source" : [ "obj-31", 0 ]
 				}
 
 			}
@@ -1282,6 +1320,34 @@
 					"destination" : [ "obj-34", 0 ],
 					"hidden" : 1,
 					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"source" : [ "obj-38", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"source" : [ "obj-40", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-41", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-43", 0 ],
+					"source" : [ "obj-42", 0 ]
 				}
 
 			}

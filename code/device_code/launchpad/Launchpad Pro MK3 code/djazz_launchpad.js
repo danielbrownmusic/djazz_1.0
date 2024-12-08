@@ -1,33 +1,44 @@
-autowatch       = 1;
+autowatch   = 1;
+outlets     = 2;
 
-var device_dict_name_               = jsarguments.length > 0 ? jsarguments[1] : "";
-var device_data_file_               = jsarguments.length > 1 ? jsarguments[2] : "";
+var device_db_file_     = jsarguments.length > 0 ? jsarguments[1] : "";
+var grid_db_file_       = jsarguments.length > 1 ? jsarguments[2] : "";
+var ctrl_db_file_       = jsarguments.length > 2 ? jsarguments[3] : "";
+var view_db_file_       = jsarguments.length > 3 ? jsarguments[4] : "";
+var mapping_db_file_    = jsarguments.length > 4 ? jsarguments[5] : "";
 
-if (!(device_dict_name_ && device_data_file_))
-    post ("Error in djazz_launchpad.js : two arguments must be provided.")
-
-var device_db_  = require('djazz_launchpad_device');
-var ctrl_db_    = require ('djazz_launchpad_control');
-var mapping_db_ = require ('djazz_launchpad_mapping');
-var view_db_    = require ('djazz_launchpad_view');
-//var c_          = require(color_to_midi_callback_file_);
-
-//var device_name_            = "";
-//var color_to_midi_callback_ = null;
-//var impl_   = require("djazz_launchpad_mapping_impl");
-//impl_.init(device_dict_name_, device_data_file_, c_.color_to_midi_callback);
-
-init(device_dict_name_, device_data_file_);
+var device_db_          = require(device_db_file_);
+var grid_db_            = require(grid_db_file_)
+var ctrl_db_            = require (ctrl_db_file_);
+var view_db_            = require (view_db_file_);
+var mapping_db_         = require (mapping_db_file_);
 
 // ------------------------------------------------------------------------------
 
-function init(device_dict_name, device_data_file)//, color_to_midi_callback)
+function init(device_dict_name)
 {
-    post ("device_dict_name =",device_dict_name,"\n");
-    post ("device_data_file =", device_data_file,"\n");
     device_db_.set_dict(device_dict_name);
-    device_db_.import_json(device_data_file);
+    //device_db_.import_json(device_data_file);
     device_name_ = device_db_.name();
+    outlet (1, device_dict.name);;
+}
+
+
+function init_and_load_mapping(
+    //device_data_file, 
+    device_dict_name, 
+
+    //grid_file_path, 
+    //mapping_file_path, 
+
+    grid_dict_name, 
+    mapping_dict_name, 
+    ctrl_dict_name,
+    view_dict_name
+)
+{
+    init(device_dict_name);
+    load_mapping(grid_dict_name, mapping_dict_name, ctrl_dict_name, view_dict_name);
 }
 
 function clear_mapping()
@@ -43,28 +54,40 @@ function save_mapping(mapping_dict, file_path)
 }
 
 
-function load_mapping(mapping_file_path, mapping_dict_name, view_dict_name, ctrl_dict_name)
+function load_mapping(grid_file_path, mapping_file_path, grid_dict_name, mapping_dict_name, ctrl_dict_name, view_dict_name)
 {
+
+    grid_db_.set_dict       (grid_dict_name);
+    mapping_db_.set_dict    (mapping_dict_name);
+    ctrl_db_.set_dict       (ctrl_dict_name);
+    view_db_.set_dict       (view_dict_name);
+
     clear_mapping_();
 
-    mapping_db_.import_json(mapping_file_path);
-    if (!mapping_db_.set_dict(device_name_, mapping_dict_name))
-        return;
-
-    view_db_.set_dict(view_dict_name);
-    ctrl_db_.set_dict(ctrl_dict_name);
+    mapping_db_.import_json         (mapping_file_path);
+    grid_db_.import_json            (grid_file_path);
 
     view_db_.set_midi_count         (device_db_.midi_count());
     view_db_.set_cc_count           (device_db_.cc_count());
 
-    view_db_.set_chapter_cell_count (mapping_db_.chapter_count());
-    view_db_.set_bar_cell_count     (mapping_db_.bar_count());
+    view_db_.set_chapter_cell_count (grid_db_.chapter_count());
+    view_db_.set_bar_cell_count     (grid_db_.bar_count());
 
-    mapping_db_.params().forEach(
+    grid_db_.all_parameters().forEach(
+        function (grid_param)
+        {
+            var [cell_type, cell_value, hue] = grid_db_.cell_data(param);
+            add_view_parameter_(grid_param, cell_type, cell_value, hue);
+            add_ctrl_parameter_(grid_param, cell_type, cell_value, hue);
+        }
+    )
+
+    mapping_db_.all_parameters().forEach(
         function (param)
         {
             var [cell_type, cell_value, hue] = mapping_db_.cell_data(param);
-            add_parameter(param, cell_type, cell_value, hue);
+            add_view_parameter_(param, cell_type, cell_value, hue);
+            add_ctrl_parameter_(param, cell_type, cell_value, hue);
         }
     )
     output_when_done_();
@@ -73,15 +96,9 @@ function load_mapping(mapping_file_path, mapping_dict_name, view_dict_name, ctrl
 
 function add_parameter(param, cell_type, cell_value, hue)
 {
-    mapping_db_.add_parameter(param, cell_type, cell_value, hue);
-    mapping_db_.states(param).forEach(
-        function (state)
-        {
-            var color = mapping_db_.color(param, state);
-            view_db_.add_parameter(param, state, cell_type, cell_value, color_code_(color));
-        }
-    )
-    ctrl_db_.add_parameter(param, cell_type, cell_value);
+    add_mapping_parameter_(param, cell_type, cell_value, hue)
+    add_view_parameter_(param, cell_type, cell_value, hue);
+    add_ctrl_parameter_(param, cell_type, cell_value, hue)
     output_when_done_();
 }
 
@@ -91,28 +108,77 @@ function remove_parameter(param)
     if (!mapping_db_.contains(param))
         return;
 
-    var [cell_type, cell_value] = mapping_db_.cell_data(param);
+    remove_view_parameter_(param)
+    remove_ctrl_parameter_(param)
+    remove_mapping_parameter_(param)
+    output_when_done_();
+}
 
+
+//----------------------------------------------------------------------------
+
+
+function add_mapping_parameter_(param, cell_type, cell_value, hue)
+{
+    mapping_db_.add_parameter(param, cell_type, cell_value, hue);
+}
+add_mapping_parameter_.local = 1
+
+
+function add_view_parameter_(param, cell_type, cell_value, hue)
+{
+    mapping_db_.states(param).forEach(
+        function (state)
+        {
+            var color = mapping_db_.color(param, state);
+            view_db_.add_parameter(param, state, cell_type, cell_value, color_code_(color));
+        }
+    )
+}
+add_view_parameter_.local = 1;
+
+
+function add_ctrl_parameter_(param, cell_type, cell_value, hue)
+{
+    ctrl_db_.add_parameter(param, cell_type, cell_value);
+}
+add_ctrl_parameter_.local = 1;
+
+
+function remove_mapping_parameter_(param)
+{
+    mapping_db_.remove_parameter(param);
+}
+remove_mapping_parameter_.local = 1;
+
+
+function remove_view_parameter_(param)
+{
     mapping_db_.states(param).forEach(
         function (state)
         {
             view_db_.remove_parameter(param, state);
         }
     )
-    ctrl_db_.remove_parameter(cell_type, cell_value);
-    mapping_db_.remove_parameter(param);
-    output_when_done_();
 }
+remove_view_parameter_.local = 1;
+
+
+function remove_ctrl_parameter_(param)
+{
+    var [cell_type, cell_value] = mapping_db_.cell_data(param);
+    ctrl_db_.remove_parameter(cell_type, cell_value);
+}
+remove_ctrl_parameter_.local = 1;
 
 //----------------------------------------------------------------------------
 
 
 function output_when_done_()
 {
-    outlet (0, impl_.view_dict(), impl_.ctrl_dict());
+    outlet (0, view_dict(), ctrl_dict());
 }
 output_when_done_.local = 1;
-
 
 
 function clear_mapping_()
