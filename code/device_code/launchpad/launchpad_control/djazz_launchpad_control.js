@@ -1,6 +1,11 @@
+var dutils          = require("db_dictionary_array_utils");
+
 var GRID_PARAMS_    = ['bar', 'chapter'];
 
-var d_ = undefined;
+var d_ = new Dict();
+
+
+// READ -----------------------------------------------
 
 
 exports.get_dict = function()
@@ -33,7 +38,13 @@ exports.clear = function()
     d_.clear();
 }
 
-//------------------------------------------------------------------
+// WRITE ---------------------------------------------
+
+
+exports.set_dict = function (dict_name)
+{
+    d_.name = dict_name;
+}
 
 
 function find_grid_param_in_param_name_(param)
@@ -70,6 +81,9 @@ function add_param_(param, cell_type, cell_value)
     d_.set(key, val);
 }
 add_param_.local = 1;
+
+
+// UTIL----------------------------------------------------------
 
 
 function make_grid_param_name_(param)

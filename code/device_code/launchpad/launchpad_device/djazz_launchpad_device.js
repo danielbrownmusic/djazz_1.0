@@ -1,7 +1,8 @@
+var dutils          = require("db_dictionary_array_utils");
+
 var d_ = new Dict();
 
-
-// READING -----------------------------------------------------------
+// READ -----------------------------------------------------------
 
 
 exports.get_dict = function ()
@@ -42,16 +43,19 @@ exports.behavior_code = function(behavior)
 
 exports.color_callback = function()
 {
-    return new Function(d_.get("color_callback").get("arguments"), d_.get("color_callback").get("body"));
+    return new Function(
+        d_.get("color_callback").get("arguments"), 
+        d_.get("color_callback").get("body")
+    );
 }
 
 
-// WRITING ---------------------------------------------
+// WRITE ---------------------------------------------
 
 
-exports.set_dict = function (device_dict_name)
+exports.set_dict = function (dict_name)
 {
-    d_.name = device_dict_name;
+    d_.name = dict_name;
     if (!is_dict_ok_(d_))
     {
         post_error_(d_);
@@ -66,7 +70,7 @@ exports.import_json = function(file_path)
 }
 
 
-//-------------------------------------------------------
+// UTIL -------------------------------------------------
 
 
 function is_dict_ok_(d)
@@ -90,4 +94,11 @@ function to_key_()
     return Array.prototype.slice.call(arguments).join("::");
 }
 to_key_.local = 1;
+
+
+function to_symbol_()
+{
+    return Array.prototype.slice.call(arguments).join(" ");
+}
+to_symbol_.local = 1;
 

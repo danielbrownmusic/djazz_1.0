@@ -4,6 +4,8 @@ CONVENTION for grid stuff:
 'param' = "bar i", "chapter j"
 */
 
+var dutils          = require("db_dictionary_array_utils");
+
 var BAR             = "bar"
 var CELLS           = "cells"
 var CHAPTER         = "chapter"
@@ -12,22 +14,24 @@ var GRID            = "grid"
 
 var GRID_PARAMS_    = [BAR, CHAPTER];
 
-// READING -----------------------------------------------------------
+var d_ = new Dict();
+
+// READ -----------------------------------------------------------
 
 
 exports.bar_count = function()
 {
-    return get_grid_param_count_(BAR);
+    return get_parameter_count_(BAR);
 }
 
 
 exports.chapter_count = function()
 {
-    return get_grid_param_count_(CHAPTER);
+    return get_parameter_count_(CHAPTER);
 }
 
 
-exports.parameter_to_message = function (param, cell_number)
+exports.cell_data = function (param, cell_number)
 {
     return str_to_list(d_.get(to_key_(GRID, param, CELLS))[cell_number]);
 }
@@ -35,17 +39,17 @@ exports.parameter_to_message = function (param, cell_number)
 
 exports.grid_states = function (param)
 {
-    return dutils.get_dict_key_array(d_.get(GRID).get(grid_param).get(COLORS));
+    return dutils.get_dict_key_array(d_.get(to_key_(GRID, param, COLORS)));
 }
 
 
-function all_grid_parameters()
+exports.all_parameters = function ()
 {
     var result = [];
     GRID_PARAMS_.forEach(
         function (param)
         {
-            for (var i = 0; i < get_grid_param_count_(param); i++)
+            for (var i = 0; i < get_parameter_count_(param); i++)
             {
                 result.push(to_symbol_(param, i));
             }
@@ -53,29 +57,55 @@ function all_grid_parameters()
     )
     return result;
 }
-get_grid_params_.local = 1;
 
 
-function get_grid_param_count_(param)
+// WRITE ---------------------------------------------
+
+
+exports.set_dict = function (dict_name)
+{
+    d_.name = dict_name;
+}
+
+
+exports.import_json = function(file_path)
+{
+    d_.import_json(file_path);
+}
+
+
+// LOCAL -----------------------------------------------------
+
+
+function get_parameter_count_(param)
 {
     return dutils.get_dict_array_length(d_, to_key_(GRID, param, CELLS));
 }
-get_grid_param_count_.local = 1;
+get_parameter_count_.local = 1;
 
 
-function get_grid_param_color_(grid_param, state)
+function get_parameter_color_(param, state)
 {
-    return d_.get(GRID).get(grid_param).get(COLORS).get(state);
+    return d_.get(to_key_(GRID, param, COLORS, state));
 }
-get_grid_param_color_.local = 1;
+get_parameter_color_.local = 1;
 
-// ------------------------------------------------------------
+
+// UTIL---------------------------------------------------
+
 
 function to_key_()
 {
     return Array.prototype.slice.call(arguments).join("::");
 }
 to_key_.local = 1;
+
+
+function to_symbol_()
+{
+    return Array.prototype.slice.call(arguments).join(" ");
+}
+to_symbol_.local = 1;
 
 
 function str_to_list(s)

@@ -3,7 +3,7 @@ var PARAM_STATES_   = [0, 1];
 var d_              = new Dict();
 
 
-// READING ---------------------------------------------------
+// READ ---------------------------------------------------
 
 
 exports.get_dict = function()
@@ -30,7 +30,7 @@ exports.states = function (param)
 }
 
 
-exports.parameter_to_message = function (param)
+exports.cell_data = function (param)
 {
     return d_.get("parameters").get(param).split(" ").slice(0, 2);
 }
@@ -47,12 +47,24 @@ exports.color = function (param, state)
 }
 
 
-//  WRITING -----------------------------------------------
+//  WRITE -----------------------------------------------
 
 
-exports.set_dict = function (device_name, mapping_dict_name)
+exports.set_dict = function (dict_name)
 {
-    d_.name = mapping_dict_name;
+    d_.name = dict_name;
+}
+
+
+exports.import_json = function(file_path)
+{
+    d_.import_json(file_path);
+}
+
+
+exports.export_json = function(file_path)
+{
+    d_.export_json(file_path);
 }
 
 
@@ -75,7 +87,7 @@ exports.clear = function()
 }
 
 
-// LOCAL ------------------------------------------------
+// UTIL ------------------------------------------------
 
 
 function to_symbol_()
