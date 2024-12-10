@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1135.0, 111.0, 486.0, 612.0 ],
+		"rect" : [ 1028.0, 111.0, 593.0, 612.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -539,7 +539,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-58",
@@ -557,7 +556,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 437.0, 426.0, 1206.0, 602.0 ],
+										"rect" : [ 518.0, 426.0, 1125.0, 602.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -585,7 +584,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-1",
@@ -615,8 +613,8 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 312.000009298324585, 116.000003457069397, 243.0, 22.0 ],
-													"text" : "pv #0_LAUNCHPAD_GRID_DICT_NAME"
+													"patching_rect" : [ 312.000009298324585, 116.000003457069397, 201.0, 22.0 ],
+													"text" : "pv #0_LAUNCHPAD_GRID_DICT"
 												}
 
 											}
@@ -645,7 +643,7 @@
 													"maxclass" : "dict.view",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 1294.666705250740051, 232.000006914138794, 282.0, 558.0 ]
+													"patching_rect" : [ 600.000017881393433, 232.000006914138794, 282.0, 558.0 ]
 												}
 
 											}
@@ -666,7 +664,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 1294.666705250740051, 144.000004291534424, 89.0, 22.0 ],
+													"patching_rect" : [ 600.000017881393433, 144.000004291534424, 89.0, 22.0 ],
 													"text" : "name $1, bang"
 												}
 
@@ -690,7 +688,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 5,
 													"outlettype" : [ "dictionary", "", "", "", "" ],
-													"patching_rect" : [ 1294.666705250740051, 186.666672229766846, 50.5, 22.0 ],
+													"patching_rect" : [ 600.000017881393433, 186.666672229766846, 50.5, 22.0 ],
 													"saved_object_attributes" : 													{
 														"embed" : 0,
 														"legacy" : 1,
@@ -709,8 +707,8 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 1294.666705250740051, 110.666669964790344, 268.0, 22.0 ],
-													"text" : "pv #0_LAUNCHPAD_MAPPING_DICT_NAME"
+													"patching_rect" : [ 600.000017881393433, 110.666669964790344, 227.0, 22.0 ],
+													"text" : "pv #0_LAUNCHPAD_MAPPING_DICT"
 												}
 
 											}
@@ -721,8 +719,8 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 21.333333969116211, 116.000003457069397, 257.0, 22.0 ],
-													"text" : "pv #0_LAUNCHPAD_DEVICE_DICT_NAME"
+													"patching_rect" : [ 21.333333969116211, 116.000003457069397, 216.0, 22.0 ],
+													"text" : "pv #0_LAUNCHPAD_DEVICE_DICT"
 												}
 
 											}
@@ -752,7 +750,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 77.0, 70.726316911216713, 35.0, 22.0 ],
+													"patching_rect" : [ 1432.666702151298523, 144.000004291534424, 35.0, 22.0 ],
 													"text" : "clear"
 												}
 
@@ -787,7 +785,7 @@
 													"maxclass" : "dict.view",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 656.000019550323486, 232.000006914138794, 282.0, 558.0 ]
+													"patching_rect" : [ 892.00002658367157, 232.000006914138794, 282.0, 558.0 ]
 												}
 
 											}
@@ -797,7 +795,7 @@
 													"maxclass" : "dict.view",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 954.666695117950439, 232.000006914138794, 277.0, 558.0 ]
+													"patching_rect" : [ 1190.666702151298523, 232.000006914138794, 277.0, 558.0 ]
 												}
 
 											}
@@ -808,7 +806,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 657.33335292339325, 144.000004291534424, 89.0, 22.0 ],
+													"patching_rect" : [ 893.333359956741333, 144.000004291534424, 89.0, 22.0 ],
 													"text" : "name $1, bang"
 												}
 
@@ -820,7 +818,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 954.666695117950439, 144.000004291534424, 89.0, 22.0 ],
+													"patching_rect" : [ 1190.666702151298523, 144.000004291534424, 89.0, 22.0 ],
 													"text" : "name $1, bang"
 												}
 
@@ -832,7 +830,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 5,
 													"outlettype" : [ "dictionary", "", "", "", "" ],
-													"patching_rect" : [ 656.000019550323486, 194.666672468185425, 50.5, 22.0 ],
+													"patching_rect" : [ 892.00002658367157, 194.666672468185425, 50.5, 22.0 ],
 													"saved_object_attributes" : 													{
 														"embed" : 0,
 														"legacy" : 1,
@@ -851,8 +849,8 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 657.33335292339325, 116.000003457069397, 244.0, 22.0 ],
-													"text" : "pv #0_LAUNCHPAD_CTRL_DICT_NAME"
+													"patching_rect" : [ 893.333359956741333, 116.000003457069397, 203.0, 22.0 ],
+													"text" : "pv #0_LAUNCHPAD_CTRL_DICT"
 												}
 
 											}
@@ -863,8 +861,8 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 954.666695117950439, 116.000003457069397, 243.0, 22.0 ],
-													"text" : "pv #0_LAUNCHPAD_VIEW_DICT_NAME"
+													"patching_rect" : [ 1190.666702151298523, 116.000003457069397, 202.0, 22.0 ],
+													"text" : "pv #0_LAUNCHPAD_VIEW_DICT"
 												}
 
 											}
@@ -875,7 +873,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 5,
 													"outlettype" : [ "dictionary", "", "", "", "" ],
-													"patching_rect" : [ 954.666695117950439, 194.666672468185425, 50.5, 22.0 ],
+													"patching_rect" : [ 1190.666702151298523, 194.666672468185425, 50.5, 22.0 ],
 													"saved_object_attributes" : 													{
 														"embed" : 0,
 														"legacy" : 1,
@@ -904,7 +902,7 @@
 										"lines" : [ 											{
 												"patchline" : 												{
 													"destination" : [ "obj-52", 0 ],
-													"order" : 0,
+													"order" : 2,
 													"source" : [ "obj-2", 0 ]
 												}
 
@@ -920,7 +918,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-67", 0 ],
-													"order" : 1,
+													"order" : 0,
 													"source" : [ "obj-2", 0 ]
 												}
 
@@ -928,7 +926,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-70", 0 ],
-													"order" : 2,
+													"order" : 1,
 													"source" : [ "obj-2", 0 ]
 												}
 
@@ -1090,7 +1088,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 743.0, 16.0, 74.0, 22.0 ],
+									"patching_rect" : [ 895.0, 16.0, 74.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -1146,8 +1144,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 438.0, 61.0, 274.0, 35.0 ],
-									"text" : "pv #0_LAUNCHPAD_GRID_DICT_NAME #0_LAUNCHPAD_GRID_DICT_NAME"
+									"patching_rect" : [ 438.0, 61.0, 230.0, 35.0 ],
+									"text" : "pv #0_LAUNCHPAD_GRID_DICT #0_LAUNCHPAD_GRID_DICT"
 								}
 
 							}
@@ -1185,8 +1183,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 438.0, 16.0, 274.0, 35.0 ],
-									"text" : "pv #0_LAUNCHPAD_DEVICE_DICT_NAME #0_LAUNCHPAD_DEVICE_DICT_NAME"
+									"patching_rect" : [ 438.0, 16.0, 230.0, 35.0 ],
+									"text" : "pv #0_LAUNCHPAD_DEVICE_DICT #0_LAUNCHPAD_DEVICE_DICT"
 								}
 
 							}
@@ -1198,8 +1196,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 439.0, 105.0, 273.0, 35.0 ],
-									"text" : "pv #0_LAUNCHPAD_MAPPING_DICT_NAME #0_LAUNCHPAD_MAPPING_DICT_NAME"
+									"patching_rect" : [ 439.0, 105.0, 229.0, 35.0 ],
+									"text" : "pv #0_LAUNCHPAD_MAPPING_DICT #0_LAUNCHPAD_MAPPING_DICT"
 								}
 
 							}
@@ -1597,7 +1595,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 805.0, 389.0, 110.0, 49.0 ],
-									"restore" : [ "NONE" ],
+									"restore" : [ "Macintosh HD:/Users/danielbrown/Documents/Max 8/Projects/djazz/djazz_user/presets/device/Launchpad Mini/marc-full-21-07-24.json" ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -1946,7 +1944,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 508.714285714285779, 115.0, 208.0, 35.0 ],
+													"patching_rect" : [ 415.857142857142833, 115.0, 208.0, 35.0 ],
 													"text" : "pv #0_LAUNCHPAD_MAPPING_FILE"
 												}
 
@@ -1959,7 +1957,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 264.0, 115.0, 183.0, 35.0 ],
+													"patching_rect" : [ 224.428571428571416, 115.0, 183.0, 35.0 ],
 													"text" : "pv #0_LAUNCHPAD_GRID_FILE"
 												}
 
@@ -1985,8 +1983,8 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 754.428571428571558, 115.0, 242.0, 35.0 ],
-													"text" : "pv #0_LAUNCHPAD_DEVICE_DICT_NAME"
+													"patching_rect" : [ 632.285714285714221, 115.0, 200.0, 35.0 ],
+													"text" : "pv #0_LAUNCHPAD_DEVICE_DICT"
 												}
 
 											}
@@ -2009,7 +2007,7 @@
 													"numinlets" : 8,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 19.0, 178.0, 1733.0, 22.0 ],
+													"patching_rect" : [ 19.0, 178.0, 1423.999999999999773, 22.0 ],
 													"text" : "pack NONE NONE NONE NONE NONE NONE NONE NONE"
 												}
 
@@ -2021,7 +2019,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 8,
 													"outlettype" : [ "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang" ],
-													"patching_rect" : [ 19.0, 68.0, 1733.0, 22.0 ],
+													"patching_rect" : [ 19.0, 68.0, 1423.999999999999773, 22.0 ],
 													"text" : "t b b b b b b b b"
 												}
 
@@ -2034,8 +2032,8 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 998.428571428571445, 115.0, 228.0, 35.0 ],
-													"text" : "pv #0_LAUNCHPAD_GRID_DICT_NAME"
+													"patching_rect" : [ 840.714285714285666, 115.0, 185.0, 35.0 ],
+													"text" : "pv #0_LAUNCHPAD_GRID_DICT"
 												}
 
 											}
@@ -2047,8 +2045,8 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 1733.0, 115.0, 253.0, 35.0 ],
-													"text" : "pv #0_LAUNCHPAD_MAPPING_DICT_NAME"
+													"patching_rect" : [ 1423.999999999999773, 115.0, 211.0, 35.0 ],
+													"text" : "pv #0_LAUNCHPAD_MAPPING_DICT"
 												}
 
 											}
@@ -2060,8 +2058,8 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 1243.285714285714221, 115.0, 229.0, 35.0 ],
-													"text" : "pv #0_LAUNCHPAD_CTRL_DICT_NAME"
+													"patching_rect" : [ 1034.14285714285711, 115.0, 187.0, 35.0 ],
+													"text" : "pv #0_LAUNCHPAD_CTRL_DICT"
 												}
 
 											}
@@ -2073,8 +2071,8 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 1488.14285714285711, 115.0, 228.0, 35.0 ],
-													"text" : "pv #0_LAUNCHPAD_VIEW_DICT_NAME"
+													"patching_rect" : [ 1229.571428571428442, 115.0, 186.0, 35.0 ],
+													"text" : "pv #0_LAUNCHPAD_VIEW_DICT"
 												}
 
 											}
@@ -3980,7 +3978,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 833.0, 278.0, 861.0, 751.0 ],
+						"rect" : [ 472.0, 210.0, 861.0, 751.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -6833,8 +6831,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 348.5, 70.0, 274.0, 35.0 ],
-					"text" : "pv #0_LAUNCHPAD_CTRL_DICT_NAME #0_LAUNCHPAD_CTRL_DICT_NAME"
+					"patching_rect" : [ 348.5, 70.0, 206.0, 35.0 ],
+					"text" : "pv #0_LAUNCHPAD_CTRL_DICT #0_LAUNCHPAD_CTRL_DICT"
 				}
 
 			}
@@ -6846,8 +6844,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 348.5, 115.0, 273.0, 35.0 ],
-					"text" : "pv #0_LAUNCHPAD_VIEW_DICT_NAME #0_LAUNCHPAD_VIEW_DICT_NAME"
+					"patching_rect" : [ 348.5, 115.0, 205.0, 35.0 ],
+					"text" : "pv #0_LAUNCHPAD_VIEW_DICT #0_LAUNCHPAD_VIEW_DICT"
 				}
 
 			}

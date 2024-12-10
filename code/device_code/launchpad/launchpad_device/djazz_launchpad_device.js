@@ -1,8 +1,45 @@
 var dutils          = require("db_dictionary_array_utils");
 
+var BEHAVIORS                   = "behaviors";
+var CC_COUNT                    = "cc_count";
+var COLORS                      = "colors";
+var COLOR_CALLBACK              = "color_callback";
+var COLOR_CALLBACK_ARGUMENTS    = "arguments";
+var COLOR_CALLBACK_BODY         = "body";
+var MIDI_COUNT                  = "midi_count";
+var NAME                        = "name";
+
 var d_ = new Dict();
 
+
 // READ -----------------------------------------------------------
+
+
+exports.behavior_code = function(behavior)
+{
+    return d_.get(to_key_(BEHAVIORS, behavior));
+}
+
+
+exports.cc_count = function ()
+{
+    return d_.get(CC_COUNT)
+}
+
+
+exports.color_callback = function()
+{
+    return new Function(
+        d_.get(COLOR_CALLBACK).get(COLOR_CALLBACK_ARGUMENTS), 
+        d_.get(COLOR_CALLBACK).get(COLOR_CALLBACK_BODY)
+    );
+}
+
+
+exports.color_code = function(hue, value)
+{
+    return d_.get(to_key_(COLORS, hue, value));
+}
 
 
 exports.get_dict = function ()
@@ -11,46 +48,24 @@ exports.get_dict = function ()
 }
 
 
-exports.name = function()
-{
-    return d_.get("name");
-}
-
-
 exports.midi_count = function()
 {
-    return d_.get("midi_count");
+    return d_.get(MIDI_COUNT);
 }
 
-
-exports.cc_count = function ()
+exports.name = function()
 {
-    return d_.get("cc_count")
-}
-
-
-exports.color_code = function(hue, value)
-{
-    return d_.get(to_key_("colors", hue, value));
-}
-
-
-exports.behavior_code = function(behavior)
-{
-    return d_.get(to_key_("behaviors", behavior));
-}
-
-
-exports.color_callback = function()
-{
-    return new Function(
-        d_.get("color_callback").get("arguments"), 
-        d_.get("color_callback").get("body")
-    );
+    return d_.get(NAME);
 }
 
 
 // WRITE ---------------------------------------------
+
+
+exports.import_json = function(file_path)
+{
+    d_.import_json(file_path);
+}
 
 
 exports.set_dict = function (dict_name)
@@ -61,12 +76,6 @@ exports.set_dict = function (dict_name)
         post_error_(d_);
         return;
     }
-}
-
-
-exports.import_json = function(file_path)
-{
-    d_.import_json(file_path);
 }
 
 

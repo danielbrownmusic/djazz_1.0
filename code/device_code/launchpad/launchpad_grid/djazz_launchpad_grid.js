@@ -1,57 +1,90 @@
 /*
-CONVENTION for grid stuff:
-'grid param' = BAR or CHAPTER
-'param' = "bar i", "chapter j"
+EXPORTS:
+
+(READ)
+
+BAR_COUNT
+CHAPTER_COUNT
+COLOR
+COMMAND
+MESSAGE
+PARAMETERS
+STATES
+
+(WRITE)
+SET_DICT
+
+(FILE)
+IMPORT_JSON
 */
 
-var dutils          = require("db_dictionary_array_utils");
+/*
+CONVENTION for grid stuff:
+'param_type' = BAR or CHAPTER
+param = "param_type param_number" e.g. "bar i", "chapter j"
+*/
 
-var BAR             = "bar"
-var CELLS           = "cells"
-var CHAPTER         = "chapter"
-var COLORS          = "colors"
-var GRID            = "grid"
+var dutils = require("db_dictionary_array_utils");
 
-var GRID_PARAMS_    = [BAR, CHAPTER];
+var BAR                 = "bar"
+var CELLS               = "cells"
+var CHAPTER             = "chapter"
+var COLORS              = "colors"
+var GRID                = "grid"
+var SET_PARAM           = "set_param"
 
-var d_ = new Dict();
+var PARAM_COMMAND       = SET_PARAM
+var PARAMETER_TYPES_    = [BAR, CHAPTER];
+
+var d_                  = new Dict();
+
 
 // READ -----------------------------------------------------------
 
 
 exports.bar_count = function()
 {
-    return get_parameter_count_(BAR);
+    return dutils.get_dict_array_length(d_, to_key_(GRID, BAR, CELLS));
 }
 
 
 exports.chapter_count = function()
 {
-    return get_parameter_count_(CHAPTER);
+    return dutils.get_dict_array_length(d_, to_key_(GRID, CHAPTER, CELLS));
 }
 
 
-exports.cell_data = function (param, cell_number)
+
+exports.color = function(param, state)
 {
-    return str_to_list(d_.get(to_key_(GRID, param, CELLS))[cell_number]);
+    return d_.get(to_key_(GRID, param, COLORS, state));
 }
 
 
-exports.grid_states = function (param)
+exports.command = function(param)
 {
-    return dutils.get_dict_key_array(d_.get(to_key_(GRID, param, COLORS)));
+    return PARAM_COMMAND;
 }
 
 
-exports.all_parameters = function ()
+exports.message = function (param)
 {
-    var result = [];
-    GRID_PARAMS_.forEach(
-        function (param)
+    var [param_type, param_number] = str_to_list_(param);
+    return d_.get(to_key_(GRID, param_type, CELLS))[param_number];
+}
+
+
+exports.parameters = function ()
+{
+    result = [];
+    PARAMETER_TYPES_.forEach
+    (
+        function (param_type)
         {
-            for (var i = 0; i < get_parameter_count_(param); i++)
+            for (var i = 0; i < get_parameter_type_count_(param_type); i++)
             {
-                result.push(to_symbol_(param, i));
+                var param = to_symbol_(param_type, i);
+                result.push(param);
             }
         }
     )
@@ -59,13 +92,14 @@ exports.all_parameters = function ()
 }
 
 
-// WRITE ---------------------------------------------
-
-
-exports.set_dict = function (dict_name)
+exports.states = function(param)
 {
-    d_.name = dict_name;
+    var param_type =  str_to_list_(param)[0];
+    return dutils.get_dict_key_array(d_.get(to_key_(GRID, param_type, COLORS)));
 }
+
+
+// WRITE ---------------------------------------------
 
 
 exports.import_json = function(file_path)
@@ -74,24 +108,36 @@ exports.import_json = function(file_path)
 }
 
 
-// LOCAL -----------------------------------------------------
-
-
-function get_parameter_count_(param)
+exports.set_dict = function (dict_name)
 {
-    return dutils.get_dict_array_length(d_, to_key_(GRID, param, CELLS));
+    d_.name = dict_name;
 }
-get_parameter_count_.local = 1;
 
 
-function get_parameter_color_(param, state)
+// FILE ---------------------------------------------
+
+
+exports.import_json = function(file_path)
 {
-    return d_.get(to_key_(GRID, param, COLORS, state));
+    d_.import_json(file_path);
 }
-get_parameter_color_.local = 1;
 
 
 // UTIL---------------------------------------------------
+
+
+function get_parameter_type_count_(param_type)
+{
+    var key = to_key_(GRID, param_type, CELLS);
+    dutils.get_dict_array_length(d_, key);
+}
+
+
+function str_to_list_(s)
+{
+    return s.split(" ");
+}
+str_to_list_.local = 1;
 
 
 function to_key_()
@@ -108,10 +154,10 @@ function to_symbol_()
 to_symbol_.local = 1;
 
 
-function str_to_list(s)
-{
-    return s.split(" ");
-}
+
+
+
+
 
 
 
@@ -120,10 +166,10 @@ function str_to_list(s)
 //     var a = param.split(" ");
 //     if (a.length > 1)
 //     {
-//         var k = GRID_PARAMS_.indexOf(a[0]);
+//         var k = PARAMETER_TYPES_.indexOf(a[0]);
 //         if (k > -1)
 //         {
-//             return GRID_PARAMS_[k];
+//             return PARAMETER_TYPES_[k];
 //         }
 //     }
 //     return null;

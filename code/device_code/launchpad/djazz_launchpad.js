@@ -15,6 +15,7 @@ var mapping_db_         = require (mapping_db_file_);
 
 // ------------------------------------------------------------------------------
 
+
 function init
 (
     device_file_path,
@@ -31,45 +32,57 @@ function init
     post ("grid file path       =", "\"" + grid_file_path + "\"","\n");
     post ("mapping file path    =", "\"" + mapping_file_path + "\"","\n");
     
-    init_device_    (device_dict_name,  device_file_path    );
-    init_grid_      (grid_dict_name,    grid_file_path      );
-    init_mapping_   (mapping_dict_name, mapping_file_path   );
-    init_ctrl_      (ctrl_dict_name                         );
-    init_view_      (view_dict_name                         );
+    ctrl_db_.set_dict(ctrl_dict_name);
+    view_db_.set_dict(view_dict_name);
 
-    output_when_done_();
+    device_db_.set_dict(device_dict_name);
+    if (device_file_path)
+    {
+        device_db_.import_json  (device_file_path);
+        device_name_ = device_db_.name();
+        view_db_.set_midi_count (device_db_.midi_count());
+        view_db_.set_cc_count   (device_db_.cc_count());
+
+    }
+    else
+    {
+        post ("Device file", device_dict_name, "failed to load.\n");
+    }
+
+    grid_db_.set_dict(grid_dict_name);
+    load_grid_(grid_file_path);
+
+    mapping_db_.set_dict(mapping_dict_name);
+    load_mapping_(mapping_file_path);
+    
+    refresh();
 }
+
 
 
 function clear_mapping()
 {
-    clear_mapping_      ();
-    output_when_done_   ();
+    mapping_db_.clear();
+    refresh();
 }
 
 function save_mapping(file_path)
 {
     mapping_db_.export_json(file_path);
-    output_when_done_();
 }
 
 
-function load_mapping()
+function load_mapping(file_path)
 {
-    clear_mapping_      ();
-    load_device_        ();
-    load_grid_          ();
-    load_mapping_       ();
-    output_when_done_   ();
+    load_mapping_();
+    refresh();
 }
 
 
-function add_parameter(param, cell_type, cell_value, hue)
+function add_parameter(param, message_type, message_value, hue)
 {
-    add_mapping_parameter_  (param, cell_type, cell_value, hue)
-    add_view_parameter_     (param, cell_type, cell_value, hue);
-    add_ctrl_parameter_     (param, cell_type, cell_value, hue)
-    output_when_done_       ();
+    mapping_db_.add_parameter(param, message_type, message_value, hue);
+    refresh();
 }
 
 
@@ -77,187 +90,80 @@ function remove_parameter(param)
 {
     if (!mapping_db_.contains(param))
         return;
-
-    remove_view_parameter_      (param)
-    remove_ctrl_parameter_      (param)
-    remove_mapping_parameter_   (param)
-    output_when_done_           ();
+    //remove_parameter_from_control_and_view_(mapping_db_, param);
+    mapping_db_.remove_parameter(param);
+    refresh();
 }
 
 
-// LOCAL -----------------------------------------------------
-
-
-function init_device_(device_dict_name, device_file_path)
-{
-    device_db_.set_dict(device_dict_name);
-    if (device_file_path)
-    {
-        device_db_.import_json(device_file_path);
-        device_name_ = device_db_.name();
-        load_device_();
-    }
-}
-init_device_.local = 1;
-
-
-function init_grid_(grid_dict_name, grid_file_path)
-{
-    grid_db_.set_dict(grid_dict_name);
-    if (grid_file_path)
-    {
-        grid_db_.import_json(grid_file_path);
-        load_grid_();
-    }
-}
-init_grid_.local = 1;
-
-
-function init_mapping_(mapping_dict_name, mapping_file_path)
-{
-    mapping_db_.set_dict(mapping_dict_name);
-    if (mapping_file_path)
-    {
-        mapping_db_.import_json(mapping_file_path);
-        load_mapping_();
-    }
-}
-init_mapping_.local = 1;
-
-
-function init_ctrl_(ctrl_dict_name)
-{
-    ctrl_db_.set_dict(ctrl_dict_name);
-}
-init_ctrl_.local = 1;
-
-
-function init_view_(view_dict_name)
-{
-    view_db_.set_dict(view_dict_name);
-}
-init_view_.local = 1;
-
-
-//--------------------------------------------------------
-
-
-function load_device_()
-{
-    view_db_.set_midi_count         (device_db_.midi_count());
-    view_db_.set_cc_count           (device_db_.cc_count());
-}
-load_device_.local = 1;
-
-
-function load_grid_()
+function refresh()
 {
     view_db_.set_chapter_cell_count (grid_db_.chapter_count());
     view_db_.set_bar_cell_count     (grid_db_.bar_count());
 
-    grid_db_.all_parameters().forEach(
-        function (param)
+    [grid_db_, mapping_db_].forEach
+    (
+        function (param_db)
         {
-            var [cell_type, cell_value, hue] = grid_db_.cell_data(param);
-            add_view_parameter_(param, cell_type, cell_value, hue);
-            add_ctrl_parameter_(param, cell_type, cell_value, hue);
+            param_db.parameters().forEach(
+                function (param)
+                {
+                    var [msg_type, msg_value] = param_db.message(param).split(" ");
+                    var param_cmd = param_db.command(param);
+                    ctrl_db_.add_parameter(param_cmd, param, msg_type, msg_value);
+                    add_parameter_to_view_(param_db, param, msg_type, msg_value);
+                }
+            )
         }
     )
+    outlet (0, view_db_.get_dict(), ctrl_db_.get_dict());
+}
+
+// LOCAL -----------------------------------------------------
+
+
+function load_grid_(file_path)
+{
+    if (file_path)
+    {
+        grid_db_.import_json(file_path);
+    }
+    else
+    {
+        post ("Grid file", grid_file_path, "failed to load.\n");
+    }
 }
 load_grid_.local = 1;
 
 
-function load_mapping_()
+function load_mapping_(file_path)
 {
-    mapping_db_.all_parameters().forEach(
-        function (param)
-        {
-            var [cell_type, cell_value, hue] = mapping_db_.cell_data(param);
-            add_view_parameter_(param, cell_type, cell_value, hue);
-            add_ctrl_parameter_(param, cell_type, cell_value, hue);
-        }
-    )
-
+    if (file_path)
+    {
+        //mapping_db_.clear();
+        mapping_db_.import_json(file_path);
+    }
+    else
+    {
+        post ("Mapping file", mapping_file_path, "failed to load.\n");
+    }
 }
 load_mapping_.local = 1;
 
 
-//--------------------------------------------------------
-
-
-function add_mapping_parameter_(param, cell_type, cell_value, hue)
+function add_parameter_to_view_(param_db, param, msg_type, msg_value)
 {
-    mapping_db_.add_parameter(param, cell_type, cell_value, hue);
-}
-add_mapping_parameter_.local = 1
-
-
-function add_view_parameter_(param, cell_type, cell_value, hue)
-{
-    mapping_db_.states(param).forEach(
+    param_db.states(param).forEach(
         function (state)
         {
-            var color = mapping_db_.color(param, state);
-            view_db_.add_parameter(param, state, cell_type, cell_value, color_code_(color));
+            var color       = param_db.color(param, state);
+            var color_code  = color_code_(color);
+            view_db_.add_parameter(param, state, msg_type, msg_value, color_code);
         }
     )
+    var param_command = grid_db_.command(param);
 }
-add_view_parameter_.local = 1;
-
-
-function add_ctrl_parameter_(param, cell_type, cell_value, hue)
-{
-    ctrl_db_.add_parameter(param, cell_type, cell_value);
-}
-add_ctrl_parameter_.local = 1;
-
-
-//--------------------------------------------------------
-
-
-function remove_mapping_parameter_(param)
-{
-    mapping_db_.remove_parameter(param);
-}
-remove_mapping_parameter_.local = 1;
-
-
-function remove_view_parameter_(param)
-{
-    mapping_db_.states(param).forEach(
-        function (state)
-        {
-            view_db_.remove_parameter(param, state);
-        }
-    )
-}
-remove_view_parameter_.local = 1;
-
-
-function remove_ctrl_parameter_(param)
-{
-    var [cell_type, cell_value] = mapping_db_.cell_data(param);
-    ctrl_db_.remove_parameter(cell_type, cell_value);
-}
-remove_ctrl_parameter_.local = 1;
-
-//----------------------------------------------------------------------------
-
-
-function output_when_done_()
-{
-    outlet (0, view_db_.get_dict(), ctrl_db_.get_dict());
-}
-output_when_done_.local = 1;
-
-
-function clear_mapping_()
-{
-    view_db_.clear();
-    ctrl_db_.clear();
-    mapping_db_.clear();
-}
-clear_mapping_.local = 1;
+add_parameter_to_view_.local = 1;
 
 
 function color_code_(color_data_string)
@@ -277,6 +183,144 @@ function color_code_(color_data_string)
 color_code_.local = 1;
 
 
+
+//function add_mapping_parameter_to_control_and_view_(param)
+// {
+//     var [msg_type, msg_value] = param_db.message(param).split(" ");
+
+//     mapping__db.states(param).forEach
+//     (
+//         function (state)
+//         {
+//             var color       = mapping__db.color(param, state);
+//             var color_code  = color_code_(color);
+//             view_db_.add_parameter(param, state, msg_type, msg_value, color_code);
+//         }
+//     )
+//     var param_command = mapping__db.command(param);
+//     ctrl_db_.add_parameter(param_command, param, msg_type, msg_value);
+
+// }
+// add_mapping_parameter_to_control_and_view_.local = 1;
+
+
+// function remove_mapping_parameter_from_control_and_view_(param_db, param)
+// {
+//     param_db.states(param).forEach(
+//         function (state)
+//         {
+//             view_db_.remove_parameter(param, state);
+//         }
+//     )
+//     var msg = param_db.message(param);
+//     ctrl_db_.remove_parameter(msg);
+// }
+// remove_mapping_parameter_from_control_and_view_.local = 1;
+
+
+
+// function add_parameter_to_control_(param_db, param, msg_type, msg_value)
+// {
+    
+    
+// }
+// add_grid_parameter_to_control_.local = 1;
+
+
+// function add_mapping_parameter_to_control_(param, msg_type, msg_value)
+// {
+//     var param_command = mapping_db.command(param);
+//     ctrl_db_.add_parameter(param_command, param, msg_type, msg_value);
+// }
+// add_mapping_parameter_to_control_.local = 1;
+
+
+// function add_grid_parameter_to_view_(param, msg_type, msg_value)
+// {
+//     add_parameter_to_view_(grid_db, param, msg_type, msg_value);
+// }
+// add_grid_parameter_to_view_.local = 1;
+
+
+// function add_mapping_parameter_to_view_(param, msg_type, msg_value)
+// {
+//     add_parameter_to_view_(mapping_db, param, msg_type, msg_value);
+// }
+// add_mapping_parameter_to_view_.local = 1;
+
+
+
+// function clear_mapping_()
+// {
+//     mapping_db_.clear();
+//     // mapping_db_.parameters().forEach
+//     // (
+//     //     function (param)
+//     //     {
+//     //         remove_mapping_parameter_from_control_and_view_(param);
+//     //         mapping_db_.remove_parameter(param);
+//     //     }
+//     // )
+// }
+// clear_mapping_.local = 1;
+
+
+
+
+// function save_mapping_(file_path)
+// {
+//     mapping_db_.export_json(file_path);
+// }
+// save_mapping_.local = 1;
+
+
+// function refresh_()
+// {
+
+// }
+
+// function add_parameter_(param, message_type, message_value, hue)
+// {
+    
+//     add_mapping_parameter_to_control_and_view_(param);
+// }
+// add_parameter_.local = 1;
+
+
+// function remove_parameter_(param)
+// {
+//     if (!mapping_db_.contains(param))
+//         return;
+//     remove_parameter_from_control_and_view_(mapping_db_, param);
+//     mapping_db_.remove_parameter(param);
+// }
+// remove_parameter_.local = 1;
+
+
+
+
+
+
+
+
+// function add_control_parameter_(param_db, param)
+// {
+//     var message_type    = param_db.message_type (param);
+//     var message_value   = param_db.message_value(param);
+
+//     param_db.states(param).forEach(
+//         function (state)
+//         {
+//             var color       = param_db.color(param, state);
+//             var color_code  = color_code_(color);
+//             view_db_.add_parameter(param, state, message_type, message_value, color_code);
+//         }
+//     )
+//     var param_command = param_db.command(param);
+//     ctrl_db_.add_parameter(param_command, param, message_type, message_value);
+
+// }
+// add_control_parameter_.local = 1;
 
 
 

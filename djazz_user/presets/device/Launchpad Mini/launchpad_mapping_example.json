@@ -1,0 +1,10 @@
+{
+	"parameters" : 	{
+		"parameter_name_1" : "message_type message_value hue command",
+		"global_solo_effects_reset_octave" : "midi 83 orange toggle",
+	}
+
+}
+
+
+
