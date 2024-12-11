@@ -98,7 +98,6 @@ to_symbol_.local = 1;
 
 function find_grid_param_in_param_name_(param)
 {
-    post ("param name =",param,"\n");
     var a = param.split(" ");
     if (a.length > 1)
     {

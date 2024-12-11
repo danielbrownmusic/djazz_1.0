@@ -1,4 +1,6 @@
 {
+    "device" : "Launchpad Pro MK3"
+    ,
     "grid" : {
         "chapter" :     {
             "cells" : [

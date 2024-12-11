@@ -13,6 +13,11 @@ var ctrl_db_            = require (ctrl_db_file_);
 var view_db_            = require (view_db_file_);
 var mapping_db_         = require (mapping_db_file_);
 
+var BRIGHT  = "bright";
+var STATIC  = "static";
+var NONE    = "none";
+var NO_FILE = "NONE";
+
 // ------------------------------------------------------------------------------
 
 
@@ -28,9 +33,9 @@ function init
     mapping_dict_name
 )
 {
-    post ("device file path     =", "\"" + device_file_path + "\"",   "\n");
-    post ("grid file path       =", "\"" + grid_file_path + "\"","\n");
-    post ("mapping file path    =", "\"" + mapping_file_path + "\"","\n");
+    // post ("device file path     =", "\"" + device_file_path + "\"",   "\n");
+    // post ("grid file path       =", "\"" + grid_file_path + "\"","\n");
+    // post ("mapping file path    =", "\"" + mapping_file_path + "\"","\n");
     
     ctrl_db_.set_dict(ctrl_dict_name);
     view_db_.set_dict(view_dict_name);
@@ -38,16 +43,17 @@ function init
     device_db_.set_dict(device_dict_name);
     if (device_file_path)
     {
-        device_db_.import_json  (device_file_path);
-        device_name_ = device_db_.name();
-        view_db_.set_midi_count (device_db_.midi_count());
-        view_db_.set_cc_count   (device_db_.cc_count());
-
+        device_db_.import_json(device_file_path);
     }
     else
     {
-        post ("Device file", device_dict_name, "failed to load.\n");
+        post_error_file_load_(device_file_path);
+        return;
     }
+
+    device_name_ = device_db_.name();
+    view_db_.set_midi_count (device_db_.midi_count());
+    view_db_.set_cc_count   (device_db_.cc_count());    
 
     grid_db_.set_dict(grid_dict_name);
     load_grid_(grid_file_path);
@@ -61,6 +67,7 @@ function init
 
 function clear_mapping()
 {
+    post ("clearing mapping\n");
     mapping_db_.clear();
     refresh();
 }
@@ -74,7 +81,7 @@ function save_mapping(file_path)
 
 function load_mapping(file_path)
 {
-    load_mapping_();
+    load_mapping_(file_path);
     refresh();
 }
 
@@ -98,6 +105,9 @@ function remove_parameter(param)
 
 function refresh()
 {
+    ctrl_db_.clear();
+    view_db_.clear();
+
     view_db_.set_chapter_cell_count (grid_db_.chapter_count());
     view_db_.set_bar_cell_count     (grid_db_.bar_count());
 
@@ -130,7 +140,7 @@ function load_grid_(file_path)
     }
     else
     {
-        post ("Grid file", grid_file_path, "failed to load.\n");
+        post_error_file_load_(file_path);
     }
 }
 load_grid_.local = 1;
@@ -138,14 +148,13 @@ load_grid_.local = 1;
 
 function load_mapping_(file_path)
 {
-    if (file_path)
+    if (file_path && file_path !== NO_FILE)
     {
-        //mapping_db_.clear();
         mapping_db_.import_json(file_path);
     }
     else
     {
-        post ("Mapping file", file_path, "failed to load.\n");
+        post_error_file_load_(file_path);
     }
 }
 load_mapping_.local = 1;
@@ -170,7 +179,7 @@ function color_code_(color_data_string)
 {
       var data            = color_data_string.split(" ");
       var hue             = data[0];
-      var is_none         = (hue === "none"); 
+      var is_none         = (hue === NONE); 
       var value           = is_none? BRIGHT : data[1];
       var behavior        = is_none ? STATIC : data[2];
  
@@ -183,6 +192,12 @@ function color_code_(color_data_string)
 color_code_.local = 1;
 
 
+
+function post_error_file_load_(file_path)
+{
+    post ("ERROR:", file_path, "failed to load.\n");
+}
+post_error_file_load_.local = 1
 
 
 

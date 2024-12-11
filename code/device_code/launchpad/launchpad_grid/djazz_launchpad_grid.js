@@ -56,7 +56,8 @@ exports.chapter_count = function()
 
 exports.color = function(param, state)
 {
-    return d_.get(to_key_(GRID, param, COLORS, state));
+    var [param_type, param_number] = str_to_list_(param);
+    return d_.get(to_key_(GRID, param_type, COLORS, state));
 }
 
 
@@ -121,8 +122,7 @@ exports.import_json = function(file_path)
 
 function get_parameter_type_count_(param_type)
 {
-    var key = to_key_(GRID, param_type, CELLS);
-    dutils.get_dict_array_length(d_, key);
+    return d_.getsize(to_key_(GRID, param_type, CELLS));
 }
 
 
