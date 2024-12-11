@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 619.0, 100.0, 1376.0, 983.0 ],
+		"rect" : [ 318.0, 100.0, 1376.0, 983.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -831,13 +831,12 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-10",
-									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 50.0, 100.0, 341.0, 35.0 ],
-									"text" : "regexp \"0: File meta event: code 84: SMPTE offset: 33 0 0 0 0 0: Tempo: (\\\\d+)\""
+									"patching_rect" : [ 50.0, 100.0, 128.0, 22.0 ],
+									"text" : "regexp \"Tempo: (\\\\d+)\""
 								}
 
 							}
@@ -862,7 +861,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 44.0, 195.0, 30.0, 30.0 ]
+									"patching_rect" : [ 77.25, 169.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -1181,6 +1180,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-9",
+									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,

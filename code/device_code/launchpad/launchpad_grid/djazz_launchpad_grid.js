@@ -54,7 +54,6 @@ exports.chapter_count = function()
 }
 
 
-
 exports.color = function(param, state)
 {
     return d_.get(to_key_(GRID, param, COLORS, state));
@@ -102,12 +101,6 @@ exports.states = function(param)
 // WRITE ---------------------------------------------
 
 
-exports.import_json = function(file_path)
-{
-    d_.import_json(file_path);
-}
-
-
 exports.set_dict = function (dict_name)
 {
     d_.name = dict_name;
@@ -152,27 +145,3 @@ function to_symbol_()
     return Array.prototype.slice.call(arguments).join(" ");
 }
 to_symbol_.local = 1;
-
-
-
-
-
-
-
-
-
-// function find_grid_param_in_param_name_(param)
-// {
-//     var a = param.split(" ");
-//     if (a.length > 1)
-//     {
-//         var k = PARAMETER_TYPES_.indexOf(a[0]);
-//         if (k > -1)
-//         {
-//             return PARAMETER_TYPES_[k];
-//         }
-//     }
-//     return null;
-// }
-// find_grid_param_in_param_name_.local = 1;
-

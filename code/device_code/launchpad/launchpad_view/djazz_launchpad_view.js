@@ -15,8 +15,6 @@ SET_CC_COUNT
 SET_CHAPTER_CELL_COUNT
 SET_DICT
 SET_MIDI_COUNT
-
-
 */
 
 var dutils = require("db_dictionary_array_utils");
@@ -102,9 +100,6 @@ exports.set_midi_count = function(midi_count)
 {
     d_.set(MIDI_COUNT, midi_count);
 }
-
-
-
 
 
 // UTIL----------------------------------------------------------

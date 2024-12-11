@@ -1,0 +1,59 @@
+Format: MIDI Simultaneous Track File
+Tracks: 2
+Timing division: 480 ppq
+Start of track: 1
+4: File meta event: code 32: Channel prefix: 15 4: File meta event: code 3: Track name: "Région MIDI"
+4: File meta event: code 4: Instrument name: "beat"
+4: Time signature: 4/4
+4: Key signature: 4 sharps, minor
+4: Key signature: 0 sharp, major
+4: File meta event: code 84: SMPTE offset: 33 0 0 0 0 4: Tempo: 84
+4: Note: channel 15 duration 40 pitch 12 velocity 100
+484: Note: channel 15 duration 40 pitch 12 velocity 100
+964: Note: channel 15 duration 40 pitch 12 velocity 100
+1444: Note: channel 15 duration 40 pitch 12 velocity 100
+1924: Note: channel 15 duration 40 pitch 12 velocity 100
+2404: Note: channel 15 duration 40 pitch 12 velocity 100
+2884: Note: channel 15 duration 40 pitch 12 velocity 100
+3364: Note: channel 15 duration 40 pitch 12 velocity 100
+3844: Note: channel 15 duration 40 pitch 12 velocity 100
+4324: Note: channel 15 duration 40 pitch 12 velocity 100
+4804: Note: channel 15 duration 40 pitch 12 velocity 100
+5284: Note: channel 15 duration 40 pitch 12 velocity 100
+5764: Note: channel 15 duration 40 pitch 12 velocity 100
+6244: Note: channel 15 duration 40 pitch 12 velocity 100
+6724: Note: channel 15 duration 40 pitch 12 velocity 100
+7204: Note: channel 15 duration 40 pitch 12 velocity 100
+7684: Note: channel 15 duration 40 pitch 12 velocity 100
+8164: Note: channel 15 duration 40 pitch 12 velocity 100
+8644: Note: channel 15 duration 40 pitch 12 velocity 100
+9124: Note: channel 15 duration 40 pitch 12 velocity 100
+9604: End of track
+Start of track: 2
+4: File meta event: code 32: Channel prefix: 15 4: File meta event: code 3: Track name: "Région MIDI"
+4: File meta event: code 4: Instrument name: "beat"
+4: Time signature: 4/4
+4: Key signature: 4 sharps, minor
+4: Key signature: 0 sharp, major
+7676: File meta event: code 84: SMPTE offset: 33 0 0 0 0 7676: Tempo: 84
+9604: Note: channel 15 duration 40 pitch 12 velocity 100
+10084: Note: channel 15 duration 40 pitch 12 velocity 100
+10564: Note: channel 15 duration 40 pitch 12 velocity 100
+11044: Note: channel 15 duration 40 pitch 12 velocity 100
+11524: Note: channel 15 duration 40 pitch 12 velocity 100
+12004: Note: channel 15 duration 40 pitch 12 velocity 100
+12484: Note: channel 15 duration 40 pitch 12 velocity 100
+12964: Note: channel 15 duration 40 pitch 12 velocity 100
+13444: Note: channel 15 duration 40 pitch 12 velocity 100
+13924: Note: channel 15 duration 40 pitch 12 velocity 100
+14404: Note: channel 15 duration 40 pitch 12 velocity 100
+14884: Note: channel 15 duration 40 pitch 12 velocity 100
+15364: Note: channel 15 duration 40 pitch 12 velocity 100
+15844: Note: channel 15 duration 40 pitch 12 velocity 100
+16324: Note: channel 15 duration 40 pitch 12 velocity 100
+16804: Note: channel 15 duration 40 pitch 12 velocity 100
+17284: Note: channel 15 duration 40 pitch 12 velocity 100
+17764: Note: channel 15 duration 40 pitch 12 velocity 100
+18244: Note: channel 15 duration 40 pitch 12 velocity 100
+18724: Note: channel 15 duration 40 pitch 12 velocity 100
+18764: End of track

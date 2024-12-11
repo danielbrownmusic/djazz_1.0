@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 400.0, 400.0, 1089.0, 657.0 ],
+		"rect" : [ 400.0, 400.0, 955.0, 608.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 795.0, 264.0, 22.0, 22.0 ],
+					"patching_rect" : [ -46.0, 323.0, 22.0, 22.0 ],
 					"text" : "t 1"
 				}
 
@@ -57,33 +57,33 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 840.0, 264.0, 71.0, 22.0 ],
+					"patching_rect" : [ -1.0, 323.0, 71.0, 22.0 ],
 					"text" : "routepass 0"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "messages to edit mapping view window",
 					"id" : "obj-5",
-					"index" : 2,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 801.0, 477.0, 30.0, 30.0 ]
+					"patching_rect" : [ 27.0, 573.0, 30.0, 30.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(sym) mapping file name to sisplay",
 					"id" : "obj-78",
-					"index" : 4,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1071.0, 9.0, 30.0, 30.0 ],
+					"patching_rect" : [ 850.0, 3.0, 30.0, 30.0 ],
 					"varname" : "mapping"
 				}
 
@@ -1221,7 +1221,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1071.0, 88.0, 56.0, 22.0 ],
+					"patching_rect" : [ 850.0, 82.0, 56.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1240,7 +1240,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1071.0, 126.0, 138.0, 22.0 ],
+					"patching_rect" : [ 850.0, 120.0, 138.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 102.0, 32.0, 282.0, 22.0 ]
 				}
@@ -1248,22 +1248,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "connect to pcontrol to open and close this window",
-					"id" : "obj-8",
-					"index" : 1,
-					"maxclass" : "inlet",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 13.0, 2.0, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"comment" : "(0/1) sets connect/disconnect button with output",
 					"id" : "obj-4",
-					"index" : 2,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1311,14 +1298,14 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "messages to edit mapping window",
+					"comment" : "0/1 if mapping is dirty or saved",
 					"id" : "obj-2",
-					"index" : 3,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 932.0, 9.0, 30.0, 30.0 ]
+					"patching_rect" : [ 790.0, 3.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -1330,7 +1317,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 795.0, 101.0, 100.0, 20.0 ],
+					"patching_rect" : [ -46.0, 160.0, 100.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 4.0, 109.0, 89.0, 20.0 ],
 					"text" : "Edit Mapping",
@@ -1374,7 +1361,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 1,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1426,7 +1413,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -1434,7 +1421,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-73", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -1449,7 +1436,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-64", 1 ],
-					"midpoints" : [ 941.5, 304.0, 422.5, 304.0 ],
+					"midpoints" : [ 799.5, 304.0, 422.5, 304.0 ],
 					"order" : 1,
 					"source" : [ "obj-2", 0 ]
 				}
@@ -1458,7 +1445,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-76", 1 ],
-					"midpoints" : [ 941.5, 304.0, 613.5, 304.0 ],
+					"midpoints" : [ 799.5, 304.0, 613.5, 304.0 ],
 					"order" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
@@ -1467,7 +1454,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-77", 1 ],
-					"midpoints" : [ 941.5, 304.0, 212.5, 304.0 ],
+					"midpoints" : [ 799.5, 304.0, 212.5, 304.0 ],
 					"order" : 2,
 					"source" : [ "obj-2", 0 ]
 				}

@@ -1,0 +1,134 @@
+Format: MIDI Single Track File
+Tracks: 1
+Timing division: 480 ppq
+Start of track: 1
+0: File meta event: code 32: Channel prefix: 0 0: File meta event: code 3: Track name: "Pas de Sortie"
+0: File meta event: code 4: Instrument name: "Solo midi exemple 2"
+0: Time signature: 4/4
+0: Key signature: 4 sharps, minor
+0: Key signature: 0 sharp, major
+0: File meta event: code 84: SMPTE offset: 33 0 0 0 0 0: Tempo: 84
+14: Note: channel 0 duration 270 pitch 72 velocity 80
+16: Note: channel 0 duration 270 pitch 84 velocity 80
+258: Note: channel 0 duration 70 pitch 74 velocity 80
+260: Note: channel 0 duration 70 pitch 86 velocity 80
+291: Note: channel 0 duration 81 pitch 75 velocity 80
+294: Note: channel 0 duration 80 pitch 87 velocity 80
+346: Note: channel 0 duration 187 pitch 76 velocity 80
+349: Note: channel 0 duration 186 pitch 88 velocity 80
+534: Note: channel 0 duration 259 pitch 74 velocity 80
+537: Note: channel 0 duration 258 pitch 86 velocity 80
+798: Note: channel 0 duration 1056 pitch 69 velocity 80
+801: Note: channel 0 duration 1056 pitch 81 velocity 80
+2937: Note: channel 0 duration 269 pitch 72 velocity 80
+3191: Note: channel 0 duration 262 pitch 76 velocity 80
+3431: Note: channel 0 duration 289 pitch 71 velocity 80
+3700: Note: channel 0 duration 233 pitch 69 velocity 80
+4177: Note: channel 0 duration 223 pitch 67 velocity 80
+4420: Note: channel 0 duration 257 pitch 69 velocity 80
+4654: Note: channel 0 duration 506 pitch 71 velocity 80
+5120: Note: channel 0 duration 1000 pitch 76 velocity 80
+6495: Note: channel 0 duration 959 pitch 67 velocity 80
+6749: Note: channel 0 duration 516 pitch 74 velocity 80
+7029: Note: channel 0 duration 292 pitch 73 velocity 80
+7142: Note: channel 0 duration 292 pitch 72 velocity 80
+7245: Note: channel 0 duration 292 pitch 71 velocity 80
+7962: Note: channel 0 duration 558 pitch 69 velocity 80
+8480: Note: channel 0 duration 274 pitch 76 velocity 80
+8702: Note: channel 0 duration 283 pitch 78 velocity 80
+8904: Note: channel 0 duration 606 pitch 79 velocity 80
+10216: Note: channel 0 duration 116 pitch 74 velocity 80
+10320: Note: channel 0 duration 107 pitch 76 velocity 80
+10446: Note: channel 0 duration 122 pitch 78 velocity 80
+10557: Note: channel 0 duration 128 pitch 69 velocity 80
+10693: Note: channel 0 duration 127 pitch 71 velocity 80
+10831: Note: channel 0 duration 87 pitch 67 velocity 80
+10936: Note: channel 0 duration 107 pitch 64 velocity 80
+11041: Note: channel 0 duration 123 pitch 66 velocity 80
+11168: Note: channel 0 duration 159 pitch 67 velocity 80
+11312: Note: channel 0 duration 94 pitch 64 velocity 80
+11402: Note: channel 0 duration 116 pitch 66 velocity 80
+11548: Note: channel 0 duration 121 pitch 62 velocity 80
+11665: Note: channel 0 duration 102 pitch 64 velocity 80
+11778: Note: channel 0 duration 98 pitch 66 velocity 80
+11912: Note: channel 0 duration 107 pitch 67 velocity 80
+12033: Note: channel 0 duration 1887 pitch 69 velocity 80
+14447: Note: channel 0 duration 759 pitch 69 velocity 80
+14731: Note: channel 0 duration 258 pitch 76 velocity 80
+14939: Note: channel 0 duration 324 pitch 78 velocity 80
+15156: Note: channel 0 duration 226 pitch 79 velocity 80
+15385: Note: channel 0 duration 247 pitch 81 velocity 80
+15616: Note: channel 0 duration 173 pitch 79 velocity 80
+15877: Note: channel 0 duration 90 pitch 81 velocity 80
+15959: Note: channel 0 duration 169 pitch 83 velocity 80
+16151: Note: channel 0 duration 1129 pitch 79 velocity 80
+18793: Note: channel 0 duration 363 pitch 81 velocity 80
+19121: Note: channel 0 duration 164 pitch 79 velocity 80
+19263: Note: channel 0 duration 130 pitch 78 velocity 80
+19383: Note: channel 0 duration 118 pitch 79 velocity 80
+19492: Note: channel 0 duration 137 pitch 76 velocity 80
+19607: Note: channel 0 duration 103 pitch 78 velocity 80
+19720: Note: channel 0 duration 94 pitch 74 velocity 80
+19836: Note: channel 0 duration 114 pitch 76 velocity 80
+19976: Note: channel 0 duration 344 pitch 71 velocity 80
+20496: Tempo: 84
+20556: Note: channel 0 duration 124 pitch 67 velocity 80
+20687: Note: channel 0 duration 158 pitch 69 velocity 80
+20819: Note: channel 0 duration 120 pitch 66 velocity 80
+20933: Note: channel 0 duration 107 pitch 67 velocity 80
+21058: Note: channel 0 duration 80 pitch 64 velocity 80
+21144: Tempo: 84
+21197: Note: channel 0 duration 115 pitch 66 velocity 80
+21329: Note: channel 0 duration 96 pitch 62 velocity 80
+21432: Tempo: 84
+21432: Note: channel 0 duration 139 pitch 64 velocity 80
+21580: Note: channel 0 duration 66 pitch 59 velocity 80
+21689: Note: channel 0 duration 133 pitch 60 velocity 80
+21811: Note: channel 0 duration 87 pitch 62 velocity 80
+21920: Note: channel 0 duration 123 pitch 64 velocity 80
+22031: Note: channel 0 duration 112 pitch 66 velocity 80
+22149: Note: channel 0 duration 108 pitch 67 velocity 80
+22269: Note: channel 0 duration 139 pitch 69 velocity 80
+22408: Note: channel 0 duration 117 pitch 71 velocity 80
+22512: Note: channel 0 duration 106 pitch 67 velocity 80
+22637: Note: channel 0 duration 138 pitch 71 velocity 80
+22752: Note: channel 0 duration 186 pitch 69 velocity 80
+22909: Note: channel 0 duration 140 pitch 66 velocity 80
+23032: Note: channel 0 duration 109 pitch 64 velocity 80
+23153: Note: channel 0 duration 216 pitch 67 velocity 80
+23249: Note: channel 0 duration 101 pitch 66 velocity 80
+23397: Note: channel 0 duration 120 pitch 64 velocity 80
+23503: Note: channel 0 duration 267 pitch 62 velocity 80
+23621: Note: channel 0 duration 1859 pitch 59 velocity 80
+26774: Note: channel 0 duration 151 pitch 59 velocity 80
+26885: Note: channel 0 duration 168 pitch 62 velocity 80
+27012: Note: channel 0 duration 140 pitch 64 velocity 80
+27145: Note: channel 0 duration 79 pitch 66 velocity 80
+27296: Note: channel 0 duration 101 pitch 67 velocity 80
+27391: Note: channel 0 duration 152 pitch 69 velocity 80
+27532: Note: channel 0 duration 83 pitch 71 velocity 80
+27676: Note: channel 0 duration 123 pitch 74 velocity 80
+27796: Note: channel 0 duration 78 pitch 76 velocity 80
+27965: Note: channel 0 duration 1355 pitch 78 velocity 80
+29912: Note: channel 0 duration 286 pitch 74 velocity 80
+30025: Note: channel 0 duration 153 pitch 78 velocity 80
+30156: Note: channel 0 duration 163 pitch 81 velocity 80
+30287: Note: channel 0 duration 145 pitch 83 velocity 80
+30410: Note: channel 0 duration 152 pitch 74 velocity 80
+30533: Note: channel 0 duration 119 pitch 78 velocity 80
+30644: Note: channel 0 duration 129 pitch 81 velocity 80
+30783: Note: channel 0 duration 104 pitch 83 velocity 80
+30924: Note: channel 0 duration 166 pitch 71 velocity 80
+31030: Note: channel 0 duration 164 pitch 76 velocity 80
+31151: Note: channel 0 duration 121 pitch 78 velocity 80
+31261: Note: channel 0 duration 186 pitch 79 velocity 80
+31379: Note: channel 0 duration 166 pitch 71 velocity 80
+31506: Note: channel 0 duration 109 pitch 76 velocity 80
+31619: Note: channel 0 duration 145 pitch 78 velocity 80
+31745: Note: channel 0 duration 695 pitch 79 velocity 80
+32375: Note: channel 0 duration 126 pitch 69 velocity 80
+32488: Note: channel 0 duration 100 pitch 71 velocity 80
+32590: Note: channel 0 duration 149 pitch 74 velocity 80
+32723: Note: channel 0 duration 1717 pitch 76 velocity 80
+38139: Tempo: 84
+38400: End of track

@@ -59,12 +59,12 @@ function init
 }
 
 
-
 function clear_mapping()
 {
     mapping_db_.clear();
     refresh();
 }
+
 
 function save_mapping(file_path)
 {
@@ -145,7 +145,7 @@ function load_mapping_(file_path)
     }
     else
     {
-        post ("Mapping file", mapping_file_path, "failed to load.\n");
+        post ("Mapping file", file_path, "failed to load.\n");
     }
 }
 load_mapping_.local = 1;
@@ -181,6 +181,13 @@ function color_code_(color_data_string)
       return color_to_midi_callback_(color_code, behavior_code).join(" ");
 }
 color_code_.local = 1;
+
+
+
+
+
+
+
 
 
 
