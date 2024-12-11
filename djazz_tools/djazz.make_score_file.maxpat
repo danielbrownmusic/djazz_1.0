@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 81.0, 134.0, 612.0, 470.0 ],
+		"rect" : [ 51.0, 115.0, 1583.0, 968.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -6106,7 +6106,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 343.0, 365.0, 640.0, 480.0 ],
+						"rect" : [ 800.0, 365.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -7220,7 +7220,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 465.0, 204.0, 640.0, 480.0 ],
+										"rect" : [ 871.0, 222.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -9001,7 +9001,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 739.0, 105.0, 49.0, 20.0 ],
+					"patching_rect" : [ 603.5, 109.0, 49.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 17.0, 115.0, 49.0, 20.0 ],
 					"text" : "BEATS",

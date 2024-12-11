@@ -319,7 +319,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 755.0, 39.0, 210.0, 35.0 ],
+					"patching_rect" : [ 754.0, 24.0, 210.0, 35.0 ],
 					"text" : "pv #0_TRACK_LIST_DICT_NAME NONE"
 				}
 
@@ -332,7 +332,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 755.0, 131.0, 200.0, 35.0 ],
+					"patching_rect" : [ 754.0, 116.0, 200.0, 35.0 ],
 					"text" : "pv #0_BEAT_LIST_DICT_NAME NONE"
 				}
 
@@ -345,7 +345,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 755.0, 86.0, 243.0, 35.0 ],
+					"patching_rect" : [ 754.0, 71.0, 243.0, 35.0 ],
 					"text" : "pv #0_CURRENT_TRACK_DICT_NAME NONE"
 				}
 
@@ -2299,7 +2299,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-5",
