@@ -10,9 +10,9 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 63.0, 129.0, 301.0, 98.0 ],
+		"rect" : [ 804.0, 484.0, 1112.0, 465.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 1,
+		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -21,7 +21,7 @@
 		"gridsnaponopen" : 1,
 		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
-		"toolbarvisible" : 0,
+		"toolbarvisible" : 1,
 		"lefttoolbarpinned" : 0,
 		"toptoolbarpinned" : 0,
 		"righttoolbarpinned" : 0,
@@ -38,7 +38,7 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
-		"title" : "Launchpad Pro MK3",
+		"title" : "Launchpad Mini",
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-30",
@@ -83,10 +83,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 847.0, 235.0, 167.0, 22.0 ],
+					"patching_rect" : [ 847.0, 234.0, 167.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 77.0, 7.0, 210.0, 22.0 ],
-					"text" : "Launchpad Pro MK3",
+					"text" : "Launchpad Mini",
 					"textcolor" : [ 1.0, 0.992156862745098, 0.796078431372549, 1.0 ],
 					"textjustification" : 1
 				}
@@ -98,7 +98,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 326.0, 188.0, 150.0, 20.0 ],
+					"patching_rect" : [ 1025.0, 235.0, 78.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 5.0, 38.0, 66.0, 20.0 ],
 					"text" : "MAPPING",
@@ -687,9 +687,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "clear" ],
-					"patching_rect" : [ 512.0, 295.0, 41.0, 22.0 ],
-					"text" : "t clear"
+					"outlettype" : [ "clear_mapping" ],
+					"patching_rect" : [ 512.0, 295.0, 94.0, 22.0 ],
+					"text" : "t clear_mapping"
 				}
 
 			}
@@ -700,8 +700,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 346.0, 295.0, 79.0, 22.0 ],
-					"text" : "prepend load"
+					"patching_rect" : [ 346.0, 295.0, 131.0, 22.0 ],
+					"text" : "prepend load_mapping"
 				}
 
 			}
@@ -998,8 +998,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 122.5, 249.0, 81.0, 22.0 ],
-									"text" : "prepend save"
+									"patching_rect" : [ 62.0, 252.0, 134.0, 22.0 ],
+									"text" : "prepend save_mapping"
 								}
 
 							}
@@ -1011,7 +1011,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 225.0, 274.0, 30.0, 30.0 ],
+									"patching_rect" : [ 159.0, 289.0, 30.0, 30.0 ],
 									"varname" : "u996049378"
 								}
 
@@ -1023,7 +1023,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "" ],
-									"patching_rect" : [ 50.0, 169.0, 31.0, 22.0 ],
+									"patching_rect" : [ 50.0, 200.0, 31.0, 22.0 ],
 									"text" : "t 1 s"
 								}
 
@@ -1035,7 +1035,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 206.0, 169.0, 22.0, 22.0 ],
+									"patching_rect" : [ 159.0, 200.0, 22.0, 22.0 ],
 									"text" : "t 0"
 								}
 
@@ -1047,7 +1047,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "bang" ],
-									"patching_rect" : [ 50.0, 100.0, 175.0, 22.0 ],
+									"patching_rect" : [ 50.0, 131.0, 128.0, 22.0 ],
 									"text" : "savedialog"
 								}
 
@@ -1061,7 +1061,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ],
+									"patching_rect" : [ 50.0, 71.0, 30.0, 30.0 ],
 									"varname" : "u755049379"
 								}
 
@@ -1074,7 +1074,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 122.5, 304.0, 30.0, 30.0 ],
+									"patching_rect" : [ 62.0, 289.0, 30.0, 30.0 ],
 									"varname" : "u823049380"
 								}
 
@@ -1090,6 +1090,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
+									"midpoints" : [ 59.5, 239.5, 168.5, 239.5 ],
 									"source" : [ "obj-2", 0 ]
 								}
 
