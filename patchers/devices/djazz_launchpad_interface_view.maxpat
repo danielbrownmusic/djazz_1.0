@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 804.0, 484.0, 1112.0, 465.0 ],
+		"rect" : [ 847.0, 194.0, 347.0, 441.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -41,12 +41,31 @@
 		"title" : "Launchpad Mini",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 1114.0, 272.0, 272.0, 22.0 ],
+					"restore" : [ 0 ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr mapping_file_path @autorestore 1 @ dirty 1",
+					"varname" : "mapping_file_path"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-30",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 849.0, 275.0, 58.0, 22.0 ],
+					"patching_rect" : [ 730.0, 312.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -59,7 +78,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 848.0, 324.0, 82.0, 62.0 ],
+					"patching_rect" : [ 729.0, 361.0, 82.0, 62.0 ],
 					"text" : "window size 63 129 364 227, window exec"
 				}
 
@@ -71,7 +90,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 847.0, 192.0, 200.0, 22.0 ],
+					"patching_rect" : [ 728.0, 229.0, 200.0, 22.0 ],
 					"text" : "loadmess set #1"
 				}
 
@@ -83,7 +102,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 847.0, 234.0, 167.0, 22.0 ],
+					"patching_rect" : [ 728.0, 271.0, 167.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 77.0, 7.0, 210.0, 22.0 ],
 					"text" : "Launchpad Mini",
@@ -98,7 +117,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1025.0, 235.0, 78.0, 20.0 ],
+					"patching_rect" : [ 906.0, 272.0, 78.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 5.0, 38.0, 66.0, 20.0 ],
 					"text" : "MAPPING",
@@ -114,7 +133,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 943.0, 276.0, 160.0, 35.0 ],
+					"patching_rect" : [ 824.0, 313.0, 160.0, 35.0 ],
 					"text" : "loadmess title #1"
 				}
 
@@ -126,7 +145,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 943.0, 406.0, 67.0, 22.0 ],
+					"patching_rect" : [ 824.0, 443.0, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -172,12 +191,12 @@
 				"box" : 				{
 					"comment" : "(sym) mapping file name to sisplay",
 					"id" : "obj-78",
-					"index" : 3,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 847.0, 23.0, 30.0, 30.0 ],
+					"patching_rect" : [ 807.0, 23.0, 30.0, 30.0 ],
 					"varname" : "mapping"
 				}
 
@@ -1303,7 +1322,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 847.0, 102.0, 56.0, 22.0 ],
+					"patching_rect" : [ 807.0, 102.0, 56.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1318,13 +1337,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-14",
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 847.0, 140.0, 138.0, 22.0 ],
+					"patching_rect" : [ 1024.0, 112.0, 480.0, 49.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 63.0, 282.0, 22.0 ]
+					"presentation_linecount" : 4,
+					"presentation_rect" : [ 5.0, 63.0, 282.0, 62.0 ],
+					"text" : "\"Macintosh HD:/Users/danielbrown/Documents/Max 8/Projects/djazz/djazz_user/mappings/Launchpad Mini/marc_chemillier_mapping_lp_mini.json\""
 				}
 
 			}
@@ -1382,12 +1404,12 @@
 				"box" : 				{
 					"comment" : "0/1 if mapping is dirty or saved",
 					"id" : "obj-2",
-					"index" : 2,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 798.0, 23.0, 30.0, 30.0 ]
+					"patching_rect" : [ 960.0, 23.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -1536,7 +1558,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-64", 1 ],
-					"midpoints" : [ 807.5, 192.0, 475.5, 192.0 ],
+					"midpoints" : [ 969.5, 192.0, 475.5, 192.0 ],
 					"order" : 1,
 					"source" : [ "obj-2", 0 ]
 				}
@@ -1545,7 +1567,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-76", 1 ],
-					"midpoints" : [ 807.5, 192.0, 641.5, 192.0 ],
+					"midpoints" : [ 969.5, 192.0, 641.5, 192.0 ],
 					"order" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
@@ -1554,7 +1576,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-77", 1 ],
-					"midpoints" : [ 807.5, 192.0, 293.5, 192.0 ],
+					"midpoints" : [ 969.5, 192.0, 293.5, 192.0 ],
 					"order" : 2,
 					"source" : [ "obj-2", 0 ]
 				}
@@ -1597,7 +1619,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"order" : 0,
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
+					"order" : 1,
 					"source" : [ "obj-35", 0 ]
 				}
 

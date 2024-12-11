@@ -14,9 +14,11 @@ var view_db_            = require (view_db_file_);
 var mapping_db_         = require (mapping_db_file_);
 
 var BRIGHT  = "bright";
-var STATIC  = "static";
+var CC      = "cc"
 var NONE    = "none";
+var NOTE    = "note";
 var NO_FILE = "NONE";
+var STATIC  = "static";
 
 // ------------------------------------------------------------------------------
 
@@ -105,9 +107,22 @@ function remove_parameter(param)
 
 function refresh()
 {
+    // CLEAR CTRL & VIEW DICTS
     ctrl_db_.clear();
     view_db_.clear();
 
+    // CLEAR LEDS
+    var [velocity, channel] = color_code_(NONE).split(" ");
+    for (var i = 0; i < device_db_.cc_count(); i++)
+    {
+        outlet (1, [CC,i, velocity, channel].join(" "));        
+    }
+    for (var i = 0; i < device_db_.midi_count(); i++)
+        {
+            outlet (1, [NOTE, i, velocity, channel].join(" "));        
+        }
+
+    // RELOAD CTRL & VIEW DICTS
     view_db_.set_chapter_cell_count (grid_db_.chapter_count());
     view_db_.set_bar_cell_count     (grid_db_.bar_count());
 
@@ -125,8 +140,10 @@ function refresh()
                 }
             )
         }
-    )
-    outlet (0, view_db_.get_dict(), ctrl_db_.get_dict());
+    )   
+
+    // REILLUMINATE ALL LEDS
+    outlet (0, "refresh");
 }
 
 // LOCAL -----------------------------------------------------
@@ -190,7 +207,6 @@ function color_code_(color_data_string)
       return color_to_midi_callback_(color_code, behavior_code).join(" ");
 }
 color_code_.local = 1;
-
 
 
 function post_error_file_load_(file_path)

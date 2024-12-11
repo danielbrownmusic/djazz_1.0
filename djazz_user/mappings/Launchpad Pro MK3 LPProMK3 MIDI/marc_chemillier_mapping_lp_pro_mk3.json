@@ -1,0 +1,18 @@
+{
+	"device" : "Launchpad Mini",
+	"parameters" : 	{
+		"global_solo_effects_speed_1/2" : "midi 41 yellow",
+		"global_solo_effects_speed_3/2" : "midi 31 yellow",
+		"global_solo_effects_speed_2" : "midi 21 yellow",
+		"global_solo_effects_speed_4" : "midi 11 yellow",
+		"global_solo_effects_loop_1" : "midi 48 yellow",
+		"global_solo_effects_loop_2" : "midi 38 yellow",
+		"global_solo_effects_loop_3" : "midi 28 yellow",
+		"global_solo_effects_loop_4" : "midi 18 yellow",
+		"global_solo_effects_loop_5" : "midi 47 yellow",
+		"global_solo_effects_loop_6" : "midi 37 yellow",
+		"global_solo_effects_loop_7" : "midi 27 yellow",
+		"global_solo_effects_loop_8" : "midi 17 yellow"
+	}
+
+}
