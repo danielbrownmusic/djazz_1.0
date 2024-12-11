@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 50.0, 110.0, 1464.0, 919.0 ],
+		"rect" : [ 50.0, 110.0, 720.0, 536.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -2075,7 +2075,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-23",
-					"items" : [ "AU DLS Synth 1", ",", "Launchpad Pro MK3 LPProMK3 MIDI", ",", "Launchpad Pro MK3 LPProMK3 DIN", ",", "Launchpad Pro MK3 LPProMK3 DAW", ",", "Launchpad Mini", ",", "from Max 1", ",", "from Max 2" ],
+					"items" : [ "AU DLS Synth 1", ",", "Logic Pro Virtual In", ",", "from Max 1", ",", "from Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2719,7 +2719,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "NONE" ],
+					"outlettype" : [ "", "int" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -2759,7 +2759,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -3032,7 +3031,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-4",
@@ -3294,9 +3292,9 @@
 								"box" : 								{
 									"id" : "obj-30",
 									"maxclass" : "newobj",
-									"numinlets" : 3,
+									"numinlets" : 4,
 									"numoutlets" : 2,
-									"outlettype" : [ "", "NONE" ],
+									"outlettype" : [ "", "int" ],
 									"patching_rect" : [ 38.0, 198.0, 243.0, 22.0 ],
 									"text" : "djazz_launchpad_mini_interface_view",
 									"varname" : "djazz_launchpad_mini_interface_view"
@@ -3309,8 +3307,8 @@
 									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 3,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "int", "" ],
 									"patching_rect" : [ 363.0, 198.0, 223.0, 35.0 ],
 									"text" : "djazz_launchpad_interface_view \"Launchpad Pro MK3 LPProMK3 MIDI\"",
 									"varname" : "djazz_launchpad_mini_interface_view[1]"
@@ -3323,10 +3321,11 @@
 									"id" : "obj-6",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 363.0, 251.0, 152.0, 22.0 ],
-									"text" : "djazz_launchpad_pro_mk3"
+									"text" : "djazz_launchpad_pro_mk3",
+									"varname" : "djazz_launchpad_pro_mk3"
 								}
 
 							}
@@ -3422,7 +3421,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-30", 2 ],
-									"midpoints" : [ 47.5, 284.837916671404855, 304.479968221981949, 284.837916671404855, 304.479968221981949, 179.837916671404855, 271.5, 179.837916671404855 ],
+									"midpoints" : [ 47.5, 284.837916671404855, 304.479968221981949, 284.837916671404855, 304.479968221981949, 179.837916671404855, 196.833333333333343, 179.837916671404855 ],
 									"order" : 0,
 									"source" : [ "obj-10", 0 ]
 								}
@@ -3464,7 +3463,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-30", 1 ],
-									"midpoints" : [ 474.5, 139.0, 159.5, 139.0 ],
+									"midpoints" : [ 474.5, 139.0, 122.166666666666671, 139.0 ],
 									"order" : 1,
 									"source" : [ "obj-21", 0 ]
 								}
@@ -3712,7 +3711,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-9",
-					"items" : [ ",", "Launchpad Pro MK3", ",", "Launchpad Mini" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -9082,7 +9081,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-13",
-					"items" : [ "Launchpad Pro MK3 LPProMK3 MIDI", ",", "Launchpad Pro MK3 LPProMK3 DIN", ",", "Launchpad Pro MK3 LPProMK3 DAW", ",", "Launchpad Mini", ",", "to Max 1", ",", "to Max 2" ],
+					"items" : [ "Logic Pro Virtual Out", ",", "to Max 1", ",", "to Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -11003,37 +11002,30 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "djazz_launchpad_dict_reader_device_mini.js",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/device_code/launchpad/Launchpad Mini code",
-				"patcherrelativepath" : "./code/device_code/launchpad/Launchpad Mini code",
+				"name" : "djazz_launchpad.js",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/device_code/launchpad",
+				"patcherrelativepath" : "./code/device_code/launchpad",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "djazz_launchpad_dict_reader_map.js",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/device_code/launchpad/Launchpad Mini code",
-				"patcherrelativepath" : "./code/device_code/launchpad/Launchpad Mini code",
+				"name" : "djazz_launchpad_control.js",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/device_code/launchpad/launchpad_control",
+				"patcherrelativepath" : "./code/device_code/launchpad/launchpad_control",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "djazz_launchpad_dict_writer_ctrl.js",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/device_code/launchpad/Launchpad Mini code",
-				"patcherrelativepath" : "./code/device_code/launchpad/Launchpad Mini code",
+				"name" : "djazz_launchpad_device.js",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/device_code/launchpad/launchpad_device",
+				"patcherrelativepath" : "./code/device_code/launchpad/launchpad_device",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "djazz_launchpad_dict_writer_map.js",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/device_code/launchpad/Launchpad Mini code",
-				"patcherrelativepath" : "./code/device_code/launchpad/Launchpad Mini code",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_launchpad_dict_writer_view.js",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/device_code/launchpad/Launchpad Mini code",
-				"patcherrelativepath" : "./code/device_code/launchpad/Launchpad Mini code",
+				"name" : "djazz_launchpad_grid.js",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/device_code/launchpad/launchpad_grid",
+				"patcherrelativepath" : "./code/device_code/launchpad/launchpad_grid",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -11045,16 +11037,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "djazz_launchpad_make_mapping.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/devices",
-				"patcherrelativepath" : "./patchers/devices",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "djazz_launchpad_mapping.js",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/device_code/launchpad/Launchpad Mini code",
-				"patcherrelativepath" : "./code/device_code/launchpad/Launchpad Mini code",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/device_code/launchpad/launchpad_mapping",
+				"patcherrelativepath" : "./code/device_code/launchpad/launchpad_mapping",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -11080,17 +11065,17 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "djazz_launchpad_mini_make_mapping.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/devices",
-				"patcherrelativepath" : "./patchers/devices",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "djazz_launchpad_pro_mk3.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/djazz/patchers/devices/Launchpad Pro MK3 LPProMK3 MIDI",
 				"patcherrelativepath" : "./patchers/devices/Launchpad Pro MK3 LPProMK3 MIDI",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "djazz_launchpad_view.js",
+				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/device_code/launchpad/launchpad_view",
+				"patcherrelativepath" : "./code/device_code/launchpad/launchpad_view",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -11123,13 +11108,6 @@
 			}
 , 			{
 				"name" : "djazz_parameter_handler.js",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/parameters",
-				"patcherrelativepath" : "./code/parameters",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz_parameter_info_provider.js",
 				"bootpath" : "~/Documents/Max 8/Projects/djazz/code/parameters",
 				"patcherrelativepath" : "./code/parameters",
 				"type" : "TEXT",
