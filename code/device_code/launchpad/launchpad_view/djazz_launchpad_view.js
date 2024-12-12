@@ -23,7 +23,7 @@ var BAR_CELL_COUNT      = "bar_cell_count";
 var CC_COUNT            = "cc_count";
 var CHAPTER_CELL_COUNT  = "chapter_cell_count";
 var MIDI_COUNT          = "midi_count";
-
+var GRID_PARAMS_        = ['bar', 'chapter'];
 var d_ = new Dict ();
 
 
@@ -47,15 +47,67 @@ exports.get_dict = function()
 exports.add_parameter = function(
     param, 
     state, 
-    cell_type, 
-    cell_value, 
+    msg_type, 
+    msg_value, 
     color_code
 )
 {
+    // var g = find_grid_param_in_param_name_(param);
+    // var f = g ? add_grid_parameter_ : add_mapping_parameter_;
+    // f(param, state, msg_type, msg_value, color_code);
+
     var key = to_symbol_(param, state);
-    var val = to_symbol_(cell_type, cell_value, color_code); 
+    var val = to_symbol_(msg_type, msg_value, color_code); 
     d_.set(key, val);
 }
+
+// function find_grid_param_in_param_name_(param)
+// {
+//     var a = param.split(" ");
+//     if (a.length > 1)
+//     {
+//         var k = GRID_PARAMS_.indexOf(a[0]);
+//         if (k > -1)
+//         {
+//             return GRID_PARAMS_[k];
+//         }
+//     }
+//     return null;
+// }
+// find_grid_param_in_param_name_.local = 1;
+
+
+
+// function add_grid_parameter_(param, state, msg_type, msg_value, color_code)
+// {
+//     function make_grid_parameter_name_(param)
+//     {
+//         return ["grid_", param,].join("");
+//     }
+//     var [grid_param, i] = param.split(" ");
+//     var key = to_symbol_(make_grid_parameter_name_(grid_param), i, state);
+//     var val = to_symbol_(msg_type, msg_value, color_code); 
+//     //var val = to_symbol_(make_grid_parameter_name_(grid_param), i);
+//     d_.set(key, val);
+// }
+// add_grid_parameter_.local = 1;
+
+
+
+// function add_mapping_parameter_(param, state, msg_type, msg_value, color_code)
+// {
+//     var key = to_symbol_(param, state);
+//     var val = to_symbol_(msg_type, msg_value, color_code);
+//     d_.set(key, val);
+// }
+// add_mapping_parameter_.local = 1;
+
+
+
+
+
+//make_grid_parameter_name_.local = 1;
+
 
 exports.clear = function()
 {

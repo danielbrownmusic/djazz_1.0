@@ -47,6 +47,7 @@ function init_and_connect
         mapping_dict_name
     );
     connect();
+    refresh();
 }
 
 
@@ -55,16 +56,17 @@ function connect()
     var connect_code = device_db_.connect_code();
     if (connect_code)
     {
-        outlet(1, connect_code);
+        var connect_msg = "midi" + connect_code;
+        post (connect_msg);
+        outlet(1, connect_msg);
     }
-    refresh();
 }
 
 
 function disconnect()
 {
     clear_all_leds_();
-    var disconnect_code = device_db_.connect_code();
+    var disconnect_code = device_db_.disconnect_code();
     if (disconnect_code)
     {
         outlet(1, disconnect_code);

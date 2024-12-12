@@ -35,6 +35,7 @@ exports.get_dict = function()
 
 exports.add_parameter = function(param_cmd, param, msg_type, msg_value)
 {
+    //add_mapping_parameter_(param_cmd, param, msg_type, msg_value);
     var g = find_grid_param_in_param_name_(param);
     var f = g ? add_grid_parameter_ : add_mapping_parameter_;
     f(param_cmd, param, msg_type, msg_value);
@@ -76,7 +77,7 @@ function add_grid_parameter_(param_command, param, msg_type, msg_value)
     var [grid_param, i] = param.split(" ");
     var key = to_symbol_(msg_type, msg_value); 
     var val = to_symbol_(param_command, make_grid_parameter_name_(grid_param), i);
-    //var val = to_symbol_("set_param", make_grid_param_name_(grid_param), i);
+    var val = to_symbol_(param_command, make_grid_parameter_name_(grid_param), i);
     d_.set(key, val);
 }
 add_grid_parameter_.local = 1;

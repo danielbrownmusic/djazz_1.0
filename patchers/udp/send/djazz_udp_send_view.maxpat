@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 864.0, 346.0, 640.0, 480.0 ],
+		"rect" : [ 857.0, 145.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -70,7 +70,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 24.0, 13.0, 79.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 1.0, 74.0, 20.0 ],
+					"presentation_rect" : [ 4.0, 2.0, 74.0, 20.0 ],
 					"text" : "UDP SEND",
 					"textcolor" : [ 1.0, 0.980392156862745, 0.980392156862745, 1.0 ]
 				}
@@ -84,7 +84,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 341.0, 6.0, 29.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 69.0, 17.0, 42.0, 20.0 ],
+					"presentation_rect" : [ 73.0, 18.0, 42.0, 20.0 ],
 					"text" : "port",
 					"textcolor" : [ 1.0, 0.980392156862745, 0.980392156862745, 1.0 ]
 				}
@@ -98,7 +98,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 140.0, 13.0, 45.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 17.0, 42.0, 20.0 ],
+					"presentation_rect" : [ 4.0, 18.0, 42.0, 20.0 ],
 					"text" : "host",
 					"textcolor" : [ 1.0, 0.980392156862745, 0.980392156862745, 1.0 ]
 				}
@@ -215,7 +215,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 360.0, 108.0, 70.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 69.0, 36.0, 38.0, 22.0 ],
+					"presentation_rect" : [ 73.0, 37.0, 38.0, 22.0 ],
 					"tabmode" : 0,
 					"text" : "7405",
 					"varname" : "textedit[1]",
@@ -236,7 +236,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 160.0, 108.0, 139.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 36.0, 65.0, 22.0 ],
+					"presentation_rect" : [ 4.0, 37.0, 65.0, 22.0 ],
 					"tabmode" : 0,
 					"text" : "127.0.0.1",
 					"varname" : "textedit",

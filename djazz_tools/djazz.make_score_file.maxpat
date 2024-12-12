@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 51.0, 115.0, 1583.0, 968.0 ],
+		"rect" : [ 51.0, 115.0, 1590.0, 916.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -21,7 +21,7 @@
 		"gridsnaponopen" : 1,
 		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
+		"toolbarvisible" : 0,
 		"lefttoolbarpinned" : 0,
 		"toptoolbarpinned" : 0,
 		"righttoolbarpinned" : 0,
@@ -38,7 +38,32 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
+		"title" : "MAKE DJAZZ SCORE FILE",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 923.0, 37.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 923.0, 83.0, 188.0, 22.0 ],
+					"text" : "title \"MAKE DJAZZ SCORE FILE\""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-38",
 					"maxclass" : "newobj",
@@ -259,7 +284,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1129.0, 82.0, 209.0, 22.0 ],
+					"patching_rect" : [ 1168.0, 252.0, 209.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -278,7 +303,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1129.0, 36.0, 58.0, 22.0 ],
+					"patching_rect" : [ 1168.0, 206.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -316,7 +341,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1129.0, 149.0, 170.0, 22.0 ],
+					"patching_rect" : [ 1168.0, 319.0, 170.0, 22.0 ],
 					"text" : "pv #0_TEMP_FOLDER_PATH"
 				}
 
@@ -328,7 +353,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1319.0, 149.0, 202.0, 22.0 ],
+					"patching_rect" : [ 1358.0, 319.0, 202.0, 22.0 ],
 					"text" : "pv #0_MIDIFILE_EXTERNAL_PATH"
 				}
 
@@ -7782,7 +7807,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 923.0, 36.0, 58.0, 22.0 ],
+					"patching_rect" : [ 1165.0, 37.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -7795,7 +7820,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 923.0, 82.0, 166.0, 35.0 ],
+					"patching_rect" : [ 1165.0, 83.0, 166.0, 35.0 ],
 					"text" : "window size 51 115 638 566, window exec"
 				}
 
@@ -8120,26 +8145,32 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-77",
+					"linecount" : 14,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 479.0, 326.0, 57.0, 22.0 ],
+					"patching_rect" : [ 479.0, 326.0, 57.0, 196.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 160.0, 157.0, 410.0, 22.0 ]
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 160.0, 157.0, 414.0, 35.0 ],
+					"text" : "\"Macintosh HD:/Users/danielbrown/Desktop/yohann_midi_import_tests/Test Djazz copie click.mid\""
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-76",
+					"linecount" : 15,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 130.0, 326.0, 50.0, 22.0 ],
+					"patching_rect" : [ 130.0, 326.0, 50.0, 210.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 161.0, 44.0, 410.0, 22.0 ]
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 161.0, 44.0, 410.0, 49.0 ],
+					"text" : "\"Macintosh HD:/Users/danielbrown/Desktop/yohann_midi_import_tests/YohannsSong/YohannsSong.json\""
 				}
 
 			}
@@ -9034,7 +9065,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 38.0, 109.0, 77.799999117851257, 20.0 ],
+					"patching_rect" : [ 38.0, 105.0, 77.799999117851257, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 17.0, 23.0, 77.799999117851257, 20.0 ],
 					"text" : "SONG FILE",
@@ -9285,6 +9316,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-102", 0 ],
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-227", 0 ],
 					"order" : 1,
 					"source" : [ "obj-132", 0 ]
@@ -9297,6 +9335,13 @@
 					"midpoints" : [ 447.5, 179.762500010430813, 816.5, 179.762500010430813 ],
 					"order" : 0,
 					"source" : [ "obj-132", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-15", 0 ]
 				}
 
 			}
