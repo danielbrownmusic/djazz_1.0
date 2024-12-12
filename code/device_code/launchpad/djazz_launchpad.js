@@ -23,6 +23,55 @@ var STATIC  = "static";
 // ------------------------------------------------------------------------------
 
 
+function init_and_connect
+(
+    device_file_path,
+    grid_file_path,
+    mapping_file_path,
+    device_dict_name, 
+    grid_dict_name, 
+    ctrl_dict_name, 
+    view_dict_name, 
+    mapping_dict_name
+)
+{
+    init
+    (
+        device_file_path,
+        grid_file_path,
+        mapping_file_path,
+        device_dict_name, 
+        grid_dict_name, 
+        ctrl_dict_name, 
+        view_dict_name, 
+        mapping_dict_name
+    );
+    connect();
+}
+
+
+function connect()
+{
+    var connect_code = device_db_.connect_code();
+    if (connect_code)
+    {
+        outlet(1, connect_code);
+    }
+    refresh();
+}
+
+
+function disconnect()
+{
+    clear_all_leds_();
+    var disconnect_code = device_db_.connect_code();
+    if (disconnect_code)
+    {
+        outlet(1, disconnect_code);
+    }   
+}
+
+
 function init
 (
     device_file_path,
@@ -105,6 +154,8 @@ function remove_parameter(param)
 }
 
 
+
+
 function refresh()
 {
     // CLEAR CTRL & VIEW DICTS
@@ -112,15 +163,7 @@ function refresh()
     view_db_.clear();
 
     // CLEAR LEDS
-    var [velocity, channel] = color_code_(NONE).split(" ");
-    for (var i = 0; i < device_db_.cc_count(); i++)
-    {
-        outlet (1, [CC,i, velocity, channel].join(" "));        
-    }
-    for (var i = 0; i < device_db_.midi_count(); i++)
-        {
-            outlet (1, [NOTE, i, velocity, channel].join(" "));        
-        }
+    clear_all_leds_();
 
     // RELOAD CTRL & VIEW DICTS
     view_db_.set_chapter_cell_count (grid_db_.chapter_count());
@@ -216,7 +259,19 @@ function post_error_file_load_(file_path)
 post_error_file_load_.local = 1
 
 
-
+function clear_all_leds_()
+{
+    var [velocity, channel] = color_code_(NONE).split(" ");
+    for (var i = 0; i < device_db_.cc_count(); i++)
+    {
+        outlet (1, [CC,i, velocity, channel].join(" "));        
+    }
+    for (var i = 0; i < device_db_.midi_count(); i++)
+        {
+            outlet (1, [NOTE, i, velocity, channel].join(" "));        
+        }
+}
+clear_all_leds_.local = 1;
 
 
 

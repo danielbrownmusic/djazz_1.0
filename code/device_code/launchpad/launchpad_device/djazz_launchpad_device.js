@@ -6,14 +6,31 @@ var COLORS                      = "colors";
 var COLOR_CALLBACK              = "color_callback";
 var COLOR_CALLBACK_ARGUMENTS    = "arguments";
 var COLOR_CALLBACK_BODY         = "body";
+var CONNECT                     = "connect";
+var DISCONNECT                  = "disconnect";
 var MIDI_COUNT                  = "midi_count";
 var NAME                        = "name";
+var SYSEX                       = "sysex";
+
 
 var d_ = new Dict();
 
 
 // READ -----------------------------------------------------------
 
+
+exports.connect_code = function()
+{
+    var key = to_key_(SYSEX, CONNECT);
+    return d_.contains(key) ? d_.get(key) : "";
+}
+
+
+exports.disconnect_code = function()
+{
+    var key = to_key_(SYSEX, DISCONNECT)
+    return d_.contains(key) ? d_.get(key) : "";
+}
 
 exports.behavior_code = function(behavior)
 {
