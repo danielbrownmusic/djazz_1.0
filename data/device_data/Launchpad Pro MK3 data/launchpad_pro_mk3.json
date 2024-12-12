@@ -55,9 +55,9 @@
         }
         ,
         "brown" : {
-            "dim"       : 38
+            "dim"       : 100
             ,
-            "bright"    : 35
+            "bright"    : 11
         }
 	}
     ,

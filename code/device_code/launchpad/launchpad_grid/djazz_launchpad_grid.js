@@ -31,9 +31,9 @@ var CELLS               = "cells"
 var CHAPTER             = "chapter"
 var COLORS              = "colors"
 var GRID                = "grid"
-var SET_PARAM           = "set_param"
+//var SET_PARAM           = "set_param"
 
-var PARAM_COMMAND       = SET_PARAM
+//var PARAM_COMMAND       = SET_PARAM
 var PARAMETER_TYPES_    = [BAR, CHAPTER];
 
 var d_                  = new Dict();

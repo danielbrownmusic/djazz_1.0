@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 100.0, 1627.0, 673.0 ],
+		"rect" : [ 34.0, 100.0, 1181.0, 673.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -632,7 +632,7 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "#1_reset_pitch",
+							"parameter_longname" : "audio_1_reset_pitch",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "textbutton",
@@ -672,7 +672,7 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "#1_pitch_down",
+							"parameter_longname" : "audio_1_pitch_down",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "textbutton",
@@ -712,7 +712,7 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "#1_pitch_up",
+							"parameter_longname" : "audio_1_pitch_up",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "textbutton",
@@ -1346,7 +1346,7 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "#1_pitch",
+							"parameter_longname" : "audio_1_pitch",
 							"parameter_mmin" : -127.0,
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "score_1_transpose_pitch",
@@ -1882,7 +1882,7 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "#1_reset_octave",
+							"parameter_longname" : "audio_1_reset_octave",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "score_1_reset_octave",
@@ -1922,7 +1922,7 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "#1_octave_down",
+							"parameter_longname" : "audio_1_octave_down",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "score_1_octave_down",
@@ -1962,7 +1962,7 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "#1_octave_up",
+							"parameter_longname" : "audio_1_octave_up",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "score_1_octave_up",
@@ -2012,7 +2012,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "#1_octave",
+							"parameter_longname" : "audio_1_octave",
 							"parameter_mmin" : -127.0,
 							"parameter_modmode" : 4,
 							"parameter_shortname" : "score_1_octave",
@@ -2187,7 +2187,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-168",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -2210,7 +2210,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "" ],
+					"outlettype" : [ "NONE", "" ],
 					"patching_rect" : [ 1182.347157683378327, 676.0, 621.130089633243642, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 841.15512565217432, 0.0, 655.0, 23.0 ],
@@ -3260,7 +3260,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "#1_max_continuity",
+							"parameter_longname" : "audio_1_max_continuity",
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "score_1_max_continuity",
 							"parameter_type" : 3
@@ -5012,7 +5012,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-31",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -5615,7 +5615,7 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "#1_loop_8",
+							"parameter_longname" : "audio_1_loop_8",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "score_1_loop_8",
@@ -5652,7 +5652,7 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "#1_loop_7",
+							"parameter_longname" : "audio_1_loop_7",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "score_1_loop_7",
@@ -5689,7 +5689,7 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "#1_loop_6",
+							"parameter_longname" : "audio_1_loop_6",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "score_1_loop_6",
@@ -5726,7 +5726,7 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "#1_loop_5",
+							"parameter_longname" : "audio_1_loop_5",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "score_1_loop_5",
@@ -5763,7 +5763,7 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "#1_loop_4",
+							"parameter_longname" : "audio_1_loop_4",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "score_1_loop_4",
@@ -5800,7 +5800,7 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "#1_loop_3",
+							"parameter_longname" : "audio_1_loop_3",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "score_1_loop_3",
@@ -5837,7 +5837,7 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "#1_loop_2",
+							"parameter_longname" : "audio_1_loop_2",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "score_1_loop_2",
@@ -5874,7 +5874,7 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "#1_loop_1",
+							"parameter_longname" : "audio_1_loop_1",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "score_1_loop_1",
@@ -5911,7 +5911,7 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "#1_speed_4",
+							"parameter_longname" : "audio_1_speed_4",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "score_1_speed_4",
@@ -5948,7 +5948,7 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "#1_speed_3/2",
+							"parameter_longname" : "audio_1_speed_3/2",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "score_1_speed_3/2",
@@ -5985,7 +5985,7 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "#1_speed_1/2",
+							"parameter_longname" : "audio_1_speed_1/2",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "score_1_speed_1/2",
@@ -6022,7 +6022,7 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "#1_speed_2",
+							"parameter_longname" : "audio_1_speed_2",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "score_1_speed_2",
@@ -6058,7 +6058,7 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "#1_improvise",
+							"parameter_longname" : "audio_1_improvise",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "score_1_improvise",
@@ -6120,7 +6120,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "#1_pitch_range",
+							"parameter_longname" : "audio_1_pitch_range",
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "score_1_pitch_range",
 							"parameter_type" : 3
@@ -6617,7 +6617,9 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-205", 2 ],
-					"source" : [ "obj-151", 0 ]
+					"source" : [ "obj-151", 0 ],
+					"watchpoint_flags" : 5,
+					"watchpoint_id" : 1
 				}
 
 			}
@@ -7375,128 +7377,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-14" : [ "#1_speed_2", "score_1_speed_2", 0 ],
-			"obj-144" : [ "#1_octave", "score_1_octave", 0 ],
-			"obj-149" : [ "#1_reset_pitch", "textbutton", 0 ],
-			"obj-15" : [ "#1_speed_1/2", "score_1_speed_1/2", 0 ],
-			"obj-150" : [ "#1_pitch_down", "textbutton", 0 ],
-			"obj-151" : [ "#1_pitch_up", "textbutton", 0 ],
-			"obj-17" : [ "#1_speed_3/2", "score_1_speed_3/2", 0 ],
-			"obj-188" : [ "#1_max_continuity", "score_1_max_continuity", 0 ],
-			"obj-19" : [ "#1_speed_4", "score_1_speed_4", 0 ],
-			"obj-20" : [ "#1_loop_1", "score_1_loop_1", 0 ],
-			"obj-22" : [ "#1_pitch", "score_1_transpose_pitch", 0 ],
-			"obj-27" : [ "#1_loop_2", "score_1_loop_2", 0 ],
-			"obj-28" : [ "#1_loop_3", "score_1_loop_3", 0 ],
-			"obj-29" : [ "#1_loop_4", "score_1_loop_4", 0 ],
-			"obj-30" : [ "#1_loop_5", "score_1_loop_5", 0 ],
-			"obj-36" : [ "#1_loop_6", "score_1_loop_6", 0 ],
-			"obj-37" : [ "#1_loop_7", "score_1_loop_7", 0 ],
-			"obj-39" : [ "#1_loop_8", "score_1_loop_8", 0 ],
-			"obj-40" : [ "#1_octave_up", "score_1_octave_up", 0 ],
-			"obj-47" : [ "#1_octave_down", "score_1_octave_down", 0 ],
-			"obj-58" : [ "#1_improvise", "score_1_improvise", 0 ],
-			"obj-64" : [ "#1_reset_octave", "score_1_reset_octave", 0 ],
-			"obj-71" : [ "#1_pitch_range", "score_1_pitch_range", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "15838-200.png",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_with_data/media",
-				"patcherrelativepath" : "../../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "2448971-200.png",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_with_data/media",
-				"patcherrelativepath" : "../../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "2650315-200.png",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_with_data/media",
-				"patcherrelativepath" : "../../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "45570-200.png",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_with_data/media",
-				"patcherrelativepath" : "../../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "5057-200.png",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_with_data/media",
-				"patcherrelativepath" : "../../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "55162.png",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_with_data/media",
-				"patcherrelativepath" : "../../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz.view.beat_clock.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_with_data/patchers/view",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz.view.select_track_file.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_with_data/patchers/song file io",
-				"patcherrelativepath" : "../song file io",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz.view.track_information.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_with_data/patchers/view",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz.view.track_view_selector.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_with_data/patchers/view",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "djazz.view.track_view_selector_views.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_with_data/patchers/view",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "song_folder.png",
-				"bootpath" : "~/Documents/Max 8/Projects/djazz_with_data/media",
-				"patcherrelativepath" : "../../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"editing_bgcolor" : [ 0.792156862745098, 0.792156862745098, 0.792156862745098, 1.0 ]
 	}
 

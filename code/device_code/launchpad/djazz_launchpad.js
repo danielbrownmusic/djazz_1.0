@@ -56,7 +56,7 @@ function connect()
     var connect_code = device_db_.connect_code();
     if (connect_code)
     {
-        var connect_msg = "midi" + connect_code;
+        var connect_msg = "midi " + connect_code;
         post (connect_msg);
         outlet(1, connect_msg);
     }
@@ -69,7 +69,10 @@ function disconnect()
     var disconnect_code = device_db_.disconnect_code();
     if (disconnect_code)
     {
-        outlet(1, disconnect_code);
+        var disconnect_msg = "midi " + disconnect_code;
+        post (disconnect_msg);
+        outlet(1, disconnect_msg);
+        outlet(1, "port none");
     }   
 }
 
@@ -149,7 +152,10 @@ function add_parameter(param, message_type, message_value, hue)
 function remove_parameter(param)
 {
     if (!mapping_db_.contains(param))
+    {
+        post (param, "is not in mapping dict.\n");
         return;
+    }
     //remove_parameter_from_control_and_view_(mapping_db_, param);
     mapping_db_.remove_parameter(param);
     refresh();
@@ -179,8 +185,8 @@ function refresh()
                 function (param)
                 {
                     var [msg_type, msg_value] = param_db.message(param).split(" ");
-                    var param_cmd = param_db.command(param);
-                    ctrl_db_.add_parameter(param_cmd, param, msg_type, msg_value);
+                    //var param_cmd = param_db.command(param);
+                    ctrl_db_.add_parameter(/* param_cmd,  */param, msg_type, msg_value);
                     add_parameter_to_view_(param_db, param, msg_type, msg_value);
                 }
             )

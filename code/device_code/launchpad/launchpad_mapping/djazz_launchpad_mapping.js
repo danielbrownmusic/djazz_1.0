@@ -27,9 +27,9 @@ var DIM             = "dim";
 var BRIGHT          = "bright";
 var STATIC          = "static";
 var PARAM_STATES_   = [0, 1];
-var TOGGLE_PARAM    = "toggle_param"
+//var TOGGLE_PARAM    = "toggle_param"
 
-var PARAM_COMMAND   = TOGGLE_PARAM;
+//var PARAM_COMMAND   = TOGGLE_PARAM;
 
 var d_              = new Dict();
 
@@ -112,7 +112,8 @@ exports.import_json = function(file_path)
 
 exports.remove_parameter = function (param)
 {
-    d_.get(PARAMETERS).remove(param);
+    post ("removing", param,"\n");
+    d_.remove(to_key_(PARAMETERS, param));
 }
 
 

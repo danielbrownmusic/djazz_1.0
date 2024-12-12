@@ -23,7 +23,7 @@ var BAR_CELL_COUNT      = "bar_cell_count";
 var CC_COUNT            = "cc_count";
 var CHAPTER_CELL_COUNT  = "chapter_cell_count";
 var MIDI_COUNT          = "midi_count";
-var GRID_PARAMS_        = ['bar', 'chapter'];
+//var GRID_PARAMS_        = ['bar', 'chapter'];
 var d_ = new Dict ();
 
 

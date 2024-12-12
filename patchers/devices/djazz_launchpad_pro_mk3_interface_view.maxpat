@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 890.0, 114.0, 371.0, 489.0 ],
+		"rect" : [ 763.0, 128.0, 528.0, 563.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -376,7 +376,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1115.0, 483.0, 268.0, 22.0 ],
-					"restore" : [ 0 ],
+					"restore" : [ "NONE" ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -565,7 +565,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-9",
-									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -619,7 +618,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "bang", "bang" ],
-									"patching_rect" : [ 66.0, 186.0, 122.0, 49.0 ],
+									"patching_rect" : [ 66.0, 186.0, 122.0, 35.0 ],
 									"text" : "dialog @mode 3 @label #1"
 								}
 
@@ -756,7 +755,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 183.0, 228.0, 1353.0, 774.0 ],
+						"rect" : [ 183.0, 228.0, 907.0, 774.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -800,7 +799,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-9",
-									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -854,7 +852,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "bang", "bang" ],
-									"patching_rect" : [ 66.0, 186.0, 122.0, 49.0 ],
+									"patching_rect" : [ 66.0, 186.0, 122.0, 35.0 ],
 									"text" : "dialog @mode 3 @label #1"
 								}
 
@@ -1044,7 +1042,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 183.0, 228.0, 596.0, 774.0 ],
+						"rect" : [ 182.0, 213.0, 596.0, 774.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1088,7 +1086,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-9",
-									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
