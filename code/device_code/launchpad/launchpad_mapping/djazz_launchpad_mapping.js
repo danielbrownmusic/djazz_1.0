@@ -46,10 +46,10 @@ exports.color = function(param, state)
 }
 
 
-exports.command = function (param)
-{
-    return PARAM_COMMAND;
-}
+// exports.command = function (param)
+// {
+//     return PARAM_COMMAND;
+// }
 
 
 exports.contains = function (param)
@@ -112,7 +112,7 @@ exports.import_json = function(file_path)
 
 exports.remove_parameter = function (param)
 {
-    post ("removing", param,"\n");
+    //post ("removing", param,"\n");
     d_.remove(to_key_(PARAMETERS, param));
 }
 

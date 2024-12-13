@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 395.0, 301.0, 771.0, 782.0 ],
+		"rect" : [ 51.0, 434.0, 642.0, 543.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -70,8 +70,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 7.0, 375.0, 51.0, 20.0 ],
 					"text" : "AUDIO",
-					"textcolor" : [ 1.0, 1.0, 1.0, 0.980392156862745 ],
-					"textjustification" : 0
+					"textcolor" : [ 1.0, 1.0, 1.0, 0.980392156862745 ]
 				}
 
 			}
@@ -148,7 +147,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 517.0, 408.0, 1034.0, 663.0 ],
+						"rect" : [ 517.0, 388.0, 1034.0, 663.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -176,7 +175,20 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 358.0, 474.0, 49.0, 22.0 ],
+									"text" : "mode 2"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-3",
 									"maxclass" : "newobj",
@@ -1364,6 +1376,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-7", 0 ],
 									"source" : [ "obj-3", 0 ]
 								}
@@ -1533,7 +1552,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-19",
-					"items" : "<empty>",
+					"items" : [ ",", "Launchpad Pro MK3", ",", "Launchpad Mini" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1557,8 +1576,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 473.0, 375.0, 109.0, 20.0 ],
 					"text" : "CONTROLLERS",
-					"textcolor" : [ 1.0, 1.0, 1.0, 0.980392156862745 ],
-					"textjustification" : 0
+					"textcolor" : [ 1.0, 1.0, 1.0, 0.980392156862745 ]
 				}
 
 			}
@@ -3612,7 +3630,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-23",
-					"items" : [ "AU DLS Synth 1", ",", "from Max 1", ",", "from Max 2", ",", "Logic Pro Virtual In" ],
+					"items" : [ "AU DLS Synth 1", ",", "Launchpad Pro MK3 LPProMK3 MIDI", ",", "Launchpad Pro MK3 LPProMK3 DIN", ",", "Launchpad Pro MK3 LPProMK3 DAW", ",", "Launchpad Mini", ",", "from Max 1", ",", "from Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3636,8 +3654,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 294.0, 375.0, 113.0, 20.0 ],
 					"text" : "MIDI INPUT",
-					"textcolor" : [ 1.0, 1.0, 1.0, 0.980392156862745 ],
-					"textjustification" : 0
+					"textcolor" : [ 1.0, 1.0, 1.0, 0.980392156862745 ]
 				}
 
 			}
@@ -9795,7 +9812,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-13",
-					"items" : [ "to Max 1", ",", "to Max 2", ",", "Logic Pro Virtual Out" ],
+					"items" : [ "Launchpad Pro MK3 LPProMK3 MIDI", ",", "Launchpad Pro MK3 LPProMK3 DIN", ",", "Launchpad Pro MK3 LPProMK3 DAW", ",", "Launchpad Mini", ",", "to Max 1", ",", "to Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -11028,6 +11045,15 @@
 			"parameter_overrides" : 			{
 				"obj-4::obj-2::obj-31" : 				{
 					"parameter_linknames" : 1
+				}
+,
+				"obj-65::obj-11::obj-47" : 				{
+					"parameter_defer" : 0,
+					"parameter_invisible" : 0,
+					"parameter_modmode" : 0,
+					"parameter_range" : [ 0, 1 ],
+					"parameter_type" : 1,
+					"parameter_unitstyle" : 0
 				}
 ,
 				"obj-65::obj-30::obj-14" : 				{

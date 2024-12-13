@@ -61,10 +61,10 @@ exports.color = function(param, state)
 }
 
 
-exports.command = function(param)
-{
-    return PARAM_COMMAND;
-}
+// exports.command = function(param)
+// {
+//     return PARAM_COMMAND;
+// }
 
 
 exports.message = function (param)

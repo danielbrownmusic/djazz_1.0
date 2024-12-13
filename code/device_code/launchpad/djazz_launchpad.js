@@ -57,7 +57,7 @@ function connect()
     if (connect_code)
     {
         var connect_msg = "midi " + connect_code;
-        post (connect_msg);
+        //post (connect_msg);
         outlet(1, connect_msg);
     }
 }
@@ -70,7 +70,7 @@ function disconnect()
     if (disconnect_code)
     {
         var disconnect_msg = "midi " + disconnect_code;
-        post (disconnect_msg);
+        //post (disconnect_msg);
         outlet(1, disconnect_msg);
         outlet(1, "port none");
     }   
@@ -123,7 +123,7 @@ function init
 
 function clear_mapping()
 {
-    post ("clearing mapping\n");
+    //post ("clearing mapping\n");
     mapping_db_.clear();
     refresh();
 }
@@ -153,7 +153,7 @@ function remove_parameter(param)
 {
     if (!mapping_db_.contains(param))
     {
-        post (param, "is not in mapping dict.\n");
+        //post (param, "is not in mapping dict.\n");
         return;
     }
     //remove_parameter_from_control_and_view_(mapping_db_, param);
@@ -238,7 +238,7 @@ function add_parameter_to_view_(param_db, param, msg_type, msg_value)
             view_db_.add_parameter(param, state, msg_type, msg_value, color_code);
         }
     )
-    var param_command = grid_db_.command(param);
+    //var param_command = grid_db_.command(param);
 }
 add_parameter_to_view_.local = 1;
 
