@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 51.0, 434.0, 642.0, 543.0 ],
+		"rect" : [ 50.0, 110.0, 932.0, 789.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -81,7 +81,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1266.0, 210.0, 58.0, 22.0 ],
+					"patching_rect" : [ 1262.0, 235.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -96,7 +96,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1217.0, 209.0, 38.0, 23.0 ],
+					"patching_rect" : [ 1213.0, 234.0, 38.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 600.0, 375.0, 25.0, 20.0 ],
 					"text" : "U",
@@ -111,7 +111,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1217.0, 255.0, 85.0, 22.0 ],
+					"patching_rect" : [ 1213.0, 280.0, 85.0, 22.0 ],
 					"text" : "disconnect_all",
 					"textjustification" : 1
 				}
@@ -124,7 +124,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1332.0, 210.0, 63.0, 22.0 ],
+					"patching_rect" : [ 1328.0, 235.0, 63.0, 22.0 ],
 					"text" : "closebang"
 				}
 
@@ -175,7 +175,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-2",
@@ -1533,7 +1532,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1113.0, 305.0, 135.0, 22.0 ],
+					"patching_rect" : [ 1109.0, 330.0, 135.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1558,7 +1557,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1043.0, 209.0, 159.0, 23.0 ],
+					"patching_rect" : [ 1039.0, 234.0, 159.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 476.0, 400.0, 149.0, 23.0 ]
 				}
@@ -1572,7 +1571,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1048.0, 163.0, 110.0, 20.0 ],
+					"patching_rect" : [ 1044.0, 188.0, 110.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 473.0, 375.0, 109.0, 20.0 ],
 					"text" : "CONTROLLERS",
@@ -9949,7 +9948,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
-					"midpoints" : [ 1226.5, 290.5, 1122.5, 290.5 ],
+					"midpoints" : [ 1222.5, 315.5, 1118.5, 315.5 ],
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -9997,7 +9996,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
-					"midpoints" : [ 1341.5, 242.5, 1226.5, 242.5 ],
+					"midpoints" : [ 1337.5, 267.5, 1222.5, 267.5 ],
 					"source" : [ "obj-16", 0 ]
 				}
 
@@ -10005,7 +10004,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
-					"midpoints" : [ 1122.5, 337.0, 1023.5, 337.0, 1023.5, 198.0, 1052.5, 198.0 ],
+					"midpoints" : [ 1118.5, 362.0, 1019.5, 362.0, 1019.5, 223.0, 1048.5, 223.0 ],
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -10128,7 +10127,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
-					"midpoints" : [ 1275.5, 242.75, 1226.5, 242.75 ],
+					"midpoints" : [ 1271.5, 267.75, 1222.5, 267.75 ],
 					"source" : [ "obj-3", 0 ]
 				}
 

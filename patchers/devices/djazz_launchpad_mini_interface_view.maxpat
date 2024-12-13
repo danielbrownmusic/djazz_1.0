@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 63.0, 129.0, 905.0, 607.0 ],
+		"rect" : [ 474.0, 104.0, 301.0, 138.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -378,7 +378,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1143.0, 495.0, 122.0, 62.0 ],
-					"restore" : [ "NONE" ],
+					"restore" : [ "Macintosh HD:/Users/danielbrown/Documents/Max 8/Projects/djazz/djazz_user/mappings/Launchpad Mini/marc_chemillier_mapping_lp_mini.json" ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -1429,13 +1429,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-14",
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1143.0, 743.0, 305.0, 22.0 ],
+					"patching_rect" : [ 1143.0, 743.0, 305.0, 49.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 63.0, 282.0, 22.0 ]
+					"presentation_linecount" : 4,
+					"presentation_rect" : [ 5.0, 63.0, 282.0, 62.0 ],
+					"text" : "\"Macintosh HD:/Users/danielbrown/Documents/Max 8/Projects/djazz/djazz_user/mappings/Launchpad Mini/marc_chemillier_mapping_lp_mini.json\""
 				}
 
 			}
