@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 131.0, 237.0, 1505.0, 562.0 ],
+		"rect" : [ 81.0, 463.0, 1505.0, 562.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -21,7 +21,7 @@
 		"gridsnaponopen" : 1,
 		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
+		"toolbarvisible" : 0,
 		"lefttoolbarpinned" : 0,
 		"toptoolbarpinned" : 0,
 		"righttoolbarpinned" : 0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1382.0, 41.0, 97.0, 22.0 ],
+					"text" : "title DJAZZ MIDI"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-64",
@@ -127,7 +139,7 @@
 					"bgfillcolor_type" : "color",
 					"fontsize" : 12.0,
 					"id" : "obj-59",
-					"items" : [ "NONE", ",", "AU DLS Synth 1", ",", "Logic Pro Virtual In", ",", "from Max 1", ",", "from Max 2" ],
+					"items" : [ "NONE", ",", "AU DLS Synth 1", ",", "from Max 1", ",", "from Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1613,6 +1625,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
 					"source" : [ "obj-4", 0 ]
 				}
@@ -1676,7 +1695,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"order" : 0,
+					"source" : [ "obj-63", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-62", 0 ],
+					"order" : 1,
 					"source" : [ "obj-63", 0 ]
 				}
 

@@ -1,4 +1,5 @@
 {
+	"device" : "Launchpad Pro MK3",
 	"parameters" : 	{
 		"midi_out_1_unmute" : "midi 41 brown",
 		"midi_out_2_unmute" : "midi 42 brown",

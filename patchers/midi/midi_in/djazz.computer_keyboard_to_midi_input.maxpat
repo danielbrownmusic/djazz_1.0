@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 170.0, 786.0, 687.0 ],
+		"rect" : [ 100.0, 170.0, 520.0, 114.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -21,7 +21,7 @@
 		"gridsnaponopen" : 1,
 		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
+		"toolbarvisible" : 0,
 		"lefttoolbarpinned" : 0,
 		"toptoolbarpinned" : 0,
 		"righttoolbarpinned" : 0,
@@ -38,7 +38,20 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
+		"title" : "COMPUTER KEYBOARD",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 443.0, 394.0, 169.0, 22.0 ],
+					"text" : "title COMPUTER KEYBOARD"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-24",
 					"items" : [ "monophonic", ",", "polyphonic", ",", "touchscreen", ",", "monophonic", ",", "polyphonic", ",", "touchscreen" ],
@@ -49,7 +62,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 109.0, 81.0, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 395.0, 6.0, 100.0, 22.0 ]
+					"presentation_rect" : [ 395.0, 6.0, 100.0, 22.0 ],
+					"textcolor" : [ 1.0, 1.0, 0.898039215686275, 1.0 ]
 				}
 
 			}
@@ -155,7 +169,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 644.0, 347.0, 100.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 5.0, 120.0, 23.0 ]
+					"presentation_rect" : [ 5.0, 5.0, 120.0, 23.0 ],
+					"textcolor" : [ 1.0, 1.0, 0.898039215686275, 1.0 ]
 				}
 
 			}
@@ -234,7 +249,8 @@
 					"patching_rect" : [ 463.0, 56.0, 69.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 131.0, 7.0, 67.0, 20.0 ],
-					"text" : "CHANNEL"
+					"text" : "CHANNEL",
+					"textcolor" : [ 1.0, 1.0, 0.898039215686275, 1.0 ]
 				}
 
 			}
@@ -777,7 +793,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 462.0, 131.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 203.0, 6.0, 39.133336826618176, 22.0 ]
+					"presentation_rect" : [ 203.0, 6.0, 39.133336826618176, 22.0 ],
+					"textcolor" : [ 1.0, 1.0, 0.898039215686275, 1.0 ]
 				}
 
 			}
@@ -892,6 +909,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
+					"order" : 1,
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"order" : 0,
 					"source" : [ "obj-23", 0 ]
 				}
 
@@ -900,6 +926,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-159", 0 ],
 					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -940,7 +973,9 @@
 				}
 
 			}
- ]
+ ],
+		"bgcolor" : [ 0.545098039215686, 0.545098039215686, 0.545098039215686, 1.0 ],
+		"editing_bgcolor" : [ 0.356862745098039, 0.356862745098039, 0.356862745098039, 1.0 ]
 	}
 
 }
