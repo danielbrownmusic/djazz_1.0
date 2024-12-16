@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 293.0, 182.0, 1166.0, 881.0 ],
+		"rect" : [ 293.0, 182.0, 720.0, 881.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,19 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "bang to clear",
+					"id" : "obj-3",
+					"index" : 0,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 635.0, 54.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-26",
 					"maxclass" : "newobj",
@@ -398,10 +411,10 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "djazz.view.track_view_selector_views.maxpat",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 2,
 					"offset" : [ -20.0, -100.0 ],
-					"outlettype" : [ "", "" ],
+					"outlettype" : [ "NONE", "" ],
 					"patching_rect" : [ 120.0, 331.0, 534.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 87.0, -1.0, 621.0, 22.0 ],
@@ -565,6 +578,13 @@
 					"destination" : [ "obj-179", 0 ],
 					"midpoints" : [ 201.5, 155.0, 256.5, 155.0, 256.5, 54.0, 201.5, 54.0 ],
 					"source" : [ "obj-26", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 1 ],
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
