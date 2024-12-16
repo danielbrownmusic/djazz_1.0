@@ -22,14 +22,14 @@ var d_ = new Dict();
 exports.connect_code = function()
 {
     var key = to_key_(SYSEX, CONNECT);
-    return d_.contains(key) ? d_.get(key) : "";
+    return d_.contains(key) == 1 ? d_.get(key) : "";
 }
 
 
 exports.disconnect_code = function()
 {
     var key = to_key_(SYSEX, DISCONNECT)
-    return d_.contains(key) ? d_.get(key) : "";
+    return d_.contains(key) == 1 ? d_.get(key) : "";
 }
 
 exports.behavior_code = function(behavior)

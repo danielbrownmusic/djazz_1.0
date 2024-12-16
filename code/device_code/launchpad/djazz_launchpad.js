@@ -20,6 +20,8 @@ var NOTE    = "note";
 var NO_FILE = "NONE";
 var STATIC  = "static";
 
+var connected_ = false;
+
 // ------------------------------------------------------------------------------
 
 
@@ -60,17 +62,22 @@ function connect()
         //post (connect_msg);
         outlet(1, connect_msg);
     }
+    connected_ = true;
 }
 
 
 function disconnect()
 {
+    if (!connected_)
+        return;
+
     clear_all_leds_();
     var disconnect_code = device_db_.disconnect_code();
     if (disconnect_code)
     {
         var disconnect_msg = "midi " + disconnect_code;
         //post (disconnect_msg);
+        connected_ = false;
         outlet(1, disconnect_msg);
         outlet(1, "port none");
     }   

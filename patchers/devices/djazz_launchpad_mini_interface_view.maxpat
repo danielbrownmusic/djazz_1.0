@@ -10,9 +10,9 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 474.0, 104.0, 301.0, 138.0 ],
+		"rect" : [ 1047.0, 76.0, 301.0, 138.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -21,7 +21,7 @@
 		"gridsnaponopen" : 1,
 		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
+		"toolbarvisible" : 0,
 		"lefttoolbarpinned" : 0,
 		"toptoolbarpinned" : 0,
 		"righttoolbarpinned" : 0,
@@ -144,7 +144,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 736.0, 45.0, 269.0, 22.0 ],
+					"patching_rect" : [ 736.0, 45.0, 270.0, 22.0 ],
 					"text" : "pv #0_LAUNCHPAD_MAPPING_FILE NONE"
 				}
 
@@ -404,12 +404,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-27",
-					"linecount" : 5,
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1049.0, 206.0, 71.0, 76.0 ],
+					"patching_rect" : [ 1049.0, 206.0, 79.0, 62.0 ],
 					"text" : "window size 63 129 364 267, window exec"
 				}
 

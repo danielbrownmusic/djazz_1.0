@@ -10,9 +10,9 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1259.0, 219.0, 317.0, 197.0 ],
+		"rect" : [ 463.0, 129.0, 301.0, 138.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -21,7 +21,7 @@
 		"gridsnaponopen" : 1,
 		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
+		"toolbarvisible" : 0,
 		"lefttoolbarpinned" : 0,
 		"toptoolbarpinned" : 0,
 		"righttoolbarpinned" : 0,
@@ -376,7 +376,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1115.0, 483.0, 268.0, 22.0 ],
-					"restore" : [ "NONE" ],
+					"restore" : [ "Macintosh HD:/Users/danielbrown/Documents/Max 8/Projects/djazz/djazz_user/mappings/Launchpad Pro MK3 LPProMK3 MIDI/marc_chemillier_mapping_lp_pro_mk3.json" ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -1426,13 +1426,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-14",
+					"linecount" : 6,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1115.0, 699.0, 230.0, 22.0 ],
+					"patching_rect" : [ 1115.0, 699.0, 230.0, 89.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 63.0, 282.0, 22.0 ]
+					"presentation_linecount" : 5,
+					"presentation_rect" : [ 5.0, 63.0, 282.0, 76.0 ],
+					"text" : "\"Macintosh HD:/Users/danielbrown/Documents/Max 8/Projects/djazz/djazz_user/mappings/Launchpad Pro MK3 LPProMK3 MIDI/marc_chemillier_mapping_lp_pro_mk3.json\""
 				}
 
 			}
